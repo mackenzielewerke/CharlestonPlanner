@@ -1,3 +1,8 @@
+$icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
 * {
 	box-sizing: border-box;
 }
@@ -9,12 +14,17 @@ img {
 
 body{
 	margin: 0;
-	font-family: "Open Sans";
+	font-family: sans-serif;
+	background-color: #d5d8db;
+}
+
+.spaced-out {
+	letter-spacing: 2px;
 }
 
 .reg-navigation{
 	background-color: #22313F;
-	color: #f1f2f3;
+	color: #d5d8db;
 	padding: 10px;
 	font-size: 16px;
 	font-weight: lighter;
@@ -32,7 +42,7 @@ body{
 .sign-in{
 	width: 25%;
 	float: right;
-	margin-top: 15px;
+	margin-top: 22px;
 }
 
 .sign-in > *{
@@ -43,28 +53,43 @@ body{
 	padding-left: 50px;
 }
 
+.hover-color:hover{
+	cursor: pointer;
+	color: #FDE3A7;
+}
+
 .searchbar{
 	text-align: center;
-	padding-top: 18px;
-	padding-bottom: 18px;
-	font-size: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 18px;
 }
 
 .searchbar > *{
 	display: inline-block;
+}
+
+.searchbar div {
+	width: 15%;
+}
+
+.searchbar form {
 	width: 25%;
 }
 
 .searchbar button{
 	border-style: none;
 	height: 25px;
-	width: 60px;
+	width: 80px;
 	font-size: 14px;
-	color: #f1f2f3;
+	color: white;
 	background-color: #22313F;
+	cursor: pointer;
 }
 
 .search-input{
 	height: 25px;
 	width: 200px;
+	font-size: 14px;
+	letter-spacing: normal;
 }
