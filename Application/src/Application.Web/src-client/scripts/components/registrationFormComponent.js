@@ -2,7 +2,7 @@ import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-export const FormComponent = React.createClass({
+export const RegistrationFormComponent = React.createClass({
 	render: function(){
 		return (
 <div className="my-form">

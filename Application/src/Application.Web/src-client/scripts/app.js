@@ -4,7 +4,8 @@ import React from 'react'
 import {HomePageView} from './views/homeView.js'
 import {EventsPageView} from './views/thumbnailView.js'
 import {SingleEventView} from './views/singleEventView.js'
-import {FormView} from './views/formView.js'
+import {RegistrationFormView} from './views/registrationFormView.js'
+import {LoginFormView} from './views/loginFormView.js'
 
 const AppRouter = Backbone.Router.extend({
 	initialize: function(){
@@ -34,9 +35,13 @@ const AppRouter = Backbone.Router.extend({
 		ReactDOM.render(<SingleEventView/>, document.querySelector('#app-container'))
 	},
 
-	showNewEventForm: function(){
-		ReactDOM.render(<FormView/>, document.querySelector('#app-container'))
+	showRegisterPage: function(){
+		ReactDOM.render(<RegistrationFormView/>, document.querySelector('#app-container'))
 
+	},
+
+	showLoginPage: function(){
+		ReactDOM.render(<LoginFormView/>, document.querySelector('#app-container'))
 	}
 
 })
