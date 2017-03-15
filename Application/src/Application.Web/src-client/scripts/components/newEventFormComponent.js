@@ -6,9 +6,9 @@ export const NewEventFormComponent = React.createClass({
 	render: function(){
 		return (
 <div className="my-form">
-  <h1>Add Your Own Event </h1>
+  <h1 className="spaced-out">Add Your Own Event </h1>
 
-  <form >
+  <form>
     <div className="form-section">
       <h4>Name </h4>
       <input type="text" className="form-control" name="theMsgEl"/>
@@ -27,12 +27,13 @@ export const NewEventFormComponent = React.createClass({
 
     <div className="form-section">
       <h4>Description </h4>
-      <input type="text" className="form-control" name="msgFromEl"/>
+      <input type="text" className="form-control description-input" name="msgFromEl"/>
     </div>
 
 
-
-    <button className="submit-button" type="submit">Register</button>
+		<div className="button-div">
+    	<button className="submit-button" type="submit">Register</button>
+		</div>
   </form>
 
 

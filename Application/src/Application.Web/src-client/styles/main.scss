@@ -16,6 +16,11 @@ body{
 	margin: 0;
 	font-family: sans-serif;
 	background-color: #d5d8db;
+	width: 100%;
+}
+
+#app-container{
+	width: 100%;
 }
 
 .spaced-out{
@@ -60,8 +65,8 @@ body{
 
 .searchbar{
 	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	font-size: 18px;
 }
 
@@ -104,30 +109,81 @@ body{
 }
 
 .form-section input{
-	width: 400px;
+	width: 350px;
 	border-radius: 10px;
 }
 
-.myform{
-	width: 70%;
-
+.my-form{
+	background-color: white;
+	width: 82%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 100px;
+	// padding-left: 70px;
+	padding-top: 30px;
+	border-radius: 10px;
+	margin-bottom: 100px;
 }
 
-.my-form button{
+// .my-form button{
+//
+// }
+
+.submit-button{
 	margin-top: 60px;
 	height: 40px;
-	width: 275px;
 	color: white;
 	background-color: #22313F;
 	font-size: 16px;
 	border-radius: 10px;
+	width: 350px;
+	text-align: center;
 }
 
-.my-form form{
-	margin-left: 100px;
-}
-
-.my-form h2{
+.my-form h1{
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+.description-input{
+	height: 250px;
+}
+
+.centered-margins{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.form-section{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button-div{
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// .register-form{
+// 	width: 40%;
+// }
+
+.register-form input{
+	width: 95%;
+	border-radius: 10px;
+}
+
+.register-form-centered{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.special-button-div{
+	width: 53%;
+	margin-left: auto;
+	margin-right: auto;
 }
