@@ -74,7 +74,7 @@ body{
 }
 
 .searchbar form{
-	width: 25%
+	width: 30%
 
 }
 
@@ -86,11 +86,48 @@ body{
 	color: white;
 	background-color: #22313F;
 	cursor: pointer;
+	border-radius: 10px;
 }
 
 .search-input{
 	height: 25px;
-	width: 200px;
+	width: 250px;
 	font-size: 14px;
 	letter-spacing: normal;
+	border-radius: 10px;
+	border-style: none;
+}
+
+.side-by-side div{
+	display: inline-block;
+	width: 50%;
+}
+
+.form-section input{
+	width: 400px;
+	border-radius: 10px;
+}
+
+.myform{
+	width: 70%;
+
+}
+
+.my-form button{
+	margin-top: 60px;
+	height: 40px;
+	width: 275px;
+	color: white;
+	background-color: #22313F;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+.my-form form{
+	margin-left: 100px;
+}
+
+.my-form h2{
+	text-align: center;
+	margin-bottom: 50px;
 }
