@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Application.Web.Data;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 
 namespace Application.Web
 {
@@ -27,8 +30,23 @@ namespace Application.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            using (var context = new EventDbContext())
+            {
+                context.Database.EnsureCreated();
+            }
             // Add framework services.
-            //services.AddMvc();
+            services.AddDbContext<EventDbContext>();
+            //AddEntityFrameworkSqlite().
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            {
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = false;
+                options.Cookies.ApplicationCookie.LoginPath = "/accounts/login";
+            })
+                .AddEntityFrameworkStores<EventDbContext>()
+                .AddDefaultTokenProviders();
+            // Add framework services.
             services.AddMvc();
         }
 

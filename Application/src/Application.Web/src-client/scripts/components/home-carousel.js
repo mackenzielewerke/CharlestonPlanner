@@ -1,33 +1,26 @@
-import ReactDOM from 'react-dom'
-import React from 'react'
-
-export const ControlledCarousel = React.createClass({
-
-  render() {
-    return (
-        <Carousel>
-          <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src="./images/people.jpg"/>
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src="/assets/carousel.png"/>
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src="/assets/carousel.png"/>
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-    );
-  }
-});
+// import ReactDOM from 'react-dom'
+// import React from 'react'
+//
+// var Slider = require('react-slick');
+//
+// var SimpleSlider = React.createClass({
+//   render: function () {
+//     var settings = {
+//       dots: true,
+//       infinite: true,
+//       speed: 500,
+//       slidesToShow: 1,
+//       slidesToScroll: 1
+//     };
+//     return (
+//       <Slider {...settings}>
+//         <div><h3>1</h3></div>
+//         <div><h3>2</h3></div>
+//         <div><h3>3</h3></div>
+//         <div><h3>4</h3></div>
+//         <div><h3>5</h3></div>
+//         <div><h3>6</h3></div>
+//       </Slider>
+//     );
+//   }
+// });

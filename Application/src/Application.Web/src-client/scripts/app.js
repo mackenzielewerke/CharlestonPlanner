@@ -2,6 +2,9 @@ import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
 import {HomePageView} from './views/homeView.js'
+import {EventsPageView} from './views/thumbnailView.js'
+import {SingleEventView} from './views/singleEventView.js'
+import {FormView} from './views/formView.js'
 
 const AppRouter = Backbone.Router.extend({
 	initialize: function(){
@@ -11,8 +14,8 @@ const AppRouter = Backbone.Router.extend({
   routes: {
     "" : "showHomePage",
     "events" : "showEventsPage",
+		"events/new": "showNewEventForm",
     "events/:id" : "showSingleEvent",
-    "events/new": "showNewEventForm",
     "account/login": "showLoginPage",
     "account/register": "showRegisterPage",
     "account/:id": "showAccountPage",
@@ -22,6 +25,19 @@ const AppRouter = Backbone.Router.extend({
 	showHomePage: function(){
 		ReactDOM.render(<HomePageView/>, document.querySelector('#app-container'))
 	},
+
+	showEventsPage: function(){
+		ReactDOM.render(<EventsPageView/>, document.querySelector('#app-container'))
+	},
+
+	showSingleEvent: function(){
+		ReactDOM.render(<SingleEventView/>, document.querySelector('#app-container'))
+	},
+
+	showNewEventForm: function(){
+		ReactDOM.render(<FormView/>, document.querySelector('#app-container'))
+
+	}
 
 })
 
