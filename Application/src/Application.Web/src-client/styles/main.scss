@@ -15,7 +15,7 @@ img {
 body{
 	margin: 0;
 	font-family: sans-serif;
-	background-color: orange;
+	background-color: #d5d8db;
 	width: 100%;
 }
 
@@ -45,7 +45,7 @@ body{
 }
 
 .sign-in{
-	width: 27%;
+	width: 25%;
 	float: right;
 	margin-top: 27px;
 }
@@ -125,14 +125,14 @@ body{
 	margin-bottom: 100px;
 }
 
-.submit-button{
+.my-form button{
 	margin-top: 60px;
 	height: 40px;
 	color: white;
 	background-color: #22313F;
 	font-size: 16px;
 	border-radius: 10px;
-	width: 400px;
+	width: 350px;
 	text-align: center;
 }
 
@@ -141,15 +141,21 @@ body{
 	margin-bottom: 50px;
 }
 
+.my-form form{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .description-input{
 	height: 250px;
 }
 
-.centered-margins{
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-}
+// .centered-margins{
+// 	width: 100%;
+// 	margin-right: auto;
+// 	margin-left: auto;
+// }
 
 .form-section{
 	width: 40%;
@@ -172,14 +178,8 @@ body{
 	border-radius: 10px;
 }
 
-.register-form-centered{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .special-button-div{
-	width: 53%;
+	width: 45%;
 	margin-left: auto;
 	margin-right: auto;
 }
