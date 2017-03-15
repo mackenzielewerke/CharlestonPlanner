@@ -6,9 +6,9 @@ export const SearchBarComponent = React.createClass({
 	render: function(){
 		return (
 			<div className="searchbar">
-        <div>Search Events</div>
+        <div className="spaced-out">Search Events</div>
         <form>
-          <input className="search-input" type="text" name="" value=""></input><button type="submit" name="button">Search</button>
+          <input className="search-input spaced-out" type="text" name=""></input><button className="spaced-out" type=" submit" name="button">Search</button>
         </form>
       </div>
 		)
