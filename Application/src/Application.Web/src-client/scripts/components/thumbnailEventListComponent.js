@@ -12,6 +12,29 @@ export const ThumbnailEventListComponent = React.createClass({
 	window.location.hash = `events/${clickedIconEl.dataset.itemid}`
 	},
 
+	getInitialState: function(){
+    return {
+      showAlert: true
+    }
+  },
+  _removeModal: function(){
+    this.setState({showAlert: false})
+
+  },
+
+	_renderAlert: function(){
+	if(this.state.showAlert){
+		return(
+			<div className="modal-wrapper" onClick={this._removeModal}>
+				<div className="modal">
+					<h1>Please Register or Sign In</h1>
+					<p>Must have an account to save events.</p>
+				</div>
+			</div>
+		)
+	}
+},
+
 	render: function(){
 		return (
 			<div className="row">
@@ -22,7 +45,7 @@ export const ThumbnailEventListComponent = React.createClass({
 			        <h3>Event Name</h3>
 			        <p>Event Date</p>
 							<p>Event Location</p>
-			        <p><a href="#" className="btn btn-primary" role="button">Button</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Button</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -34,7 +57,7 @@ export const ThumbnailEventListComponent = React.createClass({
 			        <h3>Event Name</h3>
 			        <p>Event Date</p>
 							<p>Event Location</p>
-			        <p><a href="#" className="btn btn-primary" role="button">Button</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Button</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -46,7 +69,7 @@ export const ThumbnailEventListComponent = React.createClass({
 			        <h3>Event Name</h3>
 			        <p>Event Date</p>
 							<p>Event Location</p>
-			        <p><a href="#" className="btn btn-primary" role="button">Button</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Button</a></p>
 			      </div>
 			    </div>
 			  </div>
