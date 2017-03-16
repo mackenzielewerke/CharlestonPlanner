@@ -16,7 +16,7 @@ export const SingleEventComponent = React.createClass({
 							<h3>Event Location</h3>
 							<h3>Event Venue</h3>
 							<p>Event Description: blah blah blah blah blah blah blah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blah</p>
-			        <p><a href="#" className="btn btn-primary" role="button">Button</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+			        <p><a href="#" className="btn btn-primary" role="button">Save to my Favorites</a></p>
 			      </div>
 			  </div>
 
