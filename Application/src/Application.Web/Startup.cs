@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Application.Web.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-
+using Application.Web.Models;
 
 namespace Application.Web
 {
@@ -36,7 +36,7 @@ namespace Application.Web
             }
             // Add framework services.
             services.AddDbContext<EventDbContext>();
-            //AddEntityFrameworkSqlite().
+            
             services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequireUppercase = false;
@@ -69,12 +69,17 @@ namespace Application.Web
 
             app.UseStaticFiles();
 
+            app.UseIdentity();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //var dataText = System.IO.File.ReadAllText(@"eventdataseed.json");
+            //Seeder.Seedit(dataText, app.ApplicationServices);
 
         }
     }
