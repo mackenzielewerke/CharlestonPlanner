@@ -25,7 +25,7 @@ export const ThumbnailEventListComponent = React.createClass({
   },
 
 	_renderAlert: function(){
-	// if(this.state.showAlert){
+	if(this.state.showAlert===true){
 		return(
 			<div className="modal-wrapper">
 				<div className="modal">
@@ -34,13 +34,15 @@ export const ThumbnailEventListComponent = React.createClass({
 				</div>
 			</div>
 		)
-	// }
+	}
 },
 
-_handleButtonClick: function(){
+_handleButtonClick: function(evt){
 	console.log("CLICKKK")
 	this.setState({showAlert: true})
-	return(this._renderAlert)
+	console.log(this.state)
+		this._renderAlert
+
 
 },
 

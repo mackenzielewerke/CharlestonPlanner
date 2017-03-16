@@ -28,7 +28,7 @@ _validateEmail: function(formDomEl){
 	let emailValue=formDomEl.inputEmail.value
 	let flashMsgEl=document.querySelector('.email.flash-msg')
 	if(emailValue.length < 1){
-		flashMsgEl.innerHTML= "You must your email address"
+		flashMsgEl.innerHTML= "You must enter your email address"
 	}
 },
 
