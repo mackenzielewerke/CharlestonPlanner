@@ -30,6 +30,11 @@ export const NewEventFormComponent = React.createClass({
       <input type="text" className="form-control description-input" name="msgFromEl"/>
     </div>
 
+		<div className="form-section">
+      <h4>Upload Picture (URLs only)</h4>
+      <input type="text" className="form-control" name="msgFromEl"/>
+    </div>
+
 
 		<div className="button-div">
     	<button className="submit-button" type="submit">Register</button>
