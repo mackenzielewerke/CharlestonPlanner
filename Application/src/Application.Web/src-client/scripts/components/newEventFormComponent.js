@@ -4,6 +4,19 @@ import React from 'react'
 
 export const NewEventFormComponent = React.createClass({
 
+	_handleNewEventItem: function(evt){
+		evt.preventDefault();
+		let formEl = evt.target
+		let formValsObj = {
+			name : formEl.inputName.value,
+			date : formEl.inputDate.value,
+			venue : this.inputVenue.imgPreviewLink,
+			picture : formEl.inputPicture.value
+		}
+
+		ACTIONS.saveNewShout(formValsObj)
+
+	},
 
 	_validateName: function(formDomEl){
 		let nameValue=formDomEl.inputName.value

@@ -6,10 +6,15 @@ export const LoginFormComponent = React.createClass({
 
 	_validateEmail: function(formDomEl){
 		let emailValue=formDomEl.inputEmail.value
+		console.log(emailValue)
 		let flashMsgEl=document.querySelector('.email.flash-msg')
 		if(emailValue.length < 1){
 			flashMsgEl.innerHTML= "You must enter your email address"
+		} else {
+			return emailValue= ""
+
 		}
+		return emailValue=""
 	},
 
 	_validatePasswords: function(formDomEl){
@@ -18,6 +23,8 @@ export const LoginFormComponent = React.createClass({
 
 	if(passwordValueOne.length < 1){
 		flashMsgEl.innerHTML= "You must enter a password"
+	} else {
+		passwordValueOne= ""
 	}
 },
 
@@ -30,6 +37,10 @@ export const LoginFormComponent = React.createClass({
 
 		this._validateEmail(formEl)
 		this._validatePasswords(formEl)
+
+
+
+
 	},
 
 

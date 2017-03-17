@@ -24,10 +24,10 @@ const AppRouter = Backbone.Router.extend({
     "events" : "showEventsPage",
 		"events/new": "showNewEventForm",
     "events/:id" : "showSingleEvent",
-    "account/login": "showLoginPage",
-    "account/register": "showRegisterPage",
-    "account/:id": "showAccountPage",
-    "account/:id/edit": "showEditAccountPage"
+    "accounts/login": "showLoginPage",
+    "accounts/register": "showRegisterPage",
+    "accounts/:id": "showAccountPage",
+    "accounts/:id/edit": "showEditaccountsPage"
   },
 
 	showHomePage: function(){

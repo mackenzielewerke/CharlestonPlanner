@@ -1,6 +1,7 @@
 import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
+// import AccountsController from "./AccountsController.cs"
 
 export const RegistrationFormComponent = React.createClass({
 
@@ -53,7 +54,7 @@ if (passwordValueOne !== passwordValueTwo){
 
 
 
-	handleSubmit: function(evt){
+	_handleSubmit: function(evt){
 		evt.preventDefault()
 		console.log("CLICKKKK")
 		console.log(evt.target)
@@ -72,7 +73,7 @@ if (passwordValueOne !== passwordValueTwo){
 <div className="my-form">
   <h1 className="spaced-out">Register Today!  </h1>
 
-  <form onSubmit={this.handleSubmit} className="register-form-centered">
+  <form onSubmit={this._handleSubmit} className="register-form-centered">
 		<div className="side-by-side">
 	    <div className="register-form">
 	      <h4>First Name </h4>
