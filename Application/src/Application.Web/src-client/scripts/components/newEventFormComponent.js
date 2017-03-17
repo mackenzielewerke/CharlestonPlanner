@@ -46,7 +46,7 @@ export const NewEventFormComponent = React.createClass({
 	},
 
 
-	handleSubmit: function(evt){
+	_handleSubmit: function(evt){
 		evt.preventDefault()
 		console.log("CLICKKKK")
 		console.log(evt.target)
@@ -64,7 +64,7 @@ export const NewEventFormComponent = React.createClass({
 <div className="my-form">
   <h1 className="spaced-out">Add Your Own Event </h1>
 
-  <form onSubmit={this.handleSubmit}>
+  <form onSubmit={this._handleSubmit}>
     <div className="form-section">
       <h4>Name of Event </h4>
       <input type="text" className="form-control" name="inputName"/>
