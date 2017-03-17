@@ -178,6 +178,27 @@ body{
 	border-radius: 10px;
 }
 
+.add-img{
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	text-align: center;
+	padding: 5px 0px;
+	margin-top: 5px;
+	width: 150px;
+}
+
+.add-img:hover{
+	cursor: pointer;
+}
+
+.preview-img{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	padding-left: 19px;
+}
+
 .special-button-div{
 	width: 45%;
 	margin-left: auto;
