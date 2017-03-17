@@ -3,7 +3,40 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 
 export const NewEventFormComponent = React.createClass({
+	getInitialState: function(){
+		return {
+			imagePrevUrl: 'http://9762-presscdn-0-23.pagely.netdna-cdn.com/wp-content/plugins/foundry-customposts/images/noimage.png'
+		}
+	},
 
+	_handleNewEventItem: function(evt){
+		evt.preventDefault();
+		let formEl = evt.target
+		let formValsObj = {
+			name : formEl.inputName.value,
+			date : formEl.inputDate.value,
+			venue : this.inputVenue.imgPreviewLink,
+			picture : formEl.inputPicture.value
+		}
+
+		ACTIONS.saveNewShout(formValsObj)
+
+	},
+
+	_handleImgPrevClick: function(evt){
+		evt.preventDefault();
+		let imgElement = this.refs.previewImg
+		console.log(imgElement.value)
+		if (imgElement.value.length > 0){
+			this.setState({
+				imagePrevUrl: imgElement.value
+			})
+		}else{
+			this.setState({
+				imagePrevUrl: 'http://9762-presscdn-0-23.pagely.netdna-cdn.com/wp-content/plugins/foundry-customposts/images/noimage.png'
+			})
+		}
+	},
 
 	_validateName: function(formDomEl){
 		let nameValue=formDomEl.inputName.value
@@ -92,8 +125,12 @@ export const NewEventFormComponent = React.createClass({
 
 		<div className="form-section">
       <h4>Upload Picture (URLs only)</h4>
-      <input type="text" className="form-control" name="inputPicture"/>
+      <input ref="previewImg" type="text" className="form-control" name="inputPicture"/>
+			<div className="add-img" onClick={this._handleImgPrevClick}>Add Image</div>
 			<p className="picture flash-msg"> </p>
+		</div>
+		<div className="preview-img">
+			<img src={this.state.imagePrevUrl}/>
 		</div>
 
 
