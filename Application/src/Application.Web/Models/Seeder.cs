@@ -9,30 +9,28 @@ using System.Linq;
 
 namespace Application.Web.Models
 {
-//    public static class Seeder
-//    {
-//        public static void Seedit(string jsonData,
-//                          IServiceProvider services)
-//        {
-//            JsonSerializerSettings settings = new JsonSerializerSettings
-//            {
-//                ContractResolver = new PrivateSettersContractResolver()
-//            };
-//            List<Event> events =
-//             JsonConvert.DeserializeObject<List<Event>>(
-//               jsonData, settings);
-//            using (
-//             var serviceScope = services
-//               .GetRequiredService<IServiceScopeFactory>().CreateScope())
-//            {
-//                var context = serviceScope
-//                              .ServiceProvider.GetService<EventDbContext>();
-//                if (!context.Events.Any())
-//                {
-//                    context.AddRange(events);
-//                    context.SaveChanges();
-//                }
-//            }
-//        }
-//    }
+    public static class Seeder
+    {
+        public static void Seedit(string jsonData, IServiceProvider services)
+        {
+            JsonSerializerSettings settings = new JsonSerializerSettings
+            { };
+            List<Event> events = JsonConvert.DeserializeObject<List<Event>>(jsonData, settings);
+            using ( var serviceScope = services
+               .GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetService<EventDbContext>();
+
+                var sortEvent = context.Events.OrderBy(q => q.Date).ToList();
+
+                if (!context.Events.Any())
+                {
+                    context.Database.EnsureCreated();
+                    context.AddRange(sortEvent);
+
+                    context.SaveChanges();
+                }
+            }
+        }
+    }
 }
