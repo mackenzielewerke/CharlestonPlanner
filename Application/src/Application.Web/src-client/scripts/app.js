@@ -8,6 +8,12 @@ import {RegistrationFormView} from './views/registrationFormView.js'
 import {LoginFormView} from './views/loginFormView.js'
 import {NewEventFormView} from './views/newEventFormView.js'
 
+if(window.location.hostname === 'localhost'){
+    let headEl = document.querySelector('head')
+    let linkEl = document.querySelector('link[href="./css/styles.css"]')
+    headEl.removeChild(linkEl)
+}
+
 const AppRouter = Backbone.Router.extend({
 	initialize: function(){
 		Backbone.history.start()
@@ -18,10 +24,10 @@ const AppRouter = Backbone.Router.extend({
     "events" : "showEventsPage",
 		"events/new": "showNewEventForm",
     "events/:id" : "showSingleEvent",
-    "account/login": "showLoginPage",
-    "account/register": "showRegisterPage",
-    "account/:id": "showAccountPage",
-    "account/:id/edit": "showEditAccountPage"
+    "accounts/login": "showLoginPage",
+    "accounts/register": "showRegisterPage",
+    "accounts/:id": "showAccountPage",
+    "accounts/:id/edit": "showEditaccountsPage"
   },
 
 	showHomePage: function(){

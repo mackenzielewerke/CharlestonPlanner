@@ -14,18 +14,20 @@ export const ThumbnailEventListComponent = React.createClass({
 
 	getInitialState: function(){
     return {
-      showAlert: true
+      showAlert: false
     }
   },
+
+
   _removeModal: function(){
     this.setState({showAlert: false})
 
   },
 
 	_renderAlert: function(){
-	if(this.state.showAlert){
+	if(this.state.showAlert===true){
 		return(
-			<div className="modal-wrapper" onClick={this._removeModal}>
+			<div className="modal-wrapper">
 				<div className="modal">
 					<h1>Please Register or Sign In</h1>
 					<p>Must have an account to save events.</p>
@@ -33,6 +35,15 @@ export const ThumbnailEventListComponent = React.createClass({
 			</div>
 		)
 	}
+},
+
+_handleButtonClick: function(evt){
+	console.log("CLICKKK")
+	this.setState({showAlert: true})
+	console.log(this.state)
+		this._renderAlert
+
+
 },
 
 	render: function(){
@@ -45,9 +56,9 @@ export const ThumbnailEventListComponent = React.createClass({
 			        <h3>Event Name</h3>
 			        <p>Event Date</p>
 							<p>Event Location</p>
-			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Button</a></p>
-			      </div>
-			    </div>
+							</div>
+						</div>
+			        <p><a className="btn btn-primary" role="button" onClick={this._handleButtonClick}>Save to my Favorites</a></p>
 			  </div>
 
 				<div className="col-sm-6 col-md-4">
@@ -57,7 +68,7 @@ export const ThumbnailEventListComponent = React.createClass({
 			        <h3>Event Name</h3>
 			        <p>Event Date</p>
 							<p>Event Location</p>
-			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Button</a></p>
+			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Save to my Favorites</a></p>
 			      </div>
 			    </div>
 			  </div>
@@ -69,7 +80,7 @@ export const ThumbnailEventListComponent = React.createClass({
 			        <h3>Event Name</h3>
 			        <p>Event Date</p>
 							<p>Event Location</p>
-			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Button</a></p>
+			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Save to my Favorites</a></p>
 			      </div>
 			    </div>
 			  </div>
