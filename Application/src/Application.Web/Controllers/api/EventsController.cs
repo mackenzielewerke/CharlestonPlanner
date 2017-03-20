@@ -31,7 +31,7 @@ namespace Application.Web.Controllers.api
         }
 
         [HttpGet]
-        [Route("~/api/events/{id}")]
+        [Route("~/api/events")]
         public IEnumerable<Event> GetEvents()
         {
             var userId = _userManager.GetUserId(User);
@@ -39,7 +39,7 @@ namespace Application.Web.Controllers.api
         }
 
         [HttpGet]
-        [Route("~/api/events")]
+        [Route("~/api/events/{id}")]
         public async Task<IActionResult> GetEvent(int id)
         {
             var userId = _userManager.GetUserId(User);
