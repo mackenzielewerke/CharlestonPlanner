@@ -1,7 +1,8 @@
 export const STORE = {
 	_data: {
-		shoutOutList: [],
-		shownRatingType: 'PG'
+		eventsList: [],
+		currentNavRoute: '',
+		currentUser: {}
 	},
 
 	getStoreData: function(){
