@@ -10,6 +10,8 @@ using Microsoft.Extensions.Logging;
 using Application.Web.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Application.Web.Models;
+using System.IO;
+using Microsoft.EntityFrameworkCore;
 
 namespace Application.Web
 {
@@ -30,10 +32,13 @@ namespace Application.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            using (var context = new EventDbContext())
-            {
-                context.Database.EnsureCreated();
-            }
+            var context = new EventDbContext();
+            context.Database.Migrate();
+
+            //using (var context = new EventDbContext())
+            //{
+            //    context.Database.EnsureCreated();
+            //}
             // Add framework services.
             services.AddDbContext<EventDbContext>();
             
@@ -78,8 +83,8 @@ namespace Application.Web
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //var dataText = System.IO.File.ReadAllText(@"eventdataseed.json");
-            //Seeder.Seedit(dataText, app.ApplicationServices);
+            var jsonData = File.ReadAllText(@"data/eventdataseed.json");
+            Seeder.Seedit(jsonData, app.ApplicationServices);
 
         }
     }

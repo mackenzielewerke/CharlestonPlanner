@@ -25,13 +25,6 @@ namespace Application.Web.Controllers
             _signInManager = signInManager;
         }
 
-        [AllowAnonymous]
-        [Route("~/accounts/login")]
-        public IActionResult Login()
-        {
-            return View();
-        }
-
         [HttpPost]
         [AllowAnonymous]
         [Route("~/accounts/login")]
@@ -62,13 +55,6 @@ namespace Application.Web.Controllers
                 }
             }
             return View(model);
-        }
-
-        [AllowAnonymous]
-        [Route("~/accounts/register")]
-        public IActionResult Register()
-        {
-            return View();
         }
 
         [HttpPost]

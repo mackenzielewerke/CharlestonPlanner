@@ -12,7 +12,7 @@ export const PretendEventsCollection = Backbone.Collection.extend({
 
 
 export const EventsModel= Backbone.Model.extend({
-	urlRoot: 'api/events'
+	urlRoot: 'api/events',
 	idAttribute: '_id'
 })
 
