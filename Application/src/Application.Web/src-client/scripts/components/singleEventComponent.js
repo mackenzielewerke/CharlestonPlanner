@@ -5,6 +5,7 @@ import React from 'react'
 
 
 export const SingleEventComponent = React.createClass({
+
 	render: function(){
 		return (
 			<div className="single-event">
