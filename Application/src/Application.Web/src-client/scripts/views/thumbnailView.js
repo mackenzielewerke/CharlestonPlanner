@@ -31,7 +31,7 @@ export const EventsPageView = React.createClass({
       <div>
 			     <RegularNavComponent/>
            <SearchBarComponent/>
-					 <ThumbnailEventListComponent/>
+					 <ThumbnailEventListComponent eventsList={this.state.eventsList}/>
 
 
       </div>
