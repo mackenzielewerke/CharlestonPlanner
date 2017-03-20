@@ -5,11 +5,11 @@ import React from 'react'
 export const RegularNavComponent = React.createClass({
 
 	_handleLogIn: function(evt){
-	window.location.hash = "account/login"
+	window.location.hash = "accounts/login"
 },
 
 	_handleSignUp: function(evt){
-		window.location.hash="account/register"
+		window.location.hash="accounts/register"
 	},
 
 	_handleHome: function(evt){

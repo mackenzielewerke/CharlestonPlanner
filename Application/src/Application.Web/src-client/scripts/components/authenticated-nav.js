@@ -9,7 +9,7 @@ export const AuthenticatedNavComponent = React.createClass({
 },
 
 	_handleMyAccount: function(evt){
-		window.location.hash="account/:id"
+		window.location.hash="accounts/:id"
 	},
 
 	_handleHome: function(evt){
