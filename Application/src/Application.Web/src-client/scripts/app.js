@@ -55,6 +55,32 @@ const AppRouter = Backbone.Router.extend({
 		ReactDOM.render(<NewEventFormView/>, document.querySelector('#app-container'))
 }
 
+// *****
+// showHomePage: function(){
+//   ReactDOM.render(<ViewController fromRoute="{HOME}" />, document.querySelector('#app-container'))
+// },
+//
+// showEventsPage: function(){
+//   ReactDOM.render(<ViewController fromRoute="{EVENTS}"/>, document.querySelector('#app-container'))
+// },
+//
+// showSingleEvent: function(){
+//   ReactDOM.render(<ViewController fromRoute= "{EVENTS}"/>, document.querySelector('#app-container'))
+// },
+//
+// showRegisterPage: function(){
+//   ReactDOM.render(<ViewController fromRoute="{ACCOUNTS}"/>, document.querySelector('#app-container'))
+//
+// },
+//
+// showLoginPage: function(){
+//   ReactDOM.render(<ViewController fromRoute="{ACCOUNTS}"/>, document.querySelector('#app-container'))
+// },
+//
+// showNewEventForm: function(){
+//   ReactDOM.render(<ViewController fromRoute= "{EVENTS}"/>, document.querySelector('#app-container'))
+// }
+
 })
 
 	new AppRouter()

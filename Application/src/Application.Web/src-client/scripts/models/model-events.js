@@ -1,14 +1,13 @@
 import Backbone from 'backbone'
 
-
-export const PretendEventsModel = Backbone.Model.extend({
-	url: 'https://api.myjson.com/bins/drz1f',
-	// idAttribute: '_id'
-})
-
-export const PretendEventsCollection = Backbone.Collection.extend({
-	model: PretendEventsModel
-})
+// export const PretendEventsModel = Backbone.Model.extend({
+// 	url: 'https://api.myjson.com/bins/drz1f',
+// 	// idAttribute: '_id'
+// })
+//
+// export const PretendEventsCollection = Backbone.Collection.extend({
+// 	model: PretendEventsModel
+// })
 
 
 export const EventsModel= Backbone.Model.extend({
@@ -17,5 +16,7 @@ export const EventsModel= Backbone.Model.extend({
 })
 
 export const EventsCollection= Backbone.Collection.extend({
-	model: EventsModel
+	model: EventsModel,
+	urlRoot: 'api/events'
+
 })

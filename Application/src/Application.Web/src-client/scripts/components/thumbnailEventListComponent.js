@@ -37,6 +37,15 @@ export const ThumbnailEventListComponent = React.createClass({
 	}
 },
 
+_makeOneEvent: function(eventsList){
+	console.log(eventsList)
+	let arrayOfEventsComponents= eventsList.map(function(smod, i){
+		return (
+			<h1>hey</h1>
+		)
+	})
+},
+
 _handleButtonClick: function(evt){
 	console.log("CLICKKK")
 	this.setState({showAlert: true})
@@ -47,6 +56,11 @@ _handleButtonClick: function(evt){
 },
 
 	render: function(){
+		let component= this
+		console.log(this.props)
+		let allEvents= this.props.eventsList
+		console.log(allEvents)
+
 		return (
 			<div className="row">
 			  <div className="col-sm-6 col-md-4">
