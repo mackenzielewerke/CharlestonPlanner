@@ -11,12 +11,12 @@ import Backbone from 'backbone'
 
 
 export const EventsModel= Backbone.Model.extend({
-	urlRoot: 'api/events',
+	url: 'api/events',
 	// idAttribute: '_id'
 })
 
 export const EventsCollection= Backbone.Collection.extend({
 	model: EventsModel,
-	urlRoot: 'api/events'
+	url: 'api/events'
 
 })
