@@ -37,14 +37,6 @@ export const ThumbnailEventListComponent = React.createClass({
 	}
 },
 
-_makeOneEvent: function(eventsList){
-	console.log(eventsList)
-	let arrayOfEventsComponents= eventsList.map(function(smod, i){
-		return (
-			<h1>hey</h1>
-		)
-	})
-},
 
 _handleButtonClick: function(evt){
 	console.log("CLICKKK")
@@ -62,6 +54,8 @@ _handleButtonClick: function(evt){
 		console.log(allEvents)
 
 		return (
+
+			// _makeOneEvent(allEvents)
 			<div className="row">
 			  <div className="col-sm-6 col-md-4">
 			    <div className="thumbnail" data-itemid="hey" onClick={this._handleDetailedViewClick}>
@@ -101,4 +95,28 @@ _handleButtonClick: function(evt){
 			</div>
 		)
 	}
+})
+
+export const EventsItem= React.createClass({
+	render: function(){
+			let arrayOfEventsComponents= eventsList.map(function(oneEvent, i){
+				console.log(oneEvent)
+				return (
+					<div className="row">
+						<div className="col-sm-6 col-md-4">
+							<div className="thumbnail" data-itemid="hey" onClick={this._handleDetailedViewClick}>
+								<img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
+								<div className="caption">
+									<h3>Event Name</h3>
+									<p>Event Date</p>
+									<p>Event Location</p>
+									</div>
+								</div>
+									<p><a className="btn btn-primary" role="button" onClick={this._handleButtonClick}>Save to my Favorites</a></p>
+						</div>
+					</div>
+				)
+			})
+		}
+
 })

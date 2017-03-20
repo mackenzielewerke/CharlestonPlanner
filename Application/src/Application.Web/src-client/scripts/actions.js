@@ -16,7 +16,7 @@ export const ACTIONS = {
 
   let eventsCollInstance = new EventsCollection()
     eventsCollInstance.fetch().then(function(serverRes){
-    console.log('shout data', serverRes)
+    console.log('events', serverRes)
     STORE.setStore('eventsList', serverRes)
   })
 }
