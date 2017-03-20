@@ -21,12 +21,12 @@ namespace Application.Web.Models
             {
                 var context = serviceScope.ServiceProvider.GetService<EventDbContext>();
 
-                var sortEvent = context.Events.OrderBy(q => q.Date).ToList();
+                //var sortEvent = context.Events.OrderBy(q => q.Date).ToList();
 
                 if (!context.Events.Any())
                 {
                     context.Database.EnsureCreated();
-                    context.AddRange(sortEvent);
+                    context.AddRange(events);
 
                     context.SaveChanges();
                 }
