@@ -42,7 +42,7 @@ UserModel.getCurrentUser =  function(){
 		headers: {
 			'Content-Type': 'application/json'
 		},
-		url: '/auth/current'
+		url: '/accounts/:id'
 	})
 }
 
@@ -50,6 +50,6 @@ UserModel.logOut =  function(){
 	console.log('logging in!')
 	return $.ajax({
 		method: 'GET',
-		url: '/auth/logout'
+		url: '/accounts/logout'
 	})
 }

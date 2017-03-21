@@ -17,10 +17,6 @@ export const SingleEventView = React.createClass({
 	componentDidMount: function(){
 		let component = this;
 
-		STORE.onStoreChange(function(){
-			component.setState( STORE.getStoreData() )
-		})
-
 		ACTIONS.fetchAllEvents()
 
 
@@ -29,7 +25,6 @@ export const SingleEventView = React.createClass({
 	render: function(){
 		return (
       <div>
-			     <RegularNavComponent/>
            <SearchBarComponent/>
 					 <SingleEventComponent eventsList={this.state.eventsList}/>
 

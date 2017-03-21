@@ -11,7 +11,6 @@ export const RegistrationFormView = React.createClass({
 	render: function(){
 		return (
       <div>
-			     <RegularNavComponent/>
            <SearchBarComponent/>
 					 <RegistrationFormComponent/>
 

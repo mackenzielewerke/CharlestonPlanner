@@ -9,7 +9,6 @@ export const HomePageView = React.createClass({
 	render: function(){
 		return (
       <div>
-			     <RegularNavComponent/>
            <SearchBarComponent/>
            <img src="./images/people.jpg" alt=""></img>
 				 	{/* <SimpleSlider/> */}

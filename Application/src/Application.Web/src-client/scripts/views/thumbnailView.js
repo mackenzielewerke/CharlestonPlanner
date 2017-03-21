@@ -16,12 +16,7 @@ export const EventsPageView = React.createClass({
 	componentDidMount: function(){
 		let component = this;
 
-		STORE.onStoreChange(function(){
-			component.setState( STORE.getStoreData() )
-		})
-
 		ACTIONS.fetchAllEvents()
-
 
 	},
 
@@ -35,7 +30,6 @@ export const EventsPageView = React.createClass({
 		}
 		return (
       <div>
-			     <RegularNavComponent/>
            <SearchBarComponent/>
 					 <ThumbnailEventListComponent eventsList={this.state.eventsList}/>
 

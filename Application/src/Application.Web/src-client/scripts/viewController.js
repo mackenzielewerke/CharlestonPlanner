@@ -1,70 +1,85 @@
-// import React from 'react';
-// import {Navbar} from './components/component-navbar.js';
-// import {STORE} from './store.js';
-// import {ACTIONS} from './actions.js';
-//
-// import {HomePageView} from './views/homeView.js'
-// import {EventsPageView} from './views/thumbnailView.js'
-// import {SingleEventView} from './views/singleEventView.js'
-// import {RegistrationFormView} from './views/registrationFormView.js'
-// import {LoginFormView} from './views/loginFormView.js'
-// import {NewEventFormView} from './views/newEventFormView.js'
-//
-// export const ViewController = React.createClass({
-//
-// 	getInitialState: function(){
-// 		ACTIONS.changeCurrentNav(this.props.fromRoute, window.location.hash)
-// 		let storeObject = STORE.getStoreData()
-// 		return storeObject
-// 	},
-//
-// 	componentDidMount: function(){
-// 		let component = this;
-//
-// 	   STORE.onStoreChange(function(){
-// 			// console.log("STATE CHANGED!")
-// 			let newStoreObj = STORE.getStoreData()
-// 			component.setState(newStoreObj)
-// 		})
-//
-// 		ACTIONS.fetchCurrentUser()
-//
-// 	},
-//
-// 	render: function(){
-//
-// 		let componentToRender
-//
-// 		switch(this.state.currentNavRoute){
-// 			case "HOME":
-// 				componentToRender = <homeView {...this.state}/>
-// 				break;
-// 			case "EVENTS":
-// 				componentToRender = <EventsPageView {...this.state}/>
-// 				break;
-// 			case "SINGLE":
-// 				componentToRender = <singleEventView {...this.state}/>
-// 				break;
-// 			case "REGISTER":
-// 				componentToRender = <RegistrationFormView {...this.state}/>
-// 				break;
-// 			case "LOGIN":
-// 				componentToRender = <loginFormView {...this.state}/>
-// 				break;
-// 			case "NEW":
-// 				componentToRender = <NewEventFormView {...this.state}/>
-// 				break;
-//
-//
-//  			default:
-// 		}
-//
-// 		// console.log('APP STATE', this.state)
-// 		return (
-// 			<div>
-// 				<Navbar { ...this.state }/>
-// 				{componentToRender}
-// 			</div>
-// 		)
-// 	}
-// })
+import React from 'react';
+import {RegularNavComponent} from './components/unauthenticated-nav.js';
+import {STORE} from './store.js';
+import {ACTIONS} from './actions.js';
+import {AppRouter} from './routes.js'
+import {AuthenticatedNavComponent} from './components/authenticated-nav.js';
+import {HomePageView} from './views/homeView.js'
+import {EventsPageView} from './views/thumbnailView.js'
+import {SingleEventView} from './views/singleEventView.js'
+import {RegistrationFormView} from './views/registrationFormView.js'
+import {LoginFormView} from './views/loginFormView.js'
+import {NewEventFormView} from './views/newEventFormView.js'
+
+export const ViewController = React.createClass({
+
+	getInitialState: function(){
+		// ACTIONS.changeCurrentNav(this.props.fromRoute, window.location.hash)
+		let storeObject = STORE.getStoreData()
+		return storeObject
+	},
+
+  componentWillMount: function(){
+    let component = this;
+    console.log('initializing store listener???')
+    STORE.onStoreChange(function(){
+      console.log("STATE CHANGED!")
+      let newStoreObj = STORE.getStoreData()
+      component.setState(newStoreObj)
+    })
+
+    new AppRouter()
+
+    ACTIONS.fetchCurrentUser()
+
+  },
+
+  _getNavBar: function(currentUser){
+		let navBar = <RegularNavComponent/>
+
+		if(typeof currentUser.email !== 'undefined'){
+			navBar = <AuthenticatedNavComponent/>
+		}
+
+		return navBar
+	},
+
+	render: function(){
+		let componentToRender
+    console.log('ViewController.state.currentView: ', this.state.currentVe)
+		switch(this.state.currentView){
+			case "HOME":
+        console.log('hey')
+				componentToRender = <HomePageView/>
+				break;
+			case "EVENTS":
+				componentToRender = <EventsPageView/>
+				break;
+			case "SINGLE":
+				componentToRender = <SingleEventView/>
+				break;
+			case "REGISTER":
+        console.log('register')
+				componentToRender = <RegistrationFormView/>
+				break;
+			case "LOGIN":
+        console.log('login')
+				componentToRender = <LoginFormView/>
+				break;
+			case "NEW":
+				componentToRender = <NewEventFormView/>
+				break;
+
+
+ 			default:
+		}
+
+		// console.log('APP STATE', this.state)
+		return (
+			<div>
+				{ this._getNavBar(this.state.currentUser) }
+				{componentToRender}
+			</div>
+		)
+	}
+})

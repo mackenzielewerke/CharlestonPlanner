@@ -29,7 +29,7 @@ export const LoginFormComponent = React.createClass({
 },
 
 
-	handleSubmit: function(evt){
+	_handleSubmit: function(evt){
 		evt.preventDefault()
 		console.log("CLICKKKK")
 		console.log(evt.target)
@@ -38,12 +38,20 @@ export const LoginFormComponent = React.createClass({
 		this._validateEmail(formEl)
 		this._validatePasswords(formEl)
 
-
-
-
 	},
 
+	_handleLoginFormSubmit: function(evt){
+			evt.preventDefault()
+			let formElement = evt.target
 
+			let authRequirements = {
+				email: formElement.email.value,
+				password: formElement.password.value
+			}
+
+			console.log('<LoginView> handling form submit!', authRequirements)
+			ACTIONS.loginUser(authRequirements)
+		},
 
 
 
@@ -53,16 +61,16 @@ export const LoginFormComponent = React.createClass({
 <div className="my-form">
   <h1 className="spaced-out">Login </h1>
 
-<form onSubmit={this.handleSubmit} className="centered-margins">
+<form onSubmit={this._handleSubmit} className="centered-margins">
 	<div className="form-section">
 		<h4>Email </h4>
-		<input type="text" className="form-control" name="inputEmail"/>
+		<input type="text" className="form-control" name="email"/>
 		<p className="email flash-msg"> </p>
 	</div>
 
 	<div className="form-section">
 		<h4>Password </h4>
-		<input type="text" className="form-control" name="inputPasswordOne"/>
+		<input type="text" className="form-control" name="password"/>
 		<p className="passwordone flash-msg"> </p>
 	</div>
 
