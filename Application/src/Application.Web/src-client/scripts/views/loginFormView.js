@@ -11,7 +11,6 @@ export const LoginFormView = React.createClass({
 	render: function(){
 		return (
       <div>
-           <SearchBarComponent/>
 					 <LoginFormComponent/>
 
 

@@ -1,7 +1,7 @@
 export const STORE = {
 	_data: {
 		eventsList: [],
-		currentNavRoute: 'HOME',
+		currentView: 'HOME',
 		currentUser: {}
 	},
 
@@ -10,6 +10,7 @@ export const STORE = {
 	},
 
 	setStore: function(storeProp, payload){
+
 		this._data[storeProp] = payload
 		if(typeof this._storeTheData === 'function'){
 			this._storeTheData()

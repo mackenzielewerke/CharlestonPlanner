@@ -17,7 +17,9 @@ export const AppRouter = Backbone.Router.extend({
     "accounts/:id/edit": "showEditaccountsPage"
   },
 
-  showHomePage: function(){ ACTIONS.setView("HOME") },
+  showHomePage: function(){
+		console.log('changing view!')
+		ACTIONS.setView("HOME") },
 	showEventsPage: function(){ ACTIONS.setView("EVENTS") },
 	showSingleEvent: function(){ ACTIONS.setView("SINGLE") },
 	showRegisterPage: function(){ ACTIONS.setView("REGISTER") },
