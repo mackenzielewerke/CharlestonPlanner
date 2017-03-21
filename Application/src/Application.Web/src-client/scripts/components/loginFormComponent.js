@@ -1,32 +1,32 @@
 import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
-
+import {ACTIONS} from '../actions.js'
 export const LoginFormComponent = React.createClass({
 
-	_validateEmail: function(formDomEl){
-		let emailValue=formDomEl.inputEmail.value
-		console.log(emailValue)
-		let flashMsgEl=document.querySelector('.email.flash-msg')
-		if(emailValue.length < 1){
-			flashMsgEl.innerHTML= "You must enter your email address"
-		} else {
-			return emailValue= ""
-
-		}
-		return emailValue=""
-	},
-
-	_validatePasswords: function(formDomEl){
-	let passwordValueOne=formDomEl.inputPasswordOne.value
-	let flashMsgEl= document.querySelector('.passwordone.flash-msg')
-
-	if(passwordValueOne.length < 1){
-		flashMsgEl.innerHTML= "You must enter a password"
-	} else {
-		passwordValueOne= ""
-	}
-},
+// 	_validateEmail: function(formDomEl){
+// 		let emailValue=formDomEl.email.value
+// 		console.log(emailValue)
+// 		let flashMsgEl=document.querySelector('.email.flash-msg')
+// 		if(emailValue.length < 1){
+// 			flashMsgEl.innerHTML= "You must enter your email address"
+// 		} else {
+// 			return emailValue= ""
+//
+// 		}
+// 		return emailValue=""
+// 	},
+//
+// 	_validatePasswords: function(formDomEl){
+// 	let passwordValueOne=formDomEl.password.value
+// 	let flashMsgEl= document.querySelector('.passwordone.flash-msg')
+//
+// 	if(passwordValueOne.length < 1){
+// 		flashMsgEl.innerHTML= "You must enter a password"
+// 	} else {
+// 		passwordValueOne= ""
+// 	}
+// },
 
 
 	_handleSubmit: function(evt){
@@ -35,24 +35,31 @@ export const LoginFormComponent = React.createClass({
 		console.log(evt.target)
 		let formEl=evt.target
 
-		this._validateEmail(formEl)
-		this._validatePasswords(formEl)
+		// this._validateEmail(formEl)
+		// this._validatePasswords(formEl)
+		let authRequirements = {
+			email: formEl.email.value,
+			password: formEl.password.value
+		}
+
+		console.log('<LoginView> handling form submit!', authRequirements)
+		ACTIONS.loginUser(authRequirements)
 
 	},
-
-	_handleLoginFormSubmit: function(evt){
-			evt.preventDefault()
-			let formElement = evt.target
-
-			let authRequirements = {
-				email: formElement.email.value,
-				password: formElement.password.value
-			}
-
-			console.log('<LoginView> handling form submit!', authRequirements)
-			ACTIONS.loginUser(authRequirements)
-		},
-
+	//
+	// _handleLoginFormSubmit: function(evt){
+	// 		evt.preventDefault()
+	// 		let formElement = evt.target
+	//
+	// 		let authRequirements = {
+	// 			email: formElement.email.value,
+	// 			password: formElement.password.value
+	// 		}
+	//
+	// 		console.log('<LoginView> handling form submit!', authRequirements)
+	// 		ACTIONS.loginUser(authRequirements)
+	// 	},
+	//
 
 
 
@@ -75,7 +82,7 @@ export const LoginFormComponent = React.createClass({
 	</div>
 
 		<div className="button-div">
-	    <button className="submit-button" type="submit">Register</button>
+	    <button className="submit-button" type="submit">Log In</button>
 		</div>
 	  </form>
 

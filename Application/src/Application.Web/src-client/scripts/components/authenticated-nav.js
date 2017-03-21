@@ -1,6 +1,8 @@
 import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
+import {ACTIONS} from '../actions.js'
+
 
 export const AuthenticatedNavComponent = React.createClass({
 
@@ -22,7 +24,7 @@ export const AuthenticatedNavComponent = React.createClass({
 		return (
 			<nav className="reg-navigation">
         <img className="logo" src="./images/CharlestonPlanner.png" alt=""></img>
-        <div className="sign-in">
+        <div className="sign-out-nav">
 					<div className="hover-color spaced-out" onClick={this._handleNavigationClick} data-route="HOME">Home</div>
           <div className="hover-color spaced-out" onClick={this._handleNavigationClick} data-route="ACCOUNTS">My Account</div>
           <div className="hover-color spaced-out" onClick={this._handleLogoutClick} data-route="HOME">Log Out</div>

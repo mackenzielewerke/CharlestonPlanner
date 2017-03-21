@@ -14,7 +14,11 @@ export const ACTIONS = {
     console.log('ACTIONS logging in with  creds:', credsObj)
     UserModel.logIn( credsObj.email , credsObj.password ).then(function(serverRes){
       console.log('User Logged in in!', serverRes)
-      STORE.setStore('currentUser', serverRes)
+      //temporary --- need server res to show user data
+
+      STORE.setStore('currentUser', credsObj)
+
+      ACTIONS.routeTo('')
   })
 },
 

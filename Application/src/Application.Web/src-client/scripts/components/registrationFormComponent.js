@@ -65,7 +65,7 @@ if (passwordValueOne !== passwordValueTwo){
 	this._validateLastName(formEl)
 	this._validateEmail(formEl)
 	this._validatePasswords(formEl)
-
+	
 	},
 
 	render: function(){
