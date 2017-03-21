@@ -6,14 +6,14 @@ import {UserModel} from './models/model-user.js'
 
 export const ACTIONS = {
   setView: function(viewName){
-    console.log('ACTION updating view:', viewName)
+    // console.log('ACTION updating view:', viewName)
 		STORE.setStore('currentView', viewName)
 	},
 
   loginUser: function(credsObj){
-    console.log('ACTIONS logging in with  creds:', credsObj)
+    // console.log('ACTIONS logging in with  creds:', credsObj)
     UserModel.logIn( credsObj.email , credsObj.password ).then(function(serverRes){
-      console.log('User Logged in in!', serverRes)
+      // console.log('User Logged in in!', serverRes)
       //temporary --- need server res to show user data
 
       STORE.setStore('currentUser', credsObj)
@@ -23,7 +23,7 @@ export const ACTIONS = {
 },
 
   fetchCurrentUser: function(){
-    console.log('Checking for current user...')
+    // console.log('Checking for current user...')
     UserModel.getCurrentUser().then(function(serverRes){
       let newStore = serverRes || {}
       STORE.setStore('currentUser',newStore)
@@ -31,7 +31,7 @@ export const ACTIONS = {
 },
 
   logUserOut: function(){
-    console.log('logging out user....')
+    // console.log('logging out user....')
     UserModel.logOut().then(function(){
       STORE.setStore('currentUser', {})
   })
@@ -46,8 +46,9 @@ export const ACTIONS = {
   },
 
   fetchAllEvents: function(){
+  console.log('new collection instance, and .fetch()')
   let eventsCollInstance = new EventsCollection()
-    eventsCollInstance.fetch().then(function(serverRes){
+  eventsCollInstance.fetch().then(function(serverRes){
     console.log('events', serverRes)
     STORE.setStore('eventsList', serverRes)
   })

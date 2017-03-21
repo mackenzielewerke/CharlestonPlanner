@@ -21,10 +21,10 @@ export const ViewController = React.createClass({
 
   componentWillMount: function(){
     let component = this;
-    console.log('initializing store listener???')
+    // console.log('initializing store listener???')
     STORE.onStoreChange(function(){
       let newStoreObj = STORE.getStoreData()
-      console.log("STATE CHANGED!", newStoreObj )
+      // console.log("STATE CHANGED!", newStoreObj )
 
       component.setState(newStoreObj)
     })
@@ -47,7 +47,7 @@ export const ViewController = React.createClass({
 
 	render: function(){
 		let componentToRender
-    console.log('ViewController.state.currentView: ', this.state.currentView)
+    // console.log('ViewController.state.currentView: ', this.state.currentView)
 		switch(this.state.currentView){
 			case "HOME":
         console.log('hey')
