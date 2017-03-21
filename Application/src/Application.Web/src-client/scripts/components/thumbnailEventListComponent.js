@@ -88,14 +88,13 @@ export const EachEvent= React.createClass({
 		if (this.props.eventData===undefined){
 			return <h1></h1>
 		}
-		if(this.props.eventData.name === 'undefined'){
-			return ''
-		}
-			let titleDisplay = this.props.eventData.name.slice(0,20)
 
-			if(titleDisplay.length >= 20){
-				titleDisplay += '...'
-			}
+		// let displayName = this.props.eventData.name
+		// let newDisplayName = displayName.slice(0,30)
+		//
+		// if(newDisplayName.length >= 30){
+		// 	newDisplayName += '...'
+		// }
 
 			return (
 
@@ -103,7 +102,7 @@ export const EachEvent= React.createClass({
 		    <div className="thumbnail" data-itemid="hey" onClick={component._handleDetailedViewClick}>
 		      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
 		      <div className="caption">
-		        <h3>{this.props.eventData.name}</h3>
+		        <h4>{this.props.eventData.name}</h4>
 		        <p>{this.props.eventData.date}</p>
 						<p>{this.props.eventData.venue}</p>
 						</div>
