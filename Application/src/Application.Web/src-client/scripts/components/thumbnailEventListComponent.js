@@ -41,7 +41,7 @@ export const ThumbnailEventListComponent = React.createClass({
 _handleButtonClick: function(evt){
 	console.log("CLICKKK")
 	this.setState({showAlert: true})
-	console.log(this.state)
+	// console.log(this.state)
 		this._renderAlert
 
 
@@ -56,15 +56,15 @@ _makeEventComponents: function(listOfEvents){
 	})
 
 	return arrayOfEventsComponents
-	console.log(arrayOfEventsComponents)
+	// console.log(arrayOfEventsComponents)
 },
 
 render: function(){
 	let allTheEvents=this.props.eventsList
 
-	console.log("all the events", allTheEvents)
+	// console.log("all the events", allTheEvents)
 	return (
-		<div>
+		<div className="all-events">
 			<div className="row">
 				<EachEvent/>
 			</div>
@@ -78,19 +78,28 @@ export const EachEvent= React.createClass({
 
 	_handleDetailedViewClick: function(evt){
 		let clickedIconEl=evt.currentTarget
-		console.log(clickedIconEl.dataset.itemid)
+		// console.log(clickedIconEl.dataset.itemid)
 	window.location.hash = `events/${clickedIconEl.dataset.itemid}`
 	},
 
 	render: function(){
-		console.log(this.props.eventData, 'event data')
+		// console.log(this.props.eventData, 'event data')
 		let component=this
 		if (this.props.eventData===undefined){
 			return <h1></h1>
-		} else {
+		}
+		if(this.props.eventData.name === 'undefined'){
+			return ''
+		}
+			let titleDisplay = this.props.eventData.name.slice(0,20)
+
+			if(titleDisplay.length >= 20){
+				titleDisplay += '...'
+			}
+
 			return (
 
-		  <div className="col-sm-6 col-md-4">
+		  <div className="col-sm-6 col-md-3">
 		    <div className="thumbnail" data-itemid="hey" onClick={component._handleDetailedViewClick}>
 		      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
 		      <div className="caption">
@@ -104,5 +113,4 @@ export const EachEvent= React.createClass({
 
 			)
 		}
-	}
 })

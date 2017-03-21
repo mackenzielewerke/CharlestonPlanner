@@ -1,8 +1,37 @@
 import Backbone from 'backbone';
 import {EventsModel, EventsCollection} from './models/model-events.js'
 import {STORE} from './store.js'
+import {UserModel} from './models/model-user.js'
+
 
 export const ACTIONS = {
+  setView: function(viewName){
+    console.log('ACTION updating view:', viewName)
+		STORE.setStore('currentView', viewName)
+	},
+
+  loginUser: function(credsObj){
+    console.log('ACTIONS logging in with  creds:', credsObj)
+    UserModel.logIn( credsObj.email , credsObj.password ).then(function(serverRes){
+      console.log('User Logged in in!', serverRes)
+      STORE.setStore('currentUser', serverRes)
+  })
+},
+
+  fetchCurrentUser: function(){
+    console.log('Checking for current user...')
+    UserModel.getCurrentUser().then(function(serverRes){
+      let newStore = serverRes || {}
+      STORE.setStore('currentUser',newStore)
+  })
+},
+
+  logUserOut: function(){
+    console.log('logging out user....')
+    UserModel.logOut().then(function(){
+      STORE.setStore('currentUser', {})
+  })
+},
 
   saveNewEvent: function(userFormEntry){
     let newEventInstance= new EventsModel()
@@ -13,12 +42,14 @@ export const ACTIONS = {
   },
 
   fetchAllEvents: function(){
-
   let eventsCollInstance = new EventsCollection()
     eventsCollInstance.fetch().then(function(serverRes){
     console.log('events', serverRes)
     STORE.setStore('eventsList', serverRes)
   })
-}
+},
 
+  routeTo: function(path){
+    window.location.hash = path
+  }
 }

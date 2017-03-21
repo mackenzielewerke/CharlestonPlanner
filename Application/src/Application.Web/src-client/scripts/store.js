@@ -11,11 +11,15 @@ export const STORE = {
 
 	setStore: function(storeProp, payload){
 		this._data[storeProp] = payload
-		this._storeTheData()
+		if(typeof this._storeTheData === 'function'){
+			this._storeTheData()
+		}
+
 	},
 
 	onStoreChange: function(cb){
 		this._storeTheData = cb
+
 	}
 
 

@@ -14,6 +14,7 @@
 /// <reference path="../src-client/scripts/models/model-events.js" />
 /// <reference path="../src-client/scripts/models/model-user.js" />
 /// <reference path="../src-client/scripts/store.js" />
+/// <reference path="../src-client/scripts/viewcontroller.js" />
 /// <reference path="../src-client/scripts/views/homeView.js" />
 /// <reference path="../src-client/scripts/views/loginformview.js" />
 /// <reference path="../src-client/scripts/views/neweventformview.js" />
