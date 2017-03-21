@@ -5,9 +5,16 @@ import React from 'react'
 
 
 export const SingleEventComponent = React.createClass({
-	render: function(){
+
+	_eachPictureTemplate: function(itemObj){
+		console.log(itemObj)
+	},
+	render: function(itemObj){
+		let oneEvents=this.props.oneEventsList
+		console.log(oneEvents)
 		return (
 			<div className="single-event">
+						{this._eachPictureTemplate()}
 						<h1>Event Name</h1>
 			      <img src="http://images.huffingtonpost.com/2015-11-27-1448621711-1452425-FunnyCatNames-thumb.jpg" alt="..."/>
 			      <div className="single-event-caption">

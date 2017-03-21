@@ -26,7 +26,7 @@ export const SingleEventView = React.createClass({
 		return (
       <div>
            <SearchBarComponent/>
-					 <SingleEventComponent eventsList={this.state.eventsList}/>
+					 <SingleEventComponent oneEventsList={this.state.eventsList.id}/>
 
 
       </div>
