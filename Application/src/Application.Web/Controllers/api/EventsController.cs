@@ -35,7 +35,7 @@ namespace Application.Web.Controllers.api
         public IEnumerable<Event> GetEvents()
         {
             var userId = _userManager.GetUserId(User);
-            return _context.Events.Where(q => q.EventUser == userId).ToList();
+            return _context.Events.ToList();
         }
 
         [HttpGet]

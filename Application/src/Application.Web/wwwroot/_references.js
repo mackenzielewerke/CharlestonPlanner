@@ -13,6 +13,7 @@
 /// <reference path="../src-client/scripts/components/unauthenticated-nav.js" />
 /// <reference path="../src-client/scripts/models/model-events.js" />
 /// <reference path="../src-client/scripts/models/model-user.js" />
+/// <reference path="../src-client/scripts/routes.js" />
 /// <reference path="../src-client/scripts/store.js" />
 /// <reference path="../src-client/scripts/viewcontroller.js" />
 /// <reference path="../src-client/scripts/views/homeView.js" />

@@ -38,7 +38,7 @@ namespace Application.Web.Controllers
 
                 if (result.Succeeded)
                 {
-                    return Ok(result.Succeeded);
+                    return Ok(user);
 
                 }
                 else if (result.IsLockedOut)
@@ -71,7 +71,7 @@ namespace Application.Web.Controllers
             if (result.Succeeded)
             {
                 await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
-                return Ok(result.Succeeded);
+                return Ok(user);
             }
             else
             {

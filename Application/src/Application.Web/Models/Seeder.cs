@@ -14,11 +14,9 @@ namespace Application.Web.Models
     {
         public static void Seedit(string jsonData, IServiceProvider services)
         {
-            JsonSerializerSettings settings = new JsonSerializerSettings{ };
-            List<Event> events = JsonConvert.DeserializeObject<List<Event>>(jsonData, settings);
-            using ( var serviceScope = services.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            List<Event> events = JsonConvert.DeserializeObject<List<Event>>(jsonData);
+            using (var context = services.GetRequiredService<EventDbContext>())
             {
-                var context = serviceScope.ServiceProvider.GetService<EventDbContext>();
                 context.Database.Migrate();
                 //var sortEvent = context.Events.OrderBy(q => q.Date).ToList();
 
