@@ -5,14 +5,33 @@ import {RegularNavComponent} from '../components/unauthenticated-nav.js'
 import {SearchBarComponent} from '../components/searchbar.js'
 import {ThumbnailEventListComponent} from '../components/ThumbnailEventListComponent.js'
 import {SingleEventComponent} from '../components/SingleEventComponent.js'
+import {STORE} from '../store.js'
+import {ACTIONS} from '../actions.js'
 
 export const SingleEventView = React.createClass({
+
+	getInitialState: function(){
+		return STORE.getStoreData()
+	},
+
+	componentDidMount: function(){
+		let component = this;
+
+		STORE.onStoreChange(function(){
+			component.setState( STORE.getStoreData() )
+		})
+
+		ACTIONS.fetchAllEvents()
+
+
+	},
+
 	render: function(){
 		return (
       <div>
 			     <RegularNavComponent/>
            <SearchBarComponent/>
-					 <SingleEventComponent/>
+					 <SingleEventComponent eventsList={this.state.eventsList}/>
 
 
       </div>

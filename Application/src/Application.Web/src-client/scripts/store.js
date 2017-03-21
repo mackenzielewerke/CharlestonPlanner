@@ -1,7 +1,7 @@
 export const STORE = {
 	_data: {
 		eventsList: [],
-		currentNavRoute: '',
+		currentNavRoute: 'HOME',
 		currentUser: {}
 	},
 

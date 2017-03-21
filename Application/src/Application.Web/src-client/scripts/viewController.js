@@ -36,12 +36,25 @@
 // 		let componentToRender
 //
 // 		switch(this.state.currentNavRoute){
+// 			case "HOME":
+// 				componentToRender = <homeView {...this.state}/>
+// 				break;
 // 			case "EVENTS":
 // 				componentToRender = <EventsPageView {...this.state}/>
 // 				break;
-// 			case "ACCOUNTS":
+// 			case "SINGLE":
+// 				componentToRender = <singleEventView {...this.state}/>
+// 				break;
+// 			case "REGISTER":
 // 				componentToRender = <RegistrationFormView {...this.state}/>
 // 				break;
+// 			case "LOGIN":
+// 				componentToRender = <loginFormView {...this.state}/>
+// 				break;
+// 			case "NEW":
+// 				componentToRender = <NewEventFormView {...this.state}/>
+// 				break;
+//
 //
 //  			default:
 // 		}

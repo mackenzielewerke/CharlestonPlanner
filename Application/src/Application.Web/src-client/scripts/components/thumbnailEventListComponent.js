@@ -47,76 +47,62 @@ _handleButtonClick: function(evt){
 
 },
 
-	render: function(){
-		let component= this
-		console.log(this.props)
-		let allEvents= this.props.eventsList
-		console.log(allEvents)
+_makeEventComponents: function(listOfEvents){
+	let arrayOfEventsComponents= listOfEvents.map(function (eachEventObj, i){
 
 		return (
-
-			// _makeOneEvent(allEvents)
-			<div className="row">
-			  <div className="col-sm-6 col-md-4">
-			    <div className="thumbnail" data-itemid="hey" onClick={this._handleDetailedViewClick}>
-			      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
-			      <div className="caption">
-			        <h3>Event Name</h3>
-			        <p>Event Date</p>
-							<p>Event Location</p>
-							</div>
-						</div>
-			        <p><a className="btn btn-primary" role="button" onClick={this._handleButtonClick}>Save to my Favorites</a></p>
-			  </div>
-
-				<div className="col-sm-6 col-md-4">
-			    <div className="thumbnail" data-itemid="snoopdogg" onClick={this._handleDetailedViewClick}>
-			      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
-			      <div className="caption">
-			        <h3>Event Name</h3>
-			        <p>Event Date</p>
-							<p>Event Location</p>
-			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Save to my Favorites</a></p>
-			      </div>
-			    </div>
-			  </div>
-
-				<div className="col-sm-6 col-md-4">
-			    <div className="thumbnail" data-itemid="snooooooopdoggy" onClick={this._handleDetailedViewClick}>
-			      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
-			      <div className="caption">
-			        <h3>Event Name</h3>
-			        <p>Event Date</p>
-							<p>Event Location</p>
-			        <p><a href="#" className="btn btn-primary" role="button" onClick={this._renderAlert}>Save to my Favorites</a></p>
-			      </div>
-			    </div>
-			  </div>
-			</div>
+			<EachEvent eventData= {eachEventObj} key= {i}/>
 		)
-	}
+	})
+
+	return arrayOfEventsComponents
+	console.log(arrayOfEventsComponents)
+},
+
+render: function(){
+	let allTheEvents=this.props.eventsList
+
+	console.log("all the events", allTheEvents)
+	return (
+		<div>
+			<div className="row">
+				<EachEvent/>
+			</div>
+				{this._makeEventComponents(allTheEvents)}
+			</div>
+	)
+}
 })
 
-export const EventsItem= React.createClass({
+export const EachEvent= React.createClass({
+
+	_handleDetailedViewClick: function(evt){
+		let clickedIconEl=evt.currentTarget
+		console.log(clickedIconEl.dataset.itemid)
+	window.location.hash = `events/${clickedIconEl.dataset.itemid}`
+	},
+
 	render: function(){
-			let arrayOfEventsComponents= eventsList.map(function(oneEvent, i){
-				console.log(oneEvent)
-				return (
-					<div className="row">
-						<div className="col-sm-6 col-md-4">
-							<div className="thumbnail" data-itemid="hey" onClick={this._handleDetailedViewClick}>
-								<img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
-								<div className="caption">
-									<h3>Event Name</h3>
-									<p>Event Date</p>
-									<p>Event Location</p>
-									</div>
-								</div>
-									<p><a className="btn btn-primary" role="button" onClick={this._handleButtonClick}>Save to my Favorites</a></p>
+		console.log(this.props.eventData, 'event data')
+		let component=this
+		if (this.props.eventData===undefined){
+			return <h1></h1>
+		} else {
+			return (
+
+		  <div className="col-sm-6 col-md-4">
+		    <div className="thumbnail" data-itemid="hey" onClick={component._handleDetailedViewClick}>
+		      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
+		      <div className="caption">
+		        <h3>{this.props.eventData.name}</h3>
+		        <p>{this.props.eventData.date}</p>
+						<p>{this.props.eventData.venue}</p>
 						</div>
 					</div>
-				)
-			})
-		}
+		        <p><a className="btn btn-primary" role="button" onClick={this._handleButtonClick}>Save to my Favorites</a></p>
+		  </div>
 
+			)
+		}
+	}
 })

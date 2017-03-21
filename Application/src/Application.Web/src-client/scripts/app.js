@@ -65,20 +65,20 @@ const AppRouter = Backbone.Router.extend({
 // },
 //
 // showSingleEvent: function(){
-//   ReactDOM.render(<ViewController fromRoute= "{EVENTS}"/>, document.querySelector('#app-container'))
+//   ReactDOM.render(<ViewController fromRoute= "{SINGLE}"/>, document.querySelector('#app-container'))
 // },
 //
 // showRegisterPage: function(){
-//   ReactDOM.render(<ViewController fromRoute="{ACCOUNTS}"/>, document.querySelector('#app-container'))
+//   ReactDOM.render(<ViewController fromRoute="{REGISTER}"/>, document.querySelector('#app-container'))
 //
 // },
 //
 // showLoginPage: function(){
-//   ReactDOM.render(<ViewController fromRoute="{ACCOUNTS}"/>, document.querySelector('#app-container'))
+//   ReactDOM.render(<ViewController fromRoute="{LOGIN}"/>, document.querySelector('#app-container'))
 // },
 //
 // showNewEventForm: function(){
-//   ReactDOM.render(<ViewController fromRoute= "{EVENTS}"/>, document.querySelector('#app-container'))
+//   ReactDOM.render(<ViewController fromRoute= "{NEW}"/>, document.querySelector('#app-container'))
 // }
 
 })
