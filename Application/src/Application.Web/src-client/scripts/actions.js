@@ -31,7 +31,7 @@ export const ACTIONS = {
 },
 
   logUserOut: function(){
-    // console.log('logging out user....')
+    console.log('logging out..')
     UserModel.logOut().then(function(){
       STORE.setStore('currentUser', {})
   })

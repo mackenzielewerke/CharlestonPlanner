@@ -44,7 +44,7 @@ export const LoginFormComponent = React.createClass({
 
 		console.log('<LoginView> handling form submit!', authRequirements)
 		ACTIONS.loginUser(authRequirements)
-		window.location.hash = `#`
+		// window.location.hash = `#`
 
 	},
 	//

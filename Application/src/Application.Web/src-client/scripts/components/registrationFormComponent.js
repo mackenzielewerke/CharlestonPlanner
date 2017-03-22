@@ -66,7 +66,7 @@ if (passwordValueOne !== passwordValueTwo){
 	this._validateEmail(formEl)
 	this._validatePasswords(formEl)
 
-	window.location.hash = `#`
+	// window.location.hash = `#`
 
 	},
 

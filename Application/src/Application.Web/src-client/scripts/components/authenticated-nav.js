@@ -27,7 +27,7 @@ export const AuthenticatedNavComponent = React.createClass({
         <div className="sign-out-nav">
 					<div className="hover-color spaced-out" onClick={this._handleNavigationClick} data-route="HOME">Home</div>
           <div className="hover-color spaced-out" onClick={this._handleNavigationClick} data-route="ACCOUNTS">My Account</div>
-          <div className="hover-color spaced-out" onClick={this._handleLogoutClick} data-route="HOME">Log Out</div>
+          <div className="hover-color spaced-out" onClick={this._handleLogoutClick} data-route="LOGOUT">Log Out</div>
         </div>
 			</nav>
 		)
