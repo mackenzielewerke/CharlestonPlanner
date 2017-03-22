@@ -34,6 +34,8 @@ export const ACTIONS = {
     console.log('logging out..')
     UserModel.logOut().then(function(){
       STORE.setStore('currentUser', {})
+      // ACTIONS.routeTo('')
+
   })
 },
 
