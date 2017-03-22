@@ -99,7 +99,7 @@ export const EachEvent= React.createClass({
 			return (
 
 		  <div className="col-sm-6 col-md-3">
-		    <div className="thumbnail" data-itemid="hey" onClick={component._handleDetailedViewClick}>
+		    <div className="thumbnail" data-itemid={"hey"} onClick={component._handleDetailedViewClick}>
 		      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
 		      <div className="caption">
 		        <h4>{this.props.eventData.name}</h4>
