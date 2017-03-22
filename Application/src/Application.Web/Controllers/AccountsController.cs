@@ -10,7 +10,6 @@ using Application.Web.Models;
 
 namespace Application.Web.Controllers
 {
-    [Authorize]
     public class AccountsController : Controller
     {
         public UserManager<ApplicationUser> _userManager;
@@ -79,14 +78,13 @@ namespace Application.Web.Controllers
             }
         }
 
-        //
-        // POST: /Account/LogOff
         [HttpPost]
+        [AllowAnonymous]
         [Route("~/accounts/logout")]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("~/");
+            return Ok();
         }
 
 
