@@ -11,9 +11,9 @@ export const ACTIONS = {
 	},
 
   loginUser: function(credsObj){
-    // console.log('ACTIONS logging in with  creds:', credsObj)
+    console.log('ACTIONS logging in with  creds:', credsObj)
     UserModel.logIn( credsObj.email , credsObj.password ).then(function(serverRes){
-      // console.log('User Logged in in!', serverRes)
+      console.log('User Logged in in!', serverRes)
       //temporary --- need server res to show user data
 
       STORE.setStore('currentUser', credsObj)
