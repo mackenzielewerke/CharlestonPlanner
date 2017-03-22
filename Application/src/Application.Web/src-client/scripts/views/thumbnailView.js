@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 import {RegularNavComponent} from '../components/unauthenticated-nav.js'
 import {SearchBarComponent} from '../components/searchbar.js'
-import {ThumbnailEventListComponent} from '../components/ThumbnailEventListComponent'
+import {ThumbnailEventListComponent} from '../components/thumbnailEventListComponent.js'
 import {ACTIONS} from '../actions.js'
 import {STORE} from '../store.js'
 
@@ -15,7 +15,7 @@ export const EventsPageView = React.createClass({
 
 	componentDidMount: function(){
 		let component = this;
-
+		console.log('ACTIONS.fetch()...')
 		ACTIONS.fetchAllEvents()
 
 	},

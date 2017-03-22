@@ -1,14 +1,15 @@
 import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
-
+import {STORE} from '../store.js';
 
 
 export const ThumbnailEventListComponent = React.createClass({
 
 	_handleDetailedViewClick: function(evt){
+		console.log("THISS EVENNNNTT??")
 		let clickedIconEl=evt.currentTarget
-		console.log(clickedIconEl.dataset.itemid)
+		console.log(clickedIconEl.dataset.itemid, 'item idddd')
 	window.location.hash = `events/${clickedIconEl.dataset.itemid}`
 	},
 
@@ -77,8 +78,11 @@ render: function(){
 export const EachEvent= React.createClass({
 
 	_handleDetailedViewClick: function(evt){
+
 		let clickedIconEl=evt.currentTarget
-		// console.log(clickedIconEl.dataset.itemid)
+		STORE.setStore('singleEvent', clickedIconEl.dataset.itemid)
+
+		console.log(clickedIconEl.dataset.itemid)
 	window.location.hash = `events/${clickedIconEl.dataset.itemid}`
 	},
 
@@ -99,7 +103,7 @@ export const EachEvent= React.createClass({
 			return (
 
 		  <div className="col-sm-6 col-md-3">
-		    <div className="thumbnail" data-itemid="hey" onClick={component._handleDetailedViewClick}>
+		    <div className="thumbnail" data-itemid={this.props.eventData.id} onClick={component._handleDetailedViewClick}>
 		      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
 		      <div className="caption">
 		        <h4>{this.props.eventData.name}</h4>
