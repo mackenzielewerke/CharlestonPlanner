@@ -11,7 +11,9 @@ export const SingleEventComponent = React.createClass({
 	},
 	render: function(itemObj){
 		let oneEvents=this.props.oneEventsList
+		let singleEvent=this.props.singleEvent
 		console.log(oneEvents)
+		console.log(singleEvent)
 		return (
 			<div className="single-event">
 						{this._eachPictureTemplate()}

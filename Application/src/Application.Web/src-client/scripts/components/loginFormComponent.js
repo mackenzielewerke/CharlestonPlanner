@@ -44,6 +44,7 @@ export const LoginFormComponent = React.createClass({
 
 		console.log('<LoginView> handling form submit!', authRequirements)
 		ACTIONS.loginUser(authRequirements)
+		window.location.hash = `#`
 
 	},
 	//
@@ -77,7 +78,7 @@ export const LoginFormComponent = React.createClass({
 
 	<div className="form-section">
 		<h4>Password </h4>
-		<input type="text" className="form-control" name="password"/>
+		<input type="password" className="form-control" name="password"/>
 		<p className="passwordone flash-msg"> </p>
 	</div>
 

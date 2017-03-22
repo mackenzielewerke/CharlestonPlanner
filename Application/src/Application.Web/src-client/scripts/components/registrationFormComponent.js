@@ -65,7 +65,9 @@ if (passwordValueOne !== passwordValueTwo){
 	this._validateLastName(formEl)
 	this._validateEmail(formEl)
 	this._validatePasswords(formEl)
-	
+
+	window.location.hash = `#`
+
 	},
 
 	render: function(){
@@ -98,13 +100,13 @@ if (passwordValueOne !== passwordValueTwo){
 		<div className="side-by-side">
 	    <div className="register-form">
 	      <h4>Password </h4>
-	      <input type="text" className="form-control" name="inputPasswordOne"/>
+	      <input type="password" className="form-control" name="inputPasswordOne"/>
 				<p className="passwordone flash-msg"> </p>
 	    </div>
 
 	    <div className="register-form">
 	      <h4>Confirm Password </h4>
-	      <input type="text" className="form-control" name="inputPasswordTwo"/>
+	      <input type="password" className="form-control" name="inputPasswordTwo"/>
 				<p className="passwordtwo flash-msg"> </p>
 	    </div>
 		</div>

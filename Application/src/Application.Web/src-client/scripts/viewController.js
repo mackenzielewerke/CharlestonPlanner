@@ -57,7 +57,7 @@ export const ViewController = React.createClass({
 				componentToRender = <EventsPageView/>
 				break;
 			case "SINGLE":
-				componentToRender = <SingleEventView/>
+				componentToRender = <SingleEventView {...this.state}/>
 				break;
 			case "REGISTER":
         console.log('register')
