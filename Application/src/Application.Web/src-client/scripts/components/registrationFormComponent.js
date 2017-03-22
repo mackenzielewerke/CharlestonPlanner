@@ -1,6 +1,8 @@
 import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
+import {ACTIONS} from '../actions.js'
+
 // import AccountsController from "./AccountsController.cs"
 
 export const RegistrationFormComponent = React.createClass({
@@ -65,6 +67,15 @@ if (passwordValueOne !== passwordValueTwo){
 	this._validateLastName(formEl)
 	this._validateEmail(formEl)
 	this._validatePasswords(formEl)
+
+	let regRequirements = {
+			email: formEl.inputEmail.value,
+			password: formEl.inputPasswordOne.value,
+			firstname: formEl.inputFirstName.value,
+			lastname: formEl.inputLastName.value
+		}
+
+		ACTIONS.registerNewUser(regRequirements)
 
 	// window.location.hash = `#`
 

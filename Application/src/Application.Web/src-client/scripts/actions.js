@@ -22,6 +22,21 @@ export const ACTIONS = {
   })
 },
 
+  registerNewUser: function(regObj){
+    console.log('ACTIONS registering new creds', regObj)
+    UserModel.register(regObj)
+      .then(function(serverRes){
+        console.log('registered!', serverRes)
+        STORE.setStore('currentUser', regObj)
+        
+        ACTIONS.routeTo('')
+
+      }).fail(function(err){
+       console.log(err)
+
+    })
+  },
+
   fetchCurrentUser: function(){
     // console.log('Checking for current user...')
     UserModel.getCurrentUser().then(function(serverRes){
