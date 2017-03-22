@@ -2,6 +2,8 @@ import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
 import {STORE} from '../store.js';
+import moment from 'moment'
+
 
 
 export const ThumbnailEventListComponent = React.createClass({
@@ -63,6 +65,7 @@ _makeEventComponents: function(listOfEvents){
 render: function(){
 	let allTheEvents=this.props.eventsList
 
+
 	// console.log("all the events", allTheEvents)
 	return (
 		<div className="all-events">
@@ -93,6 +96,10 @@ export const EachEvent= React.createClass({
 			return <h1></h1>
 		}
 
+		let theDate= this.props.eventData.date
+		var theDateFancy= moment(theDate).format('dddd, MMM Do YYYY - h:mm')
+		// console.log(theDateFancy)
+
 		// let displayName = this.props.eventData.name
 		// let newDisplayName = displayName.slice(0,30)
 		//
@@ -102,12 +109,14 @@ export const EachEvent= React.createClass({
 
 			return (
 
+
+
 		  <div className="col-sm-6 col-md-3">
 		    <div className="thumbnail" data-itemid={this.props.eventData.id} onClick={component._handleDetailedViewClick}>
 		      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
 		      <div className="caption">
 		        <h4>{this.props.eventData.name}</h4>
-		        <p>{this.props.eventData.date}</p>
+		        <p>{theDateFancy}</p>
 						<p>{this.props.eventData.venue}</p>
 						</div>
 					</div>
