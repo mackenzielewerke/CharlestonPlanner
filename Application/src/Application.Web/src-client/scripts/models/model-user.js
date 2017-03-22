@@ -38,7 +38,7 @@ UserModel.register =  function(dataObj){
 
 UserModel.getCurrentUser =  function(){
 	return $.ajax({
-		method: 'GET',
+		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json'
 		},
