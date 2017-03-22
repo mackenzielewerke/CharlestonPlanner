@@ -22,8 +22,8 @@ export const EventsPageView = React.createClass({
 
 
 	render: function(){
-		console.log('data??', this.props.eventsList)
-		console.log(this.state.eventsList.length)
+		// console.log('data??', this.props.eventsList)
+		// console.log(this.state.eventsList.length)
 		if (this.state.eventsList.length < 1){
 		console.log("executing")
 		return <p> loading </p>

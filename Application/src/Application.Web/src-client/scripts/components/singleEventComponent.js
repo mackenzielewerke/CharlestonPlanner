@@ -9,22 +9,17 @@ export const SingleEventComponent = React.createClass({
 	_eachPictureTemplate: function(itemObj){
 		console.log(itemObj)
 	},
-	render: function(itemObj){
+	render: function(){
 		let oneEvents=this.props.oneEventsList
-		let singleEvent=this.props.singleEvent
-		console.log(oneEvents)
-		console.log(singleEvent)
 		return (
 			<div className="single-event">
 						{this._eachPictureTemplate()}
-						<h1>Event Name</h1>
-			      <img src="http://images.huffingtonpost.com/2015-11-27-1448621711-1452425-FunnyCatNames-thumb.jpg" alt="..."/>
+						<h1>{oneEvents.name}</h1>
+			      <img src="https://i.ytimg.com/vi/8HVWitAW-Qg/hqdefault.jpg" alt="..."/>
 			      <div className="single-event-caption">
-			        <h3>Event Date</h3>
-							<h3>Event Price</h3>
-							<h3>Event Location</h3>
-							<h3>Event Venue</h3>
-							<p>Event Description: blah blah blah blah blah blah blah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blah</p>
+			        <h3>{oneEvents.date}</h3>
+							<h3>{oneEvents.venue}</h3>
+							<p>{oneEvents.description}</p>
 			        <p><a href="#" className="btn btn-primary" role="button">Save to my Favorites</a></p>
 			      </div>
 			  </div>
