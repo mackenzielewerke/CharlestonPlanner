@@ -8,20 +8,20 @@ export const NewEventFormComponent = React.createClass({
 			imagePrevUrl: 'http://9762-presscdn-0-23.pagely.netdna-cdn.com/wp-content/plugins/foundry-customposts/images/noimage.png'
 		}
 	},
-
-	_handleNewEventItem: function(evt){
-		evt.preventDefault();
-		let formEl = evt.target
-		let formValsObj = {
-			name : formEl.inputName.value,
-			date : formEl.inputDate.value,
-			venue : this.inputVenue.imgPreviewLink,
-			picture : formEl.inputPicture.value
-		}
-
-		ACTIONS.saveNewShout(formValsObj)
-
-	},
+	//
+	// _handleNewEventItem: function(evt){
+	// 	evt.preventDefault();
+	// 	let formEl = evt.target
+	// 	let formValsObj = {
+	// 		name : formEl.inputName.value,
+	// 		date : formEl.inputDate.value,
+	// 		venue : this.inputVenue.imgPreviewLink,
+	// 		picture : formEl.inputPicture.value
+	// 	}
+	//
+	// 	ACTIONS.saveNewShout(formValsObj)
+	//
+	// },
 
 	_handleImgPrevClick: function(evt){
 		evt.preventDefault();
@@ -118,7 +118,7 @@ export const NewEventFormComponent = React.createClass({
     </div>
 
     <div className="form-section">
-      <h4>Picture </h4>
+      <h4>Description </h4>
       <input type="text" className="form-control description-input" name="inputDescription"/>
 			<p className="description flash-msg"> </p>
 		</div>
