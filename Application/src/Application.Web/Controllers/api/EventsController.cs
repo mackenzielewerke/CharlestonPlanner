@@ -35,7 +35,9 @@ namespace Application.Web.Controllers.api
         public IEnumerable<Event> GetEvents()
         {
             var userId = _userManager.GetUserId(User);
-            return _context.Events.ToList();
+            var sortEvent = _context.Events.OrderBy(q => q.Date).ToList();
+            return sortEvent;
+
         }
 
         [HttpGet]
