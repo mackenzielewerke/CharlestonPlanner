@@ -10,6 +10,8 @@ import {SingleEventView} from './views/singleEventView.js'
 import {RegistrationFormView} from './views/registrationFormView.js'
 import {LoginFormView} from './views/loginFormView.js'
 import {NewEventFormView} from './views/newEventFormView.js'
+import {AccountsPageView} from './views/accountsView.js'
+
 
 export const ViewController = React.createClass({
 
@@ -69,6 +71,9 @@ export const ViewController = React.createClass({
 				break;
 			case "NEW":
 				componentToRender = <NewEventFormView/>
+				break;
+			case "ACCOUNT":
+				componentToRender = <AccountsPageView/>
 				break;
 
 

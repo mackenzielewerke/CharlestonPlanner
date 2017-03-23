@@ -27,6 +27,6 @@ export const AppRouter = Backbone.Router.extend({
 		console.log('AppRouter setting login view....')
 		ACTIONS.setView("LOGIN") },
 	showNewEventForm: function(){ ACTIONS.setView("NEW") },
-	showAccountPage: function(){ ACTIONS.setView("ACCOUNTS") },
+	showAccountPage: function(){ ACTIONS.setView("ACCOUNT") },
 
 })

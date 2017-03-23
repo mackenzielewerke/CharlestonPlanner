@@ -9,7 +9,7 @@ export const NewEventFormView = React.createClass({
 	render: function(){
 		return (
       <div>
-           <SearchBarComponent/>
+           {/* <SearchBarComponent/> */}
 					 <NewEventFormComponent/>
 
 
