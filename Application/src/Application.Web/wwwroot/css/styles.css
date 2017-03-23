@@ -6054,4 +6054,24 @@ body {
 .single-event h1 {
   margin-bottom: 30px; }
 
+.accounts-body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.accounts-body button {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  height: 40px;
+  color: white;
+  background-color: #22313F;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center; }
+
+.middle {
+  text-align: center;
+  margin-top: 50px; }
+
 /*# sourceMappingURL=styles.css.map*/

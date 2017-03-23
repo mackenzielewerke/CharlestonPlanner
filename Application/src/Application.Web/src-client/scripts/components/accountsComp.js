@@ -4,81 +4,57 @@ import React from 'react'
 import {STORE} from '../store.js';
 import moment from 'moment'
 
+export const AccountsPageComponent = React.createClass({
 
+  _handleCreateNewEvent: function(){
+    window.location.hash = 'events/new'
+  },
 
-export const ThumbnailEventListComponent = React.createClass({
-
-	_handleDetailedViewClick: function(evt){
+  _handleDetailedViewClick: function(evt){
 		console.log("THISS EVENNNNTT??")
 		let clickedIconEl=evt.currentTarget
 		console.log(clickedIconEl.dataset.itemid, 'item idddd')
-	window.location.hash = `events/${clickedIconEl.dataset.itemid}`
+	  window.location.hash = `events/${clickedIconEl.dataset.itemid}`
 	},
 
-	getInitialState: function(){
-    return {
-      showAlert: false
-    }
+  _makeEventComponents: function(listOfEvents){
+  	let arrayOfEventsComponents= listOfEvents.map(function (eachEventObj, i){
+
+  		return (
+  			<EachAccountsEvent eventData= {eachEventObj} key= {i}/>
+  		)
+  	})
+  	return arrayOfEventsComponents.slice(0,6)
+  	console.log('array of components', arrayOfEventsComponents)
   },
 
 
-  _removeModal: function(){
-    this.setState({showAlert: false})
-
-  },
-
-	_renderAlert: function(){
-	if(this.state.showAlert===true){
-		return(
-			<div className="modal-wrapper">
-				<div className="modal">
-					<h1>Please Register or Sign In</h1>
-					<p>Must have an account to save events.</p>
-				</div>
-			</div>
-		)
-	}
-},
+  render: function(){
+    console.log('events list prop', this.props.eventsList)
+    let allTheEvents=this.props.eventsList
+    console.log('all events', allTheEvents)
 
 
-_handleButtonClick: function(evt){
-	console.log("CLICKKK")
-	this.setState({showAlert: true})
-	// console.log(this.state)
-		this._renderAlert
+    return(
 
+      <div className="accounts-body">
+        <h3 className="spaced-out middle">Welcome to your Account</h3>
+        <button type="button" name="button" onClick={this._handleCreateNewEvent}>Create New Event</button>
+        <h3 className="spaced-out">Favorite Events:</h3>
+        <div></div>
+        <div>
+          <div className="row">
+            <EachAccountsEvent/>
+          </div>
+            {this._makeEventComponents(allTheEvents)}
+          </div>
+        </div>
 
-},
-
-_makeEventComponents: function(listOfEvents){
-	let arrayOfEventsComponents= listOfEvents.map(function (eachEventObj, i){
-
-		return (
-			<EachEvent eventData= {eachEventObj} key= {i}/>
-		)
-	})
-
-	return arrayOfEventsComponents
-	// console.log(arrayOfEventsComponents)
-},
-
-render: function(){
-	let allTheEvents=this.props.eventsList
-
-
-	// console.log("all the events", allTheEvents)
-	return (
-		<div className="all-events">
-			<div className="row">
-				<EachEvent/>
-			</div>
-				{this._makeEventComponents(allTheEvents)}
-			</div>
-	)
-}
+    )
+  }
 })
 
-export const EachEvent= React.createClass({
+export const EachAccountsEvent= React.createClass({
 
 	_handleDetailedViewClick: function(evt){
 
@@ -120,7 +96,7 @@ export const EachEvent= React.createClass({
 						<p>{this.props.eventData.venue}</p>
 						</div>
 					</div>
-		        {/* <p><a className="btn btn-primary" role="button" onClick={this._handleButtonClick}>Save to my Favorites</a></p> */}
+		        <p><a className="btn btn-primary" role="button" onClick={this._handleButtonClick}>Saved to Favorites</a></p>
 		  </div>
 
 			)

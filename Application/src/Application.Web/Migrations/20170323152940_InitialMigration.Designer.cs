@@ -8,7 +8,7 @@ using Application.Web.Data;
 namespace Application.Web.Migrations
 {
     [DbContext(typeof(EventDbContext))]
-    [Migration("20170317185710_InitialMigration")]
+    [Migration("20170323152940_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -81,9 +81,7 @@ namespace Application.Web.Migrations
 
                     b.Property<string>("EventUser");
 
-                    b.Property<double>("Latitude");
-
-                    b.Property<double>("Longitude");
+                    b.Property<string>("Image");
 
                     b.Property<string>("Name");
 
@@ -94,7 +92,7 @@ namespace Application.Web.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
+            modelBuilder.Entity("Application.Web.Data.Permission", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -111,7 +109,7 @@ namespace Application.Web.Migrations
 
                     b.HasIndex("EventId");
 
-                    b.ToTable("SavedEvents");
+                    b.ToTable("Permissions");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -233,14 +231,14 @@ namespace Application.Web.Migrations
                     b.HasAnnotation("Sqlite:TableName", "UserTokens");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
+            modelBuilder.Entity("Application.Web.Data.Permission", b =>
                 {
                     b.HasOne("Application.Web.Data.ApplicationUser")
-                        .WithMany("SavedEvents")
+                        .WithMany("Permissions")
                         .HasForeignKey("ApplicationUserId");
 
                     b.HasOne("Application.Web.Data.Event")
-                        .WithMany("SavedEvents")
+                        .WithMany("Permissions")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

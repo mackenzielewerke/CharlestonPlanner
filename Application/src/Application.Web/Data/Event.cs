@@ -15,12 +15,11 @@ namespace Application.Web.Data
         public DateTime Date { get; set; }
         public string Venue { get; set; }
         public string Description { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
-        public List<SavedEvent> SavedEvents { get; set; }
+        public string Image { get; set; }
+        public List<Permission> Permissions { get; set; }
         public Event()
         {
-            SavedEvents = new List<SavedEvent>();
+            Permissions = new List<Permission>();
         }
     }
 }

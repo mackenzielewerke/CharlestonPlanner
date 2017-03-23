@@ -1,827 +1,945 @@
 ﻿[
-      {
-        "name": "70th Annual Festival of Houses and Gardens",
-        "date": "04-01-2017",
-        "venue": "Charleston's Old & Historic District",
-        "description": "Proceeds benefit Historic Charleston Foundation's historic preservation initiatives and educational programs. Set amid the ambience of the city's Old & Historic District, this series of award-winning tours and educational events showcase Charleston's distinctive architecture, history, gardens, and culture. The tours provide a rare opportunity for guests to go inside the private houses and gardens of some of America's most beautiful historic residences."
-      },
-
-      {
-        "name": "Amazing Scavenger Hunt Adventure",
-        "date": "04-01-2017",
-        "venue": "Amazing Scavenger Hunt Adventure- Charleston",
-        "description": "Turn Charleston into a giant game board with this fun scavenger hunt adventure. Combine the excitement of the Amazing Race with a three-hour city tour. Guided from any smart phone, teams make their way among well known and overlooked gems of the city, solving clues and completeing challenged while learning local history."
-      },
-
-      {
-        "name": "40th Annual Cooper River Bridge Run",
-        "date": "04-01-2017",
-        "venue": "Ravenel Bridge",
-        "description": "The Cooper River Bridge Run provides a world-class 10K foot race. The race promotes continuous physical activity and a healthy lifestyle through education and opportunity."
-      },
-
-      {
-        "name": "Mount Pleasant Fish Market",
-        "date": "04-01-2017",
-        "venue": "Mt. Pleasant Farmers Market Pavilion",
-        "description": "Come out and buy fresh, local fish."
-      },
-
-      {
-        "name": "Drayton Hall Preservation Tech Tour",
-        "date": "04-01-2017",
-        "venue": "Drayton Hall",
-        "description": ""
-      },
-
-      {
-        "name": "Louie's Kids' Saturday Morning Workouts",
-        "date": "04-01-2017",
-        "venue": "Hampton Park",
-        "description": "Anyone is welcome, and no advance sign-up is required. Kids under the age of 18 will require a signed parental consent form to participate. Wear comfortable clothes and bring a water bottle and a towel. Meet at the bridge by the fountains."
-      },
-
-      {
-        "name": "One Love Collection- Pop Up Shop",
-        "date": "04-01-2017",
-        "venue": "One Love Design",
-        "description": "Rachel Gordon of One Love Design is hosting a collective of talented Charleston artist, makers, designers, photographers, musicians, dreamers, and visionairies that are bringing more beauty into the world. The collective includes: One Love Design, Sati Swim, Painter Robert Maniscalco, Ulalume Lingerie, Sacred Circle Herbal, Out of Squares, Foxy Fossils, Gregg Lambton-Carr Phototgraphy, Seam Siren, The Vinyl Countdown, HMS Log Book. Free hugs and good vibes all day long."
-      },
-
-      {
-        "name": "Bridge Run After Party",
-        "date": "04-01-2017",
-        "venue": "Bay Street Biergarten",
-        "description": "Let's pack the house and have a record breaking Cooper River Bridge Run after party. We're going to make the Largest Bloody Mary Charleston has even seen featuring Dixie Vodka & Charleston Bloody Mary Mix. Fill your glass from this legendary bloody mary bar for just $5 per cocktail. Doors open at 10am with the bloody mary bar, mimosas, and a breakfast buffet. Not a bloody mary or mimosa fan? No worries we'll have $5 Bold Rock Cider and plenty of bierx. Choose from our 70 taps, some of which are right at your table for pour your own pint awesomeness. If you're running the bridge in a costume this year, you will have a chance to win a $25 gift card. Come enjoy cornhole, craft biers, amazing food, plus beats by DJ rDot & DJ Rehab on our patio."
-      },
-
-      {
-        "name": "Bridge Run After Party",
-        "date": "04-01-2017",
-        "venue": "The Alley",
-        "description": "Get over it and come to The Alley after the Cooper River Bridge Run. We'll be open early at 10am and ready to party! The first runner inside wins a $25 gift card. The first 50 runners will get a mini bottle of Charleston Bloody Mary Mix. This is a race that you could actually win! We'll have The Charleston Bloody Mary Mix bar open to quench your thirst. THe kitchen will be open to celebrate your victory with lots of delicious bites worthy of filling your tank back up from empty. Rest up for live music from Return of the Mac from 10-1 and High5 from 1-4."
-      },
-
-      {
-        "name": "Vinyl Saturday",
-        "date": "04-01-2017",
-        "venue": "Monster Music and Movies",
-        "description": "All vinyls are 20% all day."
-      },
-
-      {
-        "name": "Yoga in the Taproom with Bendy Brewski Yoga",
-        "date": "04-01-2017",
-        "venue": "Ghost Monkey Brewery",
-        "description": "Come in from the heat and practice with us and then share a beer and conversation. Mats to borrow. Cool towels. $15 for yoga and beer."
-      },
-
-      {
-        "name": "Cooper River Bridge Run After Party",
-        "date": "04-01-2017",
-        "venue": "O-Ku",
-        "description": "Join O-Ku to cool off and refresh after the Cooper River Bridge Run with sushi, sake, and Sriracha Bloody Marys. Just steps away from the finish line, O-Ku will be opening at 11am to welcome in runners, walkers, and anyone just looking to join in on the bridge run festivities."
-      },
-
-      {
-        "name": "Frozen Drinks Discount",
-        "date": "04-01-2017",
-        "venue": "Crust Wood Fired Pizza",
-        "description": "$3 and $5 frozen drinks, all day long."
-      },
-
-      {
-        "name": "Harlem Globetrotters",
-        "date": "04-01-2017",
-        "venue": "North Charleston Coliseum",
-        "description": "See the Harlem Globetrotters on their country-wide tour."
-      },
-
-      {
-        "name": "PowerShares Series Tennis",
-        "date": "04-01-2017",
-        "venue": "Volvo Car Stadium",
-        "description": "Come out and enjoy a few matches of tennis."
-      },
-
-      {
-        "name": "Emanuel: Love is the Answer",
-        "date": "04-01-2017",
-        "venue": "Sottile Theatre",
-        "description": "The South Carolina Ballet presents Emanuel: Love is the Answer. A spiritual ballet of transcendence, hope, harmoney, love and forgiveness to create unity and peace. This multi-media presentation will unite as we embrace our differences and celebrate the indomitable human spirit. From the creator of Off the Wall & Onto the Stage: Dancing the Art of Jonathan Green."
-      },
-
-      {
-        "name": "Our Mother's Brief Affair",
-        "date": "04-01-2017",
-        "venue": "PURE theatre",
-        "description": "This stylish and intelligent play by Tony-winning playwright Richard Greenberg explores how little we know about the lives that impinge upon and shape our own."
-      },
-
-      {
-        "name": "The Miracle Worker",
-        "date": "04-01-2017",
-        "venue": "Dock Street Theatre",
-        "description": "The Miracle Worker tells the incredible and moving true story of Helen Keller, a young girl afflicted with both blindness and deafness, and Annie Sullivan, the extraordinary teacher who finds a way for Helen to learn. Set in 1880, The Miracle Worker centers on the pivotal portion of Keller's childhood when Sullivan enters her life and the journey from darkness and silence begins, eventually emerging into a true and uplifting miracle of teacher and pupil."
-      },
-
-      {
-        "name": "Saturday Loading Dock Free Concert",
-        "date": "04-01-2017",
-        "venue": "Palmetto Brewing",
-        "description": "Live Music at the Brewery opening at 1pm"
-      },
-
-      {
-        "name": "A Kickin' BBQ Pickin'",
-        "date": "04-01-2017",
-        "venue": "Harborside East",
-        "description": "Please join Project Alive & Kicking (PAK) for A Kickin' BBQ Pickin', our second annual fundraiser at Harborside East from 5:30- 8:30. Come and enjoy our family-friendly event. We will feature authentic BBQ, fabulous music, a silent auction, great food, local beverages, the best company and striking views of downtown Charleston and the iconic Ravenel Bridge. All proceeds to benefit Project Alive & Kicking to help EMPOWER expectant mothers by educating them about healthy pregnancies, the possible signs of fetal distress, and the action they can take to help their babies come into the world thriving, Alive & Kicking!"
-      },
-
-      {
-        "name": "Schema",
-        "date": "04-01-2017",
-        "venue": "The Charleston Pour House",
-        "description": "Schema free concert. Doors open at 4pm. Show is at 6pm."
-      },
-
-      {
-        "name": "Ellis Hall: Soul Unlimited",
-        "date": "04-01-2017",
-        "venue": "Gaillard Center",
-        "description": "Ellis Hall, accomplished and prolific entertainer, multi-instrumentalist and vocalist with a five octave range, headlines the CSO for an evening of soul-searing rhythm & blues with hits from Smokey Robinson, Ray Charles, Sam Cooke, and Stevie Wonder. In a career spanning over four decades, Hall has electrified audiences throughtout the world. Hall attended the Perkins School for the Blind in Boston where he mastered the bass, guitar, keyboards, piano, and drums. He has worked with some of the world's most well known conductors, including Marvin Hamlisch, Bob Bernhardt, William Eddins, Keith Lockhart, Jeff Tyzik, and Steve Reineke of the New York Philharmonic."
-      },
-
-      {
-        "name": "Black Fedora Comedy Mystery Theater",
-        "date": "04-01-2017",
-        "venue": "The Black Fedora Comedy Mystery Theatre & Shoppe",
-        "description": "Comic mysteries featuring plenty of audience participation play each week and include titles like Sherlock Holmes, Pirate Mystery Treasure Show (suitable for children), and Inspector NoClue's History Mystery. This spring, they've announced two new plays: Heist, Heist Baby, and interactive mystery and comedy, and Church Street Daughters of the Late Unpleasantness Garden, Gun & Gin Club."
-      },
-
-      {
-        "name": "Live Music",
-        "date": "04-01-2017",
-        "venue": "The Washout",
-        "description": "Enjoy live music by the beach throughout the week at Folly Beach's newest restaurant, The Washout! Every Monday is singer/songwriter night with host Campbell Brown from 6-9pm. Tuesday is Shag Night from 6:30-9:30pm. Wednesday night is live music with Josh Hughett from 6-9pm. Thursday is the Folly Beach Bluegrass Society from 8-11pm. Eddie Bush is live every Friday from 8-11pm and Saturdays offer rotating music every week."
-      },
-
-      {
-        "name": "Nitty Gritty Dirt Band",
-        "date": "04-01-2017",
-        "venue": "Charleston Music Hall",
-        "description": "Celebrating their Golden (50th) Anniversary together, the iconic and profoundly influential Nitty Gritty Dirt Band, often cited as a catalyst for an entire movement in Country Rock and American Roots Music, continues to add to their legendary status. With multi-platinum and gold records, strings of top ten hits such as 'Fishin In the Dark' and 'Mr. Bojangles', multiple Grammy, IBMA, CMA Awards and nominations, the band's accolades continue to accumulate. Their groundbreaking 'Will The Circle Be Unbroken' album has been inducted into the U.S. Library of Congress as well as the Grammy Hall of Fame. NGDB's recording of 'Mr.Bojangles' was also inducted into the Grammy Hall of Fame in 2010. In 2014, 'Fishin In The Dark' was certified platinum for digital downloads by the RIAA. Today, NGDB (Jeff Hanna, Jimmie Fadden, Bob Carpenter, John McEuen) continue their non-stop touring in their 50th year together. Recent tour stops included Stagecoach, Hardly Strictly Bluegrass Festival and many more. The plans for their 50th Anniversary will be extensive!"
-      },
-
-      {
-        "name": "The Southern Charmer",
-        "date": "04-01-2017",
-        "venue": "Palmetto Crescent Parlour",
-        "description": "The Southern Charmer brings magic, mystery, and mind reading in his Histortic Charleston, South Carolina parlour."
-      },
-
-      {
-        "name": "1770 Records Present Hip Hop In The Den: Anfernee Robinson, Sire Kaizer, Illadell",
-        "date": "04-01-2017",
-        "venue": "Music Farm",
-        "description": "Concert at the Music Farm. Doors open at 8pm. Show starts at 9pm. $5/person."
-      },
-
-      {
-        "name": "Oblivion Presents The Long Losts & Toccata Nosferatu",
-        "date": "04-01-2017",
-        "venue": "Tin Roof",
-        "description": "Concert at the Tin Roof. Tickets are $10/person."
-      },
-
-      {
-        "name": "The Hooten Hallers with Mike Martin & The Beautiful Mess and Ripley & The Ghost",
-        "date": "04-01-2017",
-        "venue": "The Royal American",
-        "description": "Concert at The Royal American. Tickets are $8/person."
-      },
-
-      {
-        "name": "Travelin Kinewith Greg Payne and the Piedmont Boys",
-        "date": "04-01-2017",
-        "venue": "The Charleston Pour House",
-        "description": "Concert at the Charleston Pour House. Tickets are $13 in advance or $15 at the door. Doors open at 8:30. Show starts at 9:30."
-      },
-
-      {
-        "name": "Mahon Brothers",
-        "date": "04-01-2017",
-        "venue": "Honky Tonk Saloon",
-        "description": "Mahon Brothers are back! Tickets are $5/person. Show is from 9:30pm - 1:30am."
-      },
-
-      {
-        "name": "Bendy Brewski Yoga",
-        "date": "04-02-2017",
-        "venue": "Holy City Brewing",
-        "description": "Accessible and fun Yoga inside the brewery for 45 minutes followed by a flight or pint of craft beer! We always have some mats to borrow and your teach Michele is kind, fun and knowledgeable! Every student matters and we can't wait to meet you!"
-      },
-
-      {
-        "name": "Storytelling",
-        "date": "04-02-2017",
-        "venue": "Teacups & Trucks",
-        "description": "For children, ages 2.5 - 5. Childhood is a time full of stories! In our storytelling class, children will be encouraged to explore language and literature through storytelling, drama, and imaginative play! This class will hekp stimulation communication skills, develop a child's confidence and self esteem, provide opportunities for creative self expression, encourage thinking and cognitive skills, explore a range of literacy concepts in an imaginative and enjoyable way. "
-      },
-
-      {
-        "name": "Music & Food Trucks",
-        "date": "04-02-2017",
-        "venue": "Ghost Monkey Brewery",
-        "description": "Food, drinks and live music!"
-      },
-
-      {
-        "name": "Free Dental Screening",
-        "date": "04-02-2017",
-        "venue": "MUSC Dental Clinic",
-        "description": "The MUSC College of Dental Medicine is offering free limited dental screenings to adults over the age of 18. The purpose of these screenings is to identify potential boards patients for the dental licensing exam. If you are screened and your dental needs match the exam requirements, it is possible you could receive this dental work at no charge to you, provided by a senior dental student. No appointment is necessary-- screening are provided on a walk-in basis. Screenings will be conducted by senior dental students. Screenings consist of a visual oral examination and will typically involve 2-6 low-dose X-rays. Most screenings should last no longer than 20 minutes."
-      },
-
-      {
-        "name": "Holy City Sinner on ABC News 4",
-        "date": "04-02-2017",
-        "venue": "ABC News 4",
-        "description": "Every Friday, Christian, the creator of Holy City Sinner, will appear on ABC News 4's 5pm broadcast to discuss his top event picks for the upcoming weekend."
-      },
-
-      {
-        "name": "The Charleston Night Market",
-        "date": "04-02-2017",
-        "venue": "The City Market",
-        "description": "The Charleston City Nigh Market kicks off a sparkling new season on Friday, March 17th. Artisans at the Southeast's largest handmade Market are not only committed to the 'wearing of the green', in honor of St. Patrick's Day, but committed to remaining 'Green' throughout the year in honor of our environment. Nearly 94% of our Night Market vendors' create products tat are made with either natural, reclaimed or recycled material, and close to 72% of our Day Market vendors do so as well. Going 'Green' is not simply a one-day event in the heart of Charleston's artisan community, but an ongoing commitment to protecting and preserving our historic roots. Not only will be green-galore, but with over 100 of Charleston's finest artisans displaying their unique, one-of-a-kind handcrafts, there will be gems-galore as well. The Night Market, open every Friday and Saturday night from March - December, features live music and has earned a well-deserved reputation of being a fun and relaxing shopping experience."
-      },
-
-      {
-        "name": "Half-Off Bottles of Wine",
-        "date": "04-02-2017",
-        "venue": "Indaco",
-        "description": "Half off bottles of wine up to $80; $40 off bottles of wine over $80"
-      },
-
-      {
-        "name": "Mimosa and Bloody Mary Discounts",
-        "date": "04-02-2017",
-        "venue": "Crust Wood Fired Pizza",
-        "description": "Sunday: $2 mimosas and $4.50 bloody mary's all day!"
-      },
-
-      {
-        "name": "North Mt.Pleasant Farmers Market Opening Day",
-        "date": "04-02-2017",
-        "venue": "The Rusty Rudder",
-        "description": "Opening Market Day"
-      },
-
-      {
-        "name": "Pet Helpers Adoptions",
-        "date": "04-02-2017",
-        "venue": "Petco, Savannah Hwy",
-        "description": "Pet Helpers will be at Petco every week with adoptable dogs and cats."
-      },
-
-      {
-        "name": "Team Trivia of Charleston",
-        "date": "04-02-2017",
-        "venue": "Manny's Neighborhood Grille",
-        "description": "Join us for a fun night of trivia with Greek food and drinks."
-      },
-
-      {
-        "name": "Thrifters & Drifters Spring Market",
-        "date": "04-02-2017",
-        "venue": "The Royal American",
-        "description": "A local market of artisans, collectors, and crafters.. which presents a beautiful collection of vintage and locally curated art, jewelry, vintage clothing, crafts, and more. 12 - 5pm. Free event"
-      },
-
-      {
-        "name": "Women's Self-Defense Classes",
-        "date": "04-02-2017",
-        "venue": "American Top Team Lowcountry",
-        "description": "Sundays at 1pm. Black belt in Brazillian Jiu-Jitsu and UFC coach teaches women how to avoid and prevent an assault; how to get a much larger attacker off them, and create life-saving decisions. These classes do not require a lot of strength and all techniques are taught in a supportive and safe atmosphere. $50/month $15/drop-in"
-      },
-
-      {
-        "name": "Second Annual 'Big Heart Raffle'",
-        "date": "04-02-2017",
-        "venue": "PURE theatre",
-        "description": "Charleston's HEART organization will host their second annual 'Big HEART Raffle' fundraiser on Sunday, April 2nd from 3-6pm. The event, which is held at PURE theatre, will include live music, food by Rutledge Cab Company, beer and wine provided by Founders Brewing Co., and awesome raffle items. The Big HEART Raffle will bring guests some of Charleston's finest musical talent who will share the stage with HEART members (aka heARTists) on a few songs. The heARTists will also debut a teaser of their Piccolo Spoleto production coming up in late May. 'A Heartfelt Look at Romeo and Juliet' is written and directed by Marybeth Clark of Charleston Stage Company & Sharon Graci of PURE theatre."
-      },
-
-      {
-        "name": "Stingrays Home Game",
-        "date": "04-02-2017",
-        "venue": "North Charleston Coliseum",
-        "description": "ECHL Hockey game. Come have a few beers and support your local Hockey team."
-      },
-
-      {
-        "name": "Illusionist Rick Thomas",
-        "date": "04-02-2017",
-        "venue": "Gaillard Center",
-        "description": "Few entertainers have succeeded in Vegas like Rick Thomas. His show has run consecutively for 15 years in Las Vegas, performing a staggering 600 shows a year. Rick Thomas now tours performing the most intriguing and innovation grand illusions in the world with style unlike any other magical entertainer. His stage presence is unmatched as he weaves magic, music, and dance into a seamless spectacle."
-      },
-
-      {
-        "name": "'CitySpeak' with Megan Metcalfe and Holy City Sinner",
-        "date": "04-02-2017",
-        "venue": "Kinetic HiFi",
-        "description": "A weekly internet radio show featuring Megan Metcalfe and the Holy City Sinner on Charleston's Kinetic HiFi."
-      },
-
-      {
-        "name": "Swing Dance",
-        "date": "04-02-2017",
-        "venue": "Prohibition",
-        "description": "Have a good night dancing in the Charleston nightlife."
-      },
-
-      {
-        "name": "Earth, Wind, & Fire",
-        "date": "04-02-2017",
-        "venue": "North Charleston Performing Arts Center",
-        "description": "Concert at the North Charleston Performing Arts Center"
-      },
-
-      {
-        "name": "Dusty Slay, Evan Berke, and Jordan Jensen",
-        "date": "04-02-2017",
-        "venue": "The Charleston Pour House",
-        "description": "Live comedy show. Doors open at 8pm. Show starts at 9pm. $10 in advance. $12 at the door."
-      },
-
-      {
-        "name": "13th Annual Respite Care Charleston Golf Tournament",
-        "date": "04-03-2017",
-        "venue": "Seabrook Island Club",
-        "description": "Respite Care Charleston will host the 13th Annual Respite Care Charleston Golf Tournament at Seabrook Island. This annual fund raising tournament is sponsored by the Doscher Family in honor of Betty Cannon, a long time participant in the Respite Care program. Golfer and sponsorship slots are still available for the tournament at Seabrook Island Crooked Oak golf course. For the cost of a single green fee ($150), each golfer can enjoy lunch, refreshments, and dinner in the Atlantic Ballroom at the Seabrook Island Club."
-      },
-
-      {
-        "name": "Draft Beer Discount",
-        "date": "04-03-2017",
-        "venue": "Crust Wood Fired Pizza",
-        "description": "Mondays: $1 off all draft beers"
-      },
-
-      {
-        "name": "Miracle Monday",
-        "date": "04-03-2017",
-        "venue": "The Rusty Rudder",
-        "description": "10% of all proceeds go to charity. Come have good food and drinks for a good cause."
-      },
-
-      {
-        "name": "Service Industry Night",
-        "date": "04-03-2017",
-        "venue": "Tabbuli Grill",
-        "description": "$5 American Burgers. $10 Bourbon Flights. $15 Hookah."
-      },
-
-      {
-        "name": "Classics Night",
-        "date": "04-03-2017",
-        "venue": "The Cocktail Club",
-        "description": "Every Monday starting at 5pm, The Cocktail Club will offer a different classic cocktail each week for a special set price."
-      },
-
-      {
-        "name": "Half-Priced Bottles of Wine at the Macintosh",
-        "date": "04-03-2017",
-        "venue": "The Macintosh",
-        "description": "Every Monday, stop by the Macintosh for half prices bottles of wine $80 or less. Bottles over $80 are discounted $40"
-      },
-
-      {
-        "name": "Aerial Yoga Class",
-        "date": "04-03-2017",
-        "venue": "Aerial Fit",
-        "description": "This is a modern style of yoga that incorportates a low-hanging soft fabric hammock to explore alignment, release chronic tension, hang around upside down, and have fun! Appropriate for anyone including beginners with no yoga experience. For experienced yogis, aerial yoga will add a new dimension to complement your existing practice on the ground. Every class includes decompression, supported inversions, core and upper body strengthening, deep relaxion, and fun! This class is appropriate for anyone whether you have experience or not."
-      },
-
-      {
-        "name": "Bingo",
-        "date": "04-03-2017",
-        "venue": "Elliotborough Mini Bar",
-        "description": "Play bingo, listen to blues music. Free drinks for winners!"
-      },
-
-      {
-        "name": "Paint with a Buzz",
-        "date": "04-03-2017",
-        "venue": "The Salt Spa & Yoga",
-        "description": "An instructor will walk you through a painting, step by step. You can choose to casually follow along or go your own way completely. Paint, brushes, easels, canvas, smocks and instruction are provided."
-      },
-
-      {
-        "name": "Singer/Songwriter Night with host Campbell Brown",
-        "date": "04-03-2017",
-        "venue": "The Washout",
-        "description": "Enjoy live music by the beach. Every Monday Campbell Brown comes in 6-9pm."
-      },
-
-      {
-        "name": "2017 Charleston Celebrity Serve",
-        "date": "04-03-2017",
-        "venue": "Triangle Char and Bar",
-        "description": "Fundraiser for Able Life Foundation: 'As a diner, you may need to rent a fork to eat your salad or a glass for your water. You may even want to challenge your celebrity server with special requests. Let's see how much it will cost you to get your celebrity server to channel their inner Sinatra or reveal a secret talent. That's up to you! Celebrity servers can make a great impact on the success of the night. Its crazy antics like this that will make this event a success. Dinner seating will start at 7pm and that's when we will work our magic! This will be a casual night of fun, music, games, and an all-inclusive open bar, appetizers, and dinner. Your $125 VIP Ticket includes: Celebrities and Celebrity Servers, Sponsors, and VIPs, Happy Hour featuring an Open Bar and free Appetizers. Your $75 Dinner Party Guest Ticket includes: Dinner and the rest of the food, fun, and games with your Celebrity Server"
-      },
-
-      {
-        "name": "The Choir of New College, Oxford in Concert",
-        "date": "04-03-2017",
-        "venue": "Grace Episcopal Church",
-        "description": "Concert at the Grace Episcopal Church. One of the most celebrated and acclaimed choral groups of the United Kingdom, the New College Choir will sing a selection of te choir's favorite British and European choral music, including works of Guerrero, Hadley, and Stanford, and exciting new music by young British composers. A reception will follow the concert."
-      },
-
-      {
-        "name": "Holy City Confessionals with Danielle Howle and Reid Stone",
-        "date": "04-03-2017",
-        "venue": "Home Team BBQ",
-        "description": "Music concert event at Home Team BBQ. Enjoy some food and drinks and listen to free live music."
-      },
-
-      {
-        "name": "It's Funny Stand-Up Comedy Open Mic",
-        "date": "04-03-2017",
-        "venue": "The Sparrow",
-        "description": "Park Circle is the place to be every Monday night for open-mic stand-up comedy at The Sparrow! Hosted by Park Circle's favorite Filipino Comedian/Real Estate Agent, Neil Bansil. You'll laugh, you'll cringe, you might even try to get on stage! But one things for sure this will be the best thing to see on a Monday night in Park Circle. Each show will end with a special guest feature comic. Drink specials all night!"
-      },
-
-      {
-        "name": "Guest Chef Night",
-        "date": "04-04-2017",
-        "venue": "Elliotborough Mini Bar",
-        "description": "EMB hosts pop-up dinners featuring local chefs! Cash only!"
-      },
-
-      {
-        "name": "Ross Bogan Trio",
-        "date": "04-04-2017",
-        "venue": "The Charleston Pour House",
-        "description": "Free concert at the Charleston Pour House. Deck opens at 4pm. Show starts at 6pm"
-      },
-
-      {
-        "name": "Bendy Brewski Yoga",
-        "date": "04-04-2017",
-        "venue": "Tradesman Brewing Co.",
-        "description": "Join in for a night of yoga and local beer!"
-      },
-
-      {
-        "name": "Karaoke",
-        "date": "04-04-2017",
-        "venue": "Queology",
-        "description": "Come out every Tuesday for Open Mic Night at the QUE with Mike Thomapson"
-      },
-
-      {
-        "name": "Lifetree Cafe Meeting",
-        "date": "04-04-2017",
-        "venue": "Lifetree Cafe Charleston",
-        "description": "Lifetree Cafe is a time and place where people gather to hear inspiring stories and engage in conversation on a different topic every week. On film and in person, you'll hear stories that will make you think, spice your conversation, help you make sense of the world, and inspire you. And in the fun, casual, safe environment of Lifetree Cafe, you may share your story too. If you're looking for a place where you can explore life and meet new friends."
-      },
-
-      {
-        "name": "Treat Yourself Tuesday(bar only)",
-        "date": "04-04-2017",
-        "venue": "Burwell's Stone Fire Grill",
-        "description": "On the first Tuesday of every month, we invite you to spend a night indulging yourself while catching up with your friends in our bar & lounge area for our Treat Yourself Tuesday. Unwined without spending all of your hard earned money by enjoying one of our famous $7 burgers until the kitchen closes at 10pm, and select $5 signature cocktails or select $3 beers until the bar closes at midnight."
-      },
-
-      {
-        "name": "Buddy Guy",
-        "date": "04-04-2017",
-        "venue": "Gaillard Center",
-        "description": "Seven Time Grammy Award Winner! Amazing concert featuring legendary guitarist, Buddy Guy."
-      },
-
-      {
-        "name": "Free Tango Lesson/Practice",
-        "date": "04-04-2017",
-        "venue": "MUSC Wellness Center",
-        "description": "Every Tuesday at 7:30pm, the Charleston Argentine Tango Society offers a free one hour tango lesson and one hour tango practice. The MUSC gym charges attendees only $5 at entrance but the lessons themselves are free. Everyone is welcome."
-      },
-
-      {
-        "name": "Name The Music",
-        "date": "04-04-2017",
-        "venue": "Creekside Kitchen & Brewhouse",
-        "description": "'Name the Music' is a family-friendly and fun high-energy party where you guess song titles, artists and release dates to win prizes every 1/2 hour.. featuring upbeat music from all decades!"
-      },
-
-      {
-        "name": "Team Trivia",
-        "date": "04-04-2017",
-        "venue": "Mex 1 Coastal Cantina",
-        "description": "Team Trivia Tuesday nights from 8-10pm. Free to play and great prizes for the winners!"
-      },
-
-      {
-        "name": "Team Trivia",
-        "date": "04-04-2017",
-        "venue": "Home Team BBQ",
-        "description": "Trivia at Home Team BBQ"
-      },
-
-      {
-        "name": "Trivia Night",
-        "date": "04-04-2017",
-        "venue": "Mellow Mushroom- Avondale",
-        "description": "Trivia at Mellow Mushroom"
-      },
-
-      {
-        "name": "Trivia Night",
-        "date": "04-04-2017",
-        "venue": "Cutty's",
-        "description": "Trivia at Cutty's"
-      },
-
-      {
-        "name": "Trivia with Val and Tia",
-        "date": "04-04-2017",
-        "venue": "Tin Roof",
-        "description": "Trivia Night at the Tin Roof"
-      },
-
-      {
-        "name": "Team Trivia",
-        "date": "04-04-2017",
-        "venue": "Bay Street Biergarten",
-        "description": "Trivia at the Biergarten"
-      },
-
-      {
-        "name": "Open Mic Tuesdays",
-        "date": "04-04-2017",
-        "venue": "Carolina Ale House",
-        "description": "Come join us for All Night Open Mic Tuesday! Enjoy our great food and drink specials with good music! Sign up starts at 9pm, show at 10pm. All Genres, stand-up comedy and poetry welcome!"
-      },
-
-      {
-        "name": "Craft Beer Tuesdays",
-        "date": "04-04-2017",
-        "venue": "The Tattooed Moose- Downtown",
-        "description": "Live show starts at 10pm. All craft beers are $1 off all night."
-      },
-
-      {
-        "name": "Karaoke Tuesdays",
-        "date": "04-04-2017",
-        "venue": "Charleston Beer Works",
-        "description": "Come out and sing some karaoke with drinks and friends!"
-      },
-
-      {
-        "name": "Doughnut Day",
-        "date": "04-05-2017",
-        "venue": "Mercantile and Mash",
-        "description": "Join us for Doughnut Day to experience the featured doughnut of the week! There will be a new flavor every Wednesday so don't miss out! 7am-doughnuts run out"
-      },
-
-      {
-        "name": "All Day Happy Hour",
-        "date": "04-05-2017",
-        "venue": "Crust Wood Fired Pizza",
-        "description": "Enjoy our happy hour prices all day long. Come have some drinks with us!"
-      },
-
-      {
-        "name": "Burger Night",
-        "date": "04-05-2017",
-        "venue": "The Bohemian Bull",
-        "description": "Build-Your-Burgers starting at $3"
-      },
-
-      {
-        "name": "Fish & Chips at Bar Mash",
-        "date": "04-05-2017",
-        "venue": "Mercantile and Mash",
-        "description": "Join us every Wednesday for classic Fish & Chips with a malt vinegar aioli for $16."
-      },
-
-      {
-        "name": "Wine Down Wednesday",
-        "date": "04-05-2017",
-        "venue": "SHOP",
-        "description": "Join us for our first 'Wine Down Wednesday,' a relaxing mid-week treat with wine and appetizers provided by our friends at 5Church Charleston. Sip and snack while you shop our selection of coveted labels. There will even be an opportunity to win a drinking grphic t-shirt by Chaser or WildFox."
-      },
-
-      {
-        "name": "Name the Music",
-        "date": "04-05-2017",
-        "venue": "SportsBook of Charleston",
-        "description": "'Name the Music' is a family-friendly and fun high-energy party where you guess song titles, artists and release dates to win prizes every 1/2 hour... featuring upbeat music from all decades."
-      },
-
-      {
-        "name": "Barn Jam",
-        "date": "04-05-2017",
-        "venue": "Awendaw Green",
-        "description": "$5 donation at the door, all ages welcome, pets on a leash and family friendly. Come enjoy the live music concert."
-      },
-
-      {
-        "name": "Baila Barre",
-        "date": "04-05-2017",
-        "venue": "One Love Fitness",
-        "description": "75-minute class includes: 25 minutes of fun, high-intensity cardio Latin dance, 25 minutes of ballet-inspired toning to give you long, lean muscles, and once you're warm and worked out, 25 minutes of juicy and relaxing stretching."
-      },
-
-      {
-        "name": "Maggie Koerner with Chris Kaspar",
-        "date": "04-05-2017",
-        "venue": "The Charleston Pour House",
-        "description": "Doors open at 8:30, show starts at 9:30. It's not uncommon to find Maggie performing on stage with a list of iconic acts that have included Widespread Panic, Gov't Mule and Charles Bradley, to name a few. The Shreveport born singer-songerwriter spent the majority of 2013 and 2014 as the lead singer and front woman for legendary New Orleans' funk-band Galactic. Spending 2015 on the road and in the studio, Maggie performed with her own band at a list of major North American music festivals including New Orleans Jazz and Heritage Festival, Austin City Limits, and Perberton Music Festival."
-      },
-
-      {
-        "name": "Hanahan Family Farmers Market",
-        "date": "04-06-2017",
-        "venue": "Reservoir Hall",
-        "description": "Features food vendors, farmers, crafters, artisans, artists, live music, and raffles for attendees."
-      },
-
-      {
-        "name": "Taste of Hudson Alley",
-        "date": "04-06-2017",
-        "venue": "Hutson Alley",
-        "description": "From 6-8:30pm, you can enjoy wine tastings, live music from One Kool Blow and small plates from six restaurants and Good Food Catering. Tickets are $65 and attendees must be over 21 years of age."
-      },
-
-      {
-        "name": "Bluegrass Mash-Up",
-        "date": "04-06-2017",
-        "venue": "Mercantile and Mash",
-        "description": "Join Bar Mash for an evening of folk, bluegrass, and blues music."
-      },
-
-      {
-        "name": "Name the Music",
-        "date": "04-06-2017",
-        "venue": "Loggerhead's Beach Grill",
-        "description": "'Name the Music' is a family-friendly and fun high-energy party where you guess song titles, artists and release dates to win prizes every 1/2 hour... featuring upbeat music from all decades."
-      },
-
-      {
-        "name": "Thursday Jazz Nights with the Gino Castillo Trio",
-        "date": "04-06-2017",
-        "venue": "Eli's Table",
-        "description": "Every Thursday from 6-9pm we feature the very best in Jazz Music, Food and Wine in the relazing atmosphere of our cozy restaurant."
-      },
-
-      {
-        "name": "Riverdogs Home Game",
-        "date": "04-06-2017",
-        "venue": "Joe Riley Stadium",
-        "description": "Come out and support our local Baseball team with some good friends and beer!"
-      },
-
-      {
-        "name": "RENT",
-        "date": "04-06-2017",
-        "venue": "Simons Center for the Arts",
-        "description": "Presented by the College of Charleston's department of theatre and dance, Rent is a multiple award-winning musical based loosely on Giacomo Puccini's opera 'La Boheme.' With music, lyrics, and book by Jonathan Larson, this rock musical shares the story of eight impoverished artistic friends struggling to survive bohemian life in Manhattan's East Village in the late 1980s/early 1990s. The group's dreams, losses, and love stories weave through the musical's narration to paint a stunningly raw and emotional portrait of life at the end of the millenium in a gritty world bein torn apart by drugs, HIV/AIDS, social tension and political unrest. Yet, throught all of that darkness, it offers a positive outlook on life and living that resonates with everyone. 'Rent' is the eleventh longest-running Broadway show. Curtain times will be 7:30pm. Performances will take place at the Emmett Robinson Theatre i the Simons Center for the Arts. Admission is $20 for general public, $15 for senior citizens, CofC employees and non-CofC students, $12 for CofC students."
-      },
-
-      {
-        "name": "Name the Music",
-        "date": "04-06-2017",
-        "venue": "Hunley's Tavern",
-        "description": "'Name the Music' is a family-friendly and fun high-energy party where you guess song titles, artists and release dates to win prizes every 1/2 hour... featuring upbeat music from all decades."
-      },
-
-      {
-        "name": "Pippin",
-        "date": "04-06-2017",
-        "venue": "Gaillard Center",
-        "description": "'Pippin' is a high-flying, death-defying hit Broadway musical. Full of extraordinary acrobarics, wondrous magical feats and soaring songs from the composer of Wicked, 'Pippin' will lift you up and leave you smiling. This unforgettable new production is the winner of four 2013 Tony Awards including Best Musical Revival. Hailed as 'an eye-popping, jaw-dropping extravaganza.'"
-      },
-
-      {
-        "name": "Portugal. The Man with HDBeenDope",
-        "date": "04-06-2017",
-        "venue": "Charleston Music Hall",
-        "description": "Concert at the Charleston Music Hall"
-      },
-
-      {
-        "name": "Real South Rex Fest",
-        "date": "04-06-2017",
-        "venue": "The Royal American",
-        "description": "South Carolina's Real South Records has announved they will hold their music festival, Real South Rex, in Charleston. Real South Records is 'dedicated to supporting South Carolina musicians. We stand for artistic expression and diversity in msic. We recognize our roles as spokespersons in our repective communities, and therefore actively stand against racsim, sexism, homophobia, and other forms of oppression.'"
-      },
-
-      {
-        "name": "Joe Marcinek Band featuring Yonrico Schott & Ike Stubblefield",
-        "date": "04-06-2017",
-        "venue": "The Charleston Pour House",
-        "description": "Concert at the Charleston Pour House. Doors open at 8:30, show starts at 9:30. $10 in advance/ $12 at the door"
-      },
-
-      {
-        "name": "Team Trivia of Charleston",
-        "date": "04-06-2017",
-        "venue": "Manny's Grills and Cafe",
-        "description": "Come out for a good night of Greek food, drinks and trivia! Win house cash up to $50."
-      },
-
-      {
-        "name": "Loretta Lynn",
-        "date": "04-07-2017",
-        "venue": "Gaillard Center",
-        "description": "Loretta first arrived in Nashville 55 years ago, signing her first recording ontract on February 1, 1960 and within a matter of weeks, she was at her first recording session. A self-taught guitarist and songwriter, Lynn became one of the most distinctive performers in Nashville in the 1960s and 1970s, shaking things up by writing her own songs, many of which tackled boundary-pushing topics drawn from her own life experiences as wife and mother."
-      },
-
-      {
-        "name": "Moon Taxis with Atlas Road Crew",
-        "date": "04-07-2017",
-        "venue": "Music Farm",
-        "description": "Concert at the Music Farm. Doors open at 8pm and show begins at 9pm. $20 in advance/ $22 at door"
-      },
-
-      {
-        "name": "Hayseed Dixie with The Royal Tinfoil",
-        "date": "04-07-2017",
-        "venue": "The Charleston Pour House",
-        "description": "Concert at the Charleston Pour House. Doors open at 8:30pm, show starts at 9:30pm. $12 in advance/ $15 at the door"
-      },
-
-      {
-        "name": "'The Rocky Horror Picture Show'",
-        "date": "04-07-2017",
-        "venue": "Terrace Theatre",
-        "description": "The Terrace Theatre's monthly screening of The Rocky Horror Picture Show"
-      },
-
-      {
-        "name": "Plow to Chow",
-        "date": "04-08-2017",
-        "venue": "Marion Square",
-        "description": "Celebrate the kick-off of the 2017 downtown Charleston Farmers Market in Marion Square with Lowcountry Local First and some of our Eat Local Month partners. Enjoy free tastings prepared by local chefs using fresh, local produce from Limehouse Produce."
-      },
-
-      {
-        "name": "Migratory Bird Walks",
-        "date": "04-08-2017",
-        "venue": "Center of Birds of Prey",
-        "description": "Lying within the Atlantic Flyway, the Avian Conservation Center campus is an ideal location to catch a glimpse of peak avian migration. Join the CEnter's experienced birding guides for an introduction to the Painted Bunting and other colorful migrants that frequent the Centter's campus each spring. Last spring we logged more than 40 species on the Center property!"
-      },
-
-      {
-        "name": "Mixson Farmers Market",
-        "date": "04-08-2017",
-        "venue": "Mixson",
-        "description": "The grand opening celebration of the Mixson Farmers Market to celebrate the beginning of its new season. Live music, kids activities, chef demos, local pie contest, fresh produce, children's lesson in strawberry pie waffle cones, healthy dessert bar."
-      },
-
-      {
-        "name": "PAW Patrol Live! 'Race to the Rescue'",
-        "date": "04-08-2017",
-        "venue": "North Charleston Performing Arts Center",
-        "description": "PAW Patrol Live! presented b Pedigree, brings everybody's favorite pups to the stage for an action-packed, high-energy, musical adventure. When Mayor Goodway goes missing during the day of The Great Adventure Bay Race, the pups come to the rescue. Join Ryder, Chase, Marshall, Rocky, Rubble, Zuma, Skye, and Everest when they visit North Charleston. Tickets range from $19-109(VIP)."
-      },
-
-      {
-        "name": "Music and Food Trucks",
-        "date": "04-08-2017",
-        "venue": "Ghost Monkey Brewery",
-        "description": "Food, Drinks, Live Music"
-      },
-
-      {
-        "name": "Women's Biker Bash",
-        "date": "04-08-2017",
-        "venue": "Low Country Harley-Davidson",
-        "description": "Help us raise money to gift a wounded veteran with a trained companion from Patriot Rovers. There will be food, games, live music, bike wash, bike show, tattoo contest, and prizes!"
-      },
-
-      {
-        "name": "Heal with Hearts, Kids Drum Circle",
-        "date": "04-08-2017",
-        "venue": "The Charleston Pour House",
-        "description": "Free kids event. Every 2nd Saturday of the month. Starts at 4:30"
-      },
-
-      {
-        "name": "Savory Saturdays",
-        "date": "04-08-2017",
-        "venue": "Oak Barrel Tavern",
-        "description": "Local Lovers: $2 off all CHS pints and $5 all wines. Come join us for food and drinks. "
-      },
-
-      {
-        "name": "Charleston Sounds Music Festival",
-        "date": "04-08-2017",
-        "venue": "Music Farm",
-        "description": "Music concert/festival. Anfernee, Diaspoura, College of Charleston Gospel Choir, Man-Child: Featuring Abstract & Speakerbox, Contour, The Night Caps. Starts at 6pm. $10 for students/$15 for general admission. $3 surcharge for those under 21 at the door."
-      }
+  {
+    "name": "70th Annual Festival of Houses and Gardens",
+    "date": "04-01-2017",
+    "venue": "Charleston's Old & Historic District",
+    "description": "Proceeds benefit Historic Charleston Foundation's historic preservation initiatives and educational programs. Set amid the ambience of the city's Old & Historic District, this series of award-winning tours and educational events showcase Charleston's distinctive architecture, history, gardens, and culture. The tours provide a rare opportunity for guests to go inside the private houses and gardens of some of America's most beautiful historic residences.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Amazing Scavenger Hunt Adventure",
+    "date": "04-01-2017",
+    "venue": "Amazing Scavenger Hunt Adventure- Charleston",
+    "description": "Turn Charleston into a giant game board with this fun scavenger hunt adventure. Combine the excitement of the Amazing Race with a three-hour city tour. Guided from any smart phone, teams make their way among well known and overlooked gems of the city, solving clues and completeing challenged while learning local history.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "40th Annual Cooper River Bridge Run",
+    "date": "04-01-2017",
+    "venue": "Ravenel Bridge",
+    "description": "The Cooper River Bridge Run provides a world-class 10K foot race. The race promotes continuous physical activity and a healthy lifestyle through education and opportunity.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Mount Pleasant Fish Market",
+    "date": "04-01-2017",
+    "venue": "Mt. Pleasant Farmers Market Pavilion",
+    "description": "Come out and buy fresh, local fish.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Drayton Hall Preservation Tech Tour",
+    "date": "04-01-2017",
+    "venue": "Drayton Hall",
+    "description": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Louie's Kids' Saturday Morning Workouts",
+    "date": "04-01-2017",
+    "venue": "Hampton Park",
+    "description": "Anyone is welcome, and no advance sign-up is required. Kids under the age of 18 will require a signed parental consent form to participate. Wear comfortable clothes and bring a water bottle and a towel. Meet at the bridge by the fountains.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "One Love Collection- Pop Up Shop",
+    "date": "04-01-2017",
+    "venue": "One Love Design",
+    "description": "Rachel Gordon of One Love Design is hosting a collective of talented Charleston artist, makers, designers, photographers, musicians, dreamers, and visionairies that are bringing more beauty into the world. The collective includes: One Love Design, Sati Swim, Painter Robert Maniscalco, Ulalume Lingerie, Sacred Circle Herbal, Out of Squares, Foxy Fossils, Gregg Lambton-Carr Phototgraphy, Seam Siren, The Vinyl Countdown, HMS Log Book. Free hugs and good vibes all day long.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Bridge Run After Party",
+    "date": "04-01-2017",
+    "venue": "Bay Street Biergarten",
+    "description": "Let's pack the house and have a record breaking Cooper River Bridge Run after party. We're going to make the Largest Bloody Mary Charleston has even seen featuring Dixie Vodka & Charleston Bloody Mary Mix. Fill your glass from this legendary bloody mary bar for just $5 per cocktail. Doors open at 10am with the bloody mary bar, mimosas, and a breakfast buffet. Not a bloody mary or mimosa fan? No worries we'll have $5 Bold Rock Cider and plenty of bierx. Choose from our 70 taps, some of which are right at your table for pour your own pint awesomeness. If you're running the bridge in a costume this year, you will have a chance to win a $25 gift card. Come enjoy cornhole, craft biers, amazing food, plus beats by DJ rDot & DJ Rehab on our patio.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Bridge Run After Party",
+    "date": "04-01-2017",
+    "venue": "The Alley",
+    "description": "Get over it and come to The Alley after the Cooper River Bridge Run. We'll be open early at 10am and ready to party! The first runner inside wins a $25 gift card. The first 50 runners will get a mini bottle of Charleston Bloody Mary Mix. This is a race that you could actually win! We'll have The Charleston Bloody Mary Mix bar open to quench your thirst. THe kitchen will be open to celebrate your victory with lots of delicious bites worthy of filling your tank back up from empty. Rest up for live music from Return of the Mac from 10-1 and High5 from 1-4.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Vinyl Saturday",
+    "date": "04-01-2017",
+    "venue": "Monster Music and Movies",
+    "description": "All vinyls are 20% all day.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Yoga in the Taproom with Bendy Brewski Yoga",
+    "date": "04-01-2017",
+    "venue": "Ghost Monkey Brewery",
+    "description": "Come in from the heat and practice with us and then share a beer and conversation. Mats to borrow. Cool towels. $15 for yoga and beer.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Cooper River Bridge Run After Party",
+    "date": "04-01-2017",
+    "venue": "O-Ku",
+    "description": "Join O-Ku to cool off and refresh after the Cooper River Bridge Run with sushi, sake, and Sriracha Bloody Marys. Just steps away from the finish line, O-Ku will be opening at 11am to welcome in runners, walkers, and anyone just looking to join in on the bridge run festivities.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Frozen Drinks Discount",
+    "date": "04-01-2017",
+    "venue": "Crust Wood Fired Pizza",
+    "description": "$3 and $5 frozen drinks, all day long.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Harlem Globetrotters",
+    "date": "04-01-2017",
+    "venue": "North Charleston Coliseum",
+    "description": "See the Harlem Globetrotters on their country-wide tour.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "PowerShares Series Tennis",
+    "date": "04-01-2017",
+    "venue": "Volvo Car Stadium",
+    "description": "Come out and enjoy a few matches of tennis.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Emanuel: Love is the Answer",
+    "date": "04-01-2017",
+    "venue": "Sottile Theatre",
+    "description": "The South Carolina Ballet presents Emanuel: Love is the Answer. A spiritual ballet of transcendence, hope, harmoney, love and forgiveness to create unity and peace. This multi-media presentation will unite as we embrace our differences and celebrate the indomitable human spirit. From the creator of Off the Wall & Onto the Stage: Dancing the Art of Jonathan Green.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Our Mother's Brief Affair",
+    "date": "04-01-2017",
+    "venue": "PURE theatre",
+    "description": "This stylish and intelligent play by Tony-winning playwright Richard Greenberg explores how little we know about the lives that impinge upon and shape our own.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "The Miracle Worker",
+    "date": "04-01-2017",
+    "venue": "Dock Street Theatre",
+    "description": "The Miracle Worker tells the incredible and moving true story of Helen Keller, a young girl afflicted with both blindness and deafness, and Annie Sullivan, the extraordinary teacher who finds a way for Helen to learn. Set in 1880, The Miracle Worker centers on the pivotal portion of Keller's childhood when Sullivan enters her life and the journey from darkness and silence begins, eventually emerging into a true and uplifting miracle of teacher and pupil.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Saturday Loading Dock Free Concert",
+    "date": "04-01-2017",
+    "venue": "Palmetto Brewing",
+    "description": "Live Music at the Brewery opening at 1pm",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "A Kickin' BBQ Pickin'",
+    "date": "04-01-2017",
+    "venue": "Harborside East",
+    "description": "Please join Project Alive & Kicking (PAK) for A Kickin' BBQ Pickin', our second annual fundraiser at Harborside East from 5:30- 8:30. Come and enjoy our family-friendly event. We will feature authentic BBQ, fabulous music, a silent auction, great food, local beverages, the best company and striking views of downtown Charleston and the iconic Ravenel Bridge. All proceeds to benefit Project Alive & Kicking to help EMPOWER expectant mothers by educating them about healthy pregnancies, the possible signs of fetal distress, and the action they can take to help their babies come into the world thriving, Alive & Kicking!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Schema",
+    "date": "04-01-2017",
+    "venue": "The Charleston Pour House",
+    "description": "Schema free concert. Doors open at 4pm. Show is at 6pm.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Ellis Hall: Soul Unlimited",
+    "date": "04-01-2017",
+    "venue": "Gaillard Center",
+    "description": "Ellis Hall, accomplished and prolific entertainer, multi-instrumentalist and vocalist with a five octave range, headlines the CSO for an evening of soul-searing rhythm & blues with hits from Smokey Robinson, Ray Charles, Sam Cooke, and Stevie Wonder. In a career spanning over four decades, Hall has electrified audiences throughtout the world. Hall attended the Perkins School for the Blind in Boston where he mastered the bass, guitar, keyboards, piano, and drums. He has worked with some of the world's most well known conductors, including Marvin Hamlisch, Bob Bernhardt, William Eddins, Keith Lockhart, Jeff Tyzik, and Steve Reineke of the New York Philharmonic.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Black Fedora Comedy Mystery Theater",
+    "date": "04-01-2017",
+    "venue": "The Black Fedora Comedy Mystery Theatre & Shoppe",
+    "description": "Comic mysteries featuring plenty of audience participation play each week and include titles like Sherlock Holmes, Pirate Mystery Treasure Show (suitable for children), and Inspector NoClue's History Mystery. This spring, they've announced two new plays: Heist, Heist Baby, and interactive mystery and comedy, and Church Street Daughters of the Late Unpleasantness Garden, Gun & Gin Club.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Live Music",
+    "date": "04-01-2017",
+    "venue": "The Washout",
+    "description": "Enjoy live music by the beach throughout the week at Folly Beach's newest restaurant, The Washout! Every Monday is singer/songwriter night with host Campbell Brown from 6-9pm. Tuesday is Shag Night from 6:30-9:30pm. Wednesday night is live music with Josh Hughett from 6-9pm. Thursday is the Folly Beach Bluegrass Society from 8-11pm. Eddie Bush is live every Friday from 8-11pm and Saturdays offer rotating music every week.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Nitty Gritty Dirt Band",
+    "date": "04-01-2017",
+    "venue": "Charleston Music Hall",
+    "description": "Celebrating their Golden (50th) Anniversary together, the iconic and profoundly influential Nitty Gritty Dirt Band, often cited as a catalyst for an entire movement in Country Rock and American Roots Music, continues to add to their legendary status. With multi-platinum and gold records, strings of top ten hits such as 'Fishin In the Dark' and 'Mr. Bojangles', multiple Grammy, IBMA, CMA Awards and nominations, the band's accolades continue to accumulate. Their groundbreaking 'Will The Circle Be Unbroken' album has been inducted into the U.S. Library of Congress as well as the Grammy Hall of Fame. NGDB's recording of 'Mr.Bojangles' was also inducted into the Grammy Hall of Fame in 2010. In 2014, 'Fishin In The Dark' was certified platinum for digital downloads by the RIAA. Today, NGDB (Jeff Hanna, Jimmie Fadden, Bob Carpenter, John McEuen) continue their non-stop touring in their 50th year together. Recent tour stops included Stagecoach, Hardly Strictly Bluegrass Festival and many more. The plans for their 50th Anniversary will be extensive!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "The Southern Charmer",
+    "date": "04-01-2017",
+    "venue": "Palmetto Crescent Parlour",
+    "description": "The Southern Charmer brings magic, mystery, and mind reading in his Histortic Charleston, South Carolina parlour.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "1770 Records Present Hip Hop In The Den: Anfernee Robinson, Sire Kaizer, Illadell",
+    "date": "04-01-2017",
+    "venue": "Music Farm",
+    "description": "Concert at the Music Farm. Doors open at 8pm. Show starts at 9pm. $5/person.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Oblivion Presents The Long Losts & Toccata Nosferatu",
+    "date": "04-01-2017",
+    "venue": "Tin Roof",
+    "description": "Concert at the Tin Roof. Tickets are $10/person.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "The Hooten Hallers with Mike Martin & The Beautiful Mess and Ripley & The Ghost",
+    "date": "04-01-2017",
+    "venue": "The Royal American",
+    "description": "Concert at The Royal American. Tickets are $8/person.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Travelin Kinewith Greg Payne and the Piedmont Boys",
+    "date": "04-01-2017",
+    "venue": "The Charleston Pour House",
+    "description": "Concert at the Charleston Pour House. Tickets are $13 in advance or $15 at the door. Doors open at 8:30. Show starts at 9:30.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Mahon Brothers",
+    "date": "04-01-2017",
+    "venue": "Honky Tonk Saloon",
+    "description": "Mahon Brothers are back! Tickets are $5/person. Show is from 9:30pm - 1:30am.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Bendy Brewski Yoga",
+    "date": "04-02-2017",
+    "venue": "Holy City Brewing",
+    "description": "Accessible and fun Yoga inside the brewery for 45 minutes followed by a flight or pint of craft beer! We always have some mats to borrow and your teach Michele is kind, fun and knowledgeable! Every student matters and we can't wait to meet you!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Storytelling",
+    "date": "04-02-2017",
+    "venue": "Teacups & Trucks",
+    "description": "For children, ages 2.5 - 5. Childhood is a time full of stories! In our storytelling class, children will be encouraged to explore language and literature through storytelling, drama, and imaginative play! This class will hekp stimulation communication skills, develop a child's confidence and self esteem, provide opportunities for creative self expression, encourage thinking and cognitive skills, explore a range of literacy concepts in an imaginative and enjoyable way. ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Music & Food Trucks",
+    "date": "04-02-2017",
+    "venue": "Ghost Monkey Brewery",
+    "description": "Food, drinks and live music!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Free Dental Screening",
+    "date": "04-02-2017",
+    "venue": "MUSC Dental Clinic",
+    "description": "The MUSC College of Dental Medicine is offering free limited dental screenings to adults over the age of 18. The purpose of these screenings is to identify potential boards patients for the dental licensing exam. If you are screened and your dental needs match the exam requirements, it is possible you could receive this dental work at no charge to you, provided by a senior dental student. No appointment is necessary-- screening are provided on a walk-in basis. Screenings will be conducted by senior dental students. Screenings consist of a visual oral examination and will typically involve 2-6 low-dose X-rays. Most screenings should last no longer than 20 minutes.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Holy City Sinner on ABC News 4",
+    "date": "04-02-2017",
+    "venue": "ABC News 4",
+    "description": "Every Friday, Christian, the creator of Holy City Sinner, will appear on ABC News 4's 5pm broadcast to discuss his top event picks for the upcoming weekend.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "The Charleston Night Market",
+    "date": "04-02-2017",
+    "venue": "The City Market",
+    "description": "The Charleston City Nigh Market kicks off a sparkling new season on Friday, March 17th. Artisans at the Southeast's largest handmade Market are not only committed to the 'wearing of the green', in honor of St. Patrick's Day, but committed to remaining 'Green' throughout the year in honor of our environment. Nearly 94% of our Night Market vendors' create products tat are made with either natural, reclaimed or recycled material, and close to 72% of our Day Market vendors do so as well. Going 'Green' is not simply a one-day event in the heart of Charleston's artisan community, but an ongoing commitment to protecting and preserving our historic roots. Not only will be green-galore, but with over 100 of Charleston's finest artisans displaying their unique, one-of-a-kind handcrafts, there will be gems-galore as well. The Night Market, open every Friday and Saturday night from March - December, features live music and has earned a well-deserved reputation of being a fun and relaxing shopping experience.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Half-Off Bottles of Wine",
+    "date": "04-02-2017",
+    "venue": "Indaco",
+    "description": "Half off bottles of wine up to $80; $40 off bottles of wine over $80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Mimosa and Bloody Mary Discounts",
+    "date": "04-02-2017",
+    "venue": "Crust Wood Fired Pizza",
+    "description": "Sunday: $2 mimosas and $4.50 bloody mary's all day!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "North Mt.Pleasant Farmers Market Opening Day",
+    "date": "04-02-2017",
+    "venue": "The Rusty Rudder",
+    "description": "Opening Market Day",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Pet Helpers Adoptions",
+    "date": "04-02-2017",
+    "venue": "Petco, Savannah Hwy",
+    "description": "Pet Helpers will be at Petco every week with adoptable dogs and cats.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Team Trivia of Charleston",
+    "date": "04-02-2017",
+    "venue": "Manny's Neighborhood Grille",
+    "description": "Join us for a fun night of trivia with Greek food and drinks.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Thrifters & Drifters Spring Market",
+    "date": "04-02-2017",
+    "venue": "The Royal American",
+    "description": "A local market of artisans, collectors, and crafters.. which presents a beautiful collection of vintage and locally curated art, jewelry, vintage clothing, crafts, and more. 12 - 5pm. Free event",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Women's Self-Defense Classes",
+    "date": "04-02-2017",
+    "venue": "American Top Team Lowcountry",
+    "description": "Sundays at 1pm. Black belt in Brazillian Jiu-Jitsu and UFC coach teaches women how to avoid and prevent an assault; how to get a much larger attacker off them, and create life-saving decisions. These classes do not require a lot of strength and all techniques are taught in a supportive and safe atmosphere. $50/month $15/drop-in",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Second Annual 'Big Heart Raffle'",
+    "date": "04-02-2017",
+    "venue": "PURE theatre",
+    "description": "Charleston's HEART organization will host their second annual 'Big HEART Raffle' fundraiser on Sunday, April 2nd from 3-6pm. The event, which is held at PURE theatre, will include live music, food by Rutledge Cab Company, beer and wine provided by Founders Brewing Co., and awesome raffle items. The Big HEART Raffle will bring guests some of Charleston's finest musical talent who will share the stage with HEART members (aka heARTists) on a few songs. The heARTists will also debut a teaser of their Piccolo Spoleto production coming up in late May. 'A Heartfelt Look at Romeo and Juliet' is written and directed by Marybeth Clark of Charleston Stage Company & Sharon Graci of PURE theatre.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Stingrays Home Game",
+    "date": "04-02-2017",
+    "venue": "North Charleston Coliseum",
+    "description": "ECHL Hockey game. Come have a few beers and support your local Hockey team.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Illusionist Rick Thomas",
+    "date": "04-02-2017",
+    "venue": "Gaillard Center",
+    "description": "Few entertainers have succeeded in Vegas like Rick Thomas. His show has run consecutively for 15 years in Las Vegas, performing a staggering 600 shows a year. Rick Thomas now tours performing the most intriguing and innovation grand illusions in the world with style unlike any other magical entertainer. His stage presence is unmatched as he weaves magic, music, and dance into a seamless spectacle.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "'CitySpeak' with Megan Metcalfe and Holy City Sinner",
+    "date": "04-02-2017",
+    "venue": "Kinetic HiFi",
+    "description": "A weekly internet radio show featuring Megan Metcalfe and the Holy City Sinner on Charleston's Kinetic HiFi.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Swing Dance",
+    "date": "04-02-2017",
+    "venue": "Prohibition",
+    "description": "Have a good night dancing in the Charleston nightlife.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Earth, Wind, & Fire",
+    "date": "04-02-2017",
+    "venue": "North Charleston Performing Arts Center",
+    "description": "Concert at the North Charleston Performing Arts Center",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Dusty Slay, Evan Berke, and Jordan Jensen",
+    "date": "04-02-2017",
+    "venue": "The Charleston Pour House",
+    "description": "Live comedy show. Doors open at 8pm. Show starts at 9pm. $10 in advance. $12 at the door.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "13th Annual Respite Care Charleston Golf Tournament",
+    "date": "04-03-2017",
+    "venue": "Seabrook Island Club",
+    "description": "Respite Care Charleston will host the 13th Annual Respite Care Charleston Golf Tournament at Seabrook Island. This annual fund raising tournament is sponsored by the Doscher Family in honor of Betty Cannon, a long time participant in the Respite Care program. Golfer and sponsorship slots are still available for the tournament at Seabrook Island Crooked Oak golf course. For the cost of a single green fee ($150), each golfer can enjoy lunch, refreshments, and dinner in the Atlantic Ballroom at the Seabrook Island Club.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Draft Beer Discount",
+    "date": "04-03-2017",
+    "venue": "Crust Wood Fired Pizza",
+    "description": "Mondays: $1 off all draft beers",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Miracle Monday",
+    "date": "04-03-2017",
+    "venue": "The Rusty Rudder",
+    "description": "10% of all proceeds go to charity. Come have good food and drinks for a good cause.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Service Industry Night",
+    "date": "04-03-2017",
+    "venue": "Tabbuli Grill",
+    "description": "$5 American Burgers. $10 Bourbon Flights. $15 Hookah.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Classics Night",
+    "date": "04-03-2017",
+    "venue": "The Cocktail Club",
+    "description": "Every Monday starting at 5pm, The Cocktail Club will offer a different classic cocktail each week for a special set price.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Half-Priced Bottles of Wine at the Macintosh",
+    "date": "04-03-2017",
+    "venue": "The Macintosh",
+    "description": "Every Monday, stop by the Macintosh for half prices bottles of wine $80 or less. Bottles over $80 are discounted $40",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Aerial Yoga Class",
+    "date": "04-03-2017",
+    "venue": "Aerial Fit",
+    "description": "This is a modern style of yoga that incorportates a low-hanging soft fabric hammock to explore alignment, release chronic tension, hang around upside down, and have fun! Appropriate for anyone including beginners with no yoga experience. For experienced yogis, aerial yoga will add a new dimension to complement your existing practice on the ground. Every class includes decompression, supported inversions, core and upper body strengthening, deep relaxion, and fun! This class is appropriate for anyone whether you have experience or not.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Bingo",
+    "date": "04-03-2017",
+    "venue": "Elliotborough Mini Bar",
+    "description": "Play bingo, listen to blues music. Free drinks for winners!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Paint with a Buzz",
+    "date": "04-03-2017",
+    "venue": "The Salt Spa & Yoga",
+    "description": "An instructor will walk you through a painting, step by step. You can choose to casually follow along or go your own way completely. Paint, brushes, easels, canvas, smocks and instruction are provided.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Singer/Songwriter Night with host Campbell Brown",
+    "date": "04-03-2017",
+    "venue": "The Washout",
+    "description": "Enjoy live music by the beach. Every Monday Campbell Brown comes in 6-9pm.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "2017 Charleston Celebrity Serve",
+    "date": "04-03-2017",
+    "venue": "Triangle Char and Bar",
+    "description": "Fundraiser for Able Life Foundation: 'As a diner, you may need to rent a fork to eat your salad or a glass for your water. You may even want to challenge your celebrity server with special requests. Let's see how much it will cost you to get your celebrity server to channel their inner Sinatra or reveal a secret talent. That's up to you! Celebrity servers can make a great impact on the success of the night. Its crazy antics like this that will make this event a success. Dinner seating will start at 7pm and that's when we will work our magic! This will be a casual night of fun, music, games, and an all-inclusive open bar, appetizers, and dinner. Your $125 VIP Ticket includes: Celebrities and Celebrity Servers, Sponsors, and VIPs, Happy Hour featuring an Open Bar and free Appetizers. Your $75 Dinner Party Guest Ticket includes: Dinner and the rest of the food, fun, and games with your Celebrity Server",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "The Choir of New College, Oxford in Concert",
+    "date": "04-03-2017",
+    "venue": "Grace Episcopal Church",
+    "description": "Concert at the Grace Episcopal Church. One of the most celebrated and acclaimed choral groups of the United Kingdom, the New College Choir will sing a selection of te choir's favorite British and European choral music, including works of Guerrero, Hadley, and Stanford, and exciting new music by young British composers. A reception will follow the concert.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Holy City Confessionals with Danielle Howle and Reid Stone",
+    "date": "04-03-2017",
+    "venue": "Home Team BBQ",
+    "description": "Music concert event at Home Team BBQ. Enjoy some food and drinks and listen to free live music.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "It's Funny Stand-Up Comedy Open Mic",
+    "date": "04-03-2017",
+    "venue": "The Sparrow",
+    "description": "Park Circle is the place to be every Monday night for open-mic stand-up comedy at The Sparrow! Hosted by Park Circle's favorite Filipino Comedian/Real Estate Agent, Neil Bansil. You'll laugh, you'll cringe, you might even try to get on stage! But one things for sure this will be the best thing to see on a Monday night in Park Circle. Each show will end with a special guest feature comic. Drink specials all night!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Guest Chef Night",
+    "date": "04-04-2017",
+    "venue": "Elliotborough Mini Bar",
+    "description": "EMB hosts pop-up dinners featuring local chefs! Cash only!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Ross Bogan Trio",
+    "date": "04-04-2017",
+    "venue": "The Charleston Pour House",
+    "description": "Free concert at the Charleston Pour House. Deck opens at 4pm. Show starts at 6pm",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Bendy Brewski Yoga",
+    "date": "04-04-2017",
+    "venue": "Tradesman Brewing Co.",
+    "description": "Join in for a night of yoga and local beer!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Karaoke",
+    "date": "04-04-2017",
+    "venue": "Queology",
+    "description": "Come out every Tuesday for Open Mic Night at the QUE with Mike Thomapson",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Lifetree Cafe Meeting",
+    "date": "04-04-2017",
+    "venue": "Lifetree Cafe Charleston",
+    "description": "Lifetree Cafe is a time and place where people gather to hear inspiring stories and engage in conversation on a different topic every week. On film and in person, you'll hear stories that will make you think, spice your conversation, help you make sense of the world, and inspire you. And in the fun, casual, safe environment of Lifetree Cafe, you may share your story too. If you're looking for a place where you can explore life and meet new friends.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Treat Yourself Tuesday(bar only)",
+    "date": "04-04-2017",
+    "venue": "Burwell's Stone Fire Grill",
+    "description": "On the first Tuesday of every month, we invite you to spend a night indulging yourself while catching up with your friends in our bar & lounge area for our Treat Yourself Tuesday. Unwined without spending all of your hard earned money by enjoying one of our famous $7 burgers until the kitchen closes at 10pm, and select $5 signature cocktails or select $3 beers until the bar closes at midnight.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Buddy Guy",
+    "date": "04-04-2017",
+    "venue": "Gaillard Center",
+    "description": "Seven Time Grammy Award Winner! Amazing concert featuring legendary guitarist, Buddy Guy.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Free Tango Lesson/Practice",
+    "date": "04-04-2017",
+    "venue": "MUSC Wellness Center",
+    "description": "Every Tuesday at 7:30pm, the Charleston Argentine Tango Society offers a free one hour tango lesson and one hour tango practice. The MUSC gym charges attendees only $5 at entrance but the lessons themselves are free. Everyone is welcome.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Name The Music",
+    "date": "04-04-2017",
+    "venue": "Creekside Kitchen & Brewhouse",
+    "description": "'Name the Music' is a family-friendly and fun high-energy party where you guess song titles, artists and release dates to win prizes every 1/2 hour.. featuring upbeat music from all decades!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Team Trivia",
+    "date": "04-04-2017",
+    "venue": "Mex 1 Coastal Cantina",
+    "description": "Team Trivia Tuesday nights from 8-10pm. Free to play and great prizes for the winners!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Team Trivia",
+    "date": "04-04-2017",
+    "venue": "Home Team BBQ",
+    "description": "Trivia at Home Team BBQ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Trivia Night",
+    "date": "04-04-2017",
+    "venue": "Mellow Mushroom- Avondale",
+    "description": "Trivia at Mellow Mushroom",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Trivia Night",
+    "date": "04-04-2017",
+    "venue": "Cutty's",
+    "description": "Trivia at Cutty's",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Trivia with Val and Tia",
+    "date": "04-04-2017",
+    "venue": "Tin Roof",
+    "description": "Trivia Night at the Tin Roof",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Team Trivia",
+    "date": "04-04-2017",
+    "venue": "Bay Street Biergarten",
+    "description": "Trivia at the Biergarten",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Open Mic Tuesdays",
+    "date": "04-04-2017",
+    "venue": "Carolina Ale House",
+    "description": "Come join us for All Night Open Mic Tuesday! Enjoy our great food and drink specials with good music! Sign up starts at 9pm, show at 10pm. All Genres, stand-up comedy and poetry welcome!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Craft Beer Tuesdays",
+    "date": "04-04-2017",
+    "venue": "The Tattooed Moose- Downtown",
+    "description": "Live show starts at 10pm. All craft beers are $1 off all night.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Karaoke Tuesdays",
+    "date": "04-04-2017",
+    "venue": "Charleston Beer Works",
+    "description": "Come out and sing some karaoke with drinks and friends!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Doughnut Day",
+    "date": "04-05-2017",
+    "venue": "Mercantile and Mash",
+    "description": "Join us for Doughnut Day to experience the featured doughnut of the week! There will be a new flavor every Wednesday so don't miss out! 7am-doughnuts run out",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "All Day Happy Hour",
+    "date": "04-05-2017",
+    "venue": "Crust Wood Fired Pizza",
+    "description": "Enjoy our happy hour prices all day long. Come have some drinks with us!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Burger Night",
+    "date": "04-05-2017",
+    "venue": "The Bohemian Bull",
+    "description": "Build-Your-Burgers starting at $3",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Fish & Chips at Bar Mash",
+    "date": "04-05-2017",
+    "venue": "Mercantile and Mash",
+    "description": "Join us every Wednesday for classic Fish & Chips with a malt vinegar aioli for $16.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Wine Down Wednesday",
+    "date": "04-05-2017",
+    "venue": "SHOP",
+    "description": "Join us for our first 'Wine Down Wednesday,' a relaxing mid-week treat with wine and appetizers provided by our friends at 5Church Charleston. Sip and snack while you shop our selection of coveted labels. There will even be an opportunity to win a drinking grphic t-shirt by Chaser or WildFox.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Name the Music",
+    "date": "04-05-2017",
+    "venue": "SportsBook of Charleston",
+    "description": "'Name the Music' is a family-friendly and fun high-energy party where you guess song titles, artists and release dates to win prizes every 1/2 hour... featuring upbeat music from all decades.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Barn Jam",
+    "date": "04-05-2017",
+    "venue": "Awendaw Green",
+    "description": "$5 donation at the door, all ages welcome, pets on a leash and family friendly. Come enjoy the live music concert.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Baila Barre",
+    "date": "04-05-2017",
+    "venue": "One Love Fitness",
+    "description": "75-minute class includes: 25 minutes of fun, high-intensity cardio Latin dance, 25 minutes of ballet-inspired toning to give you long, lean muscles, and once you're warm and worked out, 25 minutes of juicy and relaxing stretching.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Maggie Koerner with Chris Kaspar",
+    "date": "04-05-2017",
+    "venue": "The Charleston Pour House",
+    "description": "Doors open at 8:30, show starts at 9:30. It's not uncommon to find Maggie performing on stage with a list of iconic acts that have included Widespread Panic, Gov't Mule and Charles Bradley, to name a few. The Shreveport born singer-songerwriter spent the majority of 2013 and 2014 as the lead singer and front woman for legendary New Orleans' funk-band Galactic. Spending 2015 on the road and in the studio, Maggie performed with her own band at a list of major North American music festivals including New Orleans Jazz and Heritage Festival, Austin City Limits, and Perberton Music Festival.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Hanahan Family Farmers Market",
+    "date": "04-06-2017",
+    "venue": "Reservoir Hall",
+    "description": "Features food vendors, farmers, crafters, artisans, artists, live music, and raffles for attendees.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Taste of Hudson Alley",
+    "date": "04-06-2017",
+    "venue": "Hutson Alley",
+    "description": "From 6-8:30pm, you can enjoy wine tastings, live music from One Kool Blow and small plates from six restaurants and Good Food Catering. Tickets are $65 and attendees must be over 21 years of age.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Bluegrass Mash-Up",
+    "date": "04-06-2017",
+    "venue": "Mercantile and Mash",
+    "description": "Join Bar Mash for an evening of folk, bluegrass, and blues music.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Name the Music",
+    "date": "04-06-2017",
+    "venue": "Loggerhead's Beach Grill",
+    "description": "'Name the Music' is a family-friendly and fun high-energy party where you guess song titles, artists and release dates to win prizes every 1/2 hour... featuring upbeat music from all decades.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Thursday Jazz Nights with the Gino Castillo Trio",
+    "date": "04-06-2017",
+    "venue": "Eli's Table",
+    "description": "Every Thursday from 6-9pm we feature the very best in Jazz Music, Food and Wine in the relazing atmosphere of our cozy restaurant.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Riverdogs Home Game",
+    "date": "04-06-2017",
+    "venue": "Joe Riley Stadium",
+    "description": "Come out and support our local Baseball team with some good friends and beer!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "RENT",
+    "date": "04-06-2017",
+    "venue": "Simons Center for the Arts",
+    "description": "Presented by the College of Charleston's department of theatre and dance, Rent is a multiple award-winning musical based loosely on Giacomo Puccini's opera 'La Boheme.' With music, lyrics, and book by Jonathan Larson, this rock musical shares the story of eight impoverished artistic friends struggling to survive bohemian life in Manhattan's East Village in the late 1980s/early 1990s. The group's dreams, losses, and love stories weave through the musical's narration to paint a stunningly raw and emotional portrait of life at the end of the millenium in a gritty world bein torn apart by drugs, HIV/AIDS, social tension and political unrest. Yet, throught all of that darkness, it offers a positive outlook on life and living that resonates with everyone. 'Rent' is the eleventh longest-running Broadway show. Curtain times will be 7:30pm. Performances will take place at the Emmett Robinson Theatre i the Simons Center for the Arts. Admission is $20 for general public, $15 for senior citizens, CofC employees and non-CofC students, $12 for CofC students.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Name the Music",
+    "date": "04-06-2017",
+    "venue": "Hunley's Tavern",
+    "description": "'Name the Music' is a family-friendly and fun high-energy party where you guess song titles, artists and release dates to win prizes every 1/2 hour... featuring upbeat music from all decades.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Pippin",
+    "date": "04-06-2017",
+    "venue": "Gaillard Center",
+    "description": "'Pippin' is a high-flying, death-defying hit Broadway musical. Full of extraordinary acrobarics, wondrous magical feats and soaring songs from the composer of Wicked, 'Pippin' will lift you up and leave you smiling. This unforgettable new production is the winner of four 2013 Tony Awards including Best Musical Revival. Hailed as 'an eye-popping, jaw-dropping extravaganza.'",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Portugal. The Man with HDBeenDope",
+    "date": "04-06-2017",
+    "venue": "Charleston Music Hall",
+    "description": "Concert at the Charleston Music Hall",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Real South Rex Fest",
+    "date": "04-06-2017",
+    "venue": "The Royal American",
+    "description": "South Carolina's Real South Records has announved they will hold their music festival, Real South Rex, in Charleston. Real South Records is 'dedicated to supporting South Carolina musicians. We stand for artistic expression and diversity in msic. We recognize our roles as spokespersons in our repective communities, and therefore actively stand against racsim, sexism, homophobia, and other forms of oppression.'",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Joe Marcinek Band featuring Yonrico Schott & Ike Stubblefield",
+    "date": "04-06-2017",
+    "venue": "The Charleston Pour House",
+    "description": "Concert at the Charleston Pour House. Doors open at 8:30, show starts at 9:30. $10 in advance/ $12 at the door",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Team Trivia of Charleston",
+    "date": "04-06-2017",
+    "venue": "Manny's Grills and Cafe",
+    "description": "Come out for a good night of Greek food, drinks and trivia! Win house cash up to $50.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Loretta Lynn",
+    "date": "04-07-2017",
+    "venue": "Gaillard Center",
+    "description": "Loretta first arrived in Nashville 55 years ago, signing her first recording ontract on February 1, 1960 and within a matter of weeks, she was at her first recording session. A self-taught guitarist and songwriter, Lynn became one of the most distinctive performers in Nashville in the 1960s and 1970s, shaking things up by writing her own songs, many of which tackled boundary-pushing topics drawn from her own life experiences as wife and mother.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Moon Taxis with Atlas Road Crew",
+    "date": "04-07-2017",
+    "venue": "Music Farm",
+    "description": "Concert at the Music Farm. Doors open at 8pm and show begins at 9pm. $20 in advance/ $22 at door",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Hayseed Dixie with The Royal Tinfoil",
+    "date": "04-07-2017",
+    "venue": "The Charleston Pour House",
+    "description": "Concert at the Charleston Pour House. Doors open at 8:30pm, show starts at 9:30pm. $12 in advance/ $15 at the door",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "'The Rocky Horror Picture Show'",
+    "date": "04-07-2017",
+    "venue": "Terrace Theatre",
+    "description": "The Terrace Theatre's monthly screening of The Rocky Horror Picture Show",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Plow to Chow",
+    "date": "04-08-2017",
+    "venue": "Marion Square",
+    "description": "Celebrate the kick-off of the 2017 downtown Charleston Farmers Market in Marion Square with Lowcountry Local First and some of our Eat Local Month partners. Enjoy free tastings prepared by local chefs using fresh, local produce from Limehouse Produce.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Migratory Bird Walks",
+    "date": "04-08-2017",
+    "venue": "Center of Birds of Prey",
+    "description": "Lying within the Atlantic Flyway, the Avian Conservation Center campus is an ideal location to catch a glimpse of peak avian migration. Join the CEnter's experienced birding guides for an introduction to the Painted Bunting and other colorful migrants that frequent the Centter's campus each spring. Last spring we logged more than 40 species on the Center property!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Mixson Farmers Market",
+    "date": "04-08-2017",
+    "venue": "Mixson",
+    "description": "The grand opening celebration of the Mixson Farmers Market to celebrate the beginning of its new season. Live music, kids activities, chef demos, local pie contest, fresh produce, children's lesson in strawberry pie waffle cones, healthy dessert bar.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "PAW Patrol Live! 'Race to the Rescue'",
+    "date": "04-08-2017",
+    "venue": "North Charleston Performing Arts Center",
+    "description": "PAW Patrol Live! presented b Pedigree, brings everybody's favorite pups to the stage for an action-packed, high-energy, musical adventure. When Mayor Goodway goes missing during the day of The Great Adventure Bay Race, the pups come to the rescue. Join Ryder, Chase, Marshall, Rocky, Rubble, Zuma, Skye, and Everest when they visit North Charleston. Tickets range from $19-109(VIP).",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Music and Food Trucks",
+    "date": "04-08-2017",
+    "venue": "Ghost Monkey Brewery",
+    "description": "Food, Drinks, Live Music",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Women's Biker Bash",
+    "date": "04-08-2017",
+    "venue": "Low Country Harley-Davidson",
+    "description": "Help us raise money to gift a wounded veteran with a trained companion from Patriot Rovers. There will be food, games, live music, bike wash, bike show, tattoo contest, and prizes!",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Heal with Hearts, Kids Drum Circle",
+    "date": "04-08-2017",
+    "venue": "The Charleston Pour House",
+    "description": "Free kids event. Every 2nd Saturday of the month. Starts at 4:30",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Savory Saturdays",
+    "date": "04-08-2017",
+    "venue": "Oak Barrel Tavern",
+    "description": "Local Lovers: $2 off all CHS pints and $5 all wines. Come join us for food and drinks. ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  },
+
+  {
+    "name": "Charleston Sounds Music Festival",
+    "date": "04-08-2017",
+    "venue": "Music Farm",
+    "description": "Music concert/festival. Anfernee, Diaspoura, College of Charleston Gospel Choir, Man-Child: Featuring Abstract & Speakerbox, Contour, The Night Caps. Starts at 6pm. $10 for students/$15 for general admission. $3 surcharge for those under 21 at the door.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ravenel_Bridge_at_Sunset.jpg/1280px-Ravenel_Bridge_at_Sunset.jpg"
+  }
     ]

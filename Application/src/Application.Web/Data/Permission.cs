@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Application.Web.Data
 {
-    public class SavedEvent
+    public class Permission
     {
         public int Id { get; set; }
         public int UserId { get; set; }
