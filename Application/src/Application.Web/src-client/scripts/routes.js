@@ -11,6 +11,7 @@ export const AppRouter = Backbone.Router.extend({
     "events" : "showEventsPage",
 		"events/new": "showNewEventForm",
     "events/:id" : "showSingleEvent",
+		"events/search" : "showSearchEvent",
     "accounts/login": "showLoginPage",
     "accounts/register": "showRegisterPage",
     "accounts/:id": "showAccountPage",
@@ -22,6 +23,7 @@ export const AppRouter = Backbone.Router.extend({
 		ACTIONS.setView("HOME") },
 	showEventsPage: function(){ ACTIONS.setView("EVENTS") },
 	showSingleEvent: function(){ ACTIONS.setView("SINGLE") },
+	showSearchEvent: function(){ACTIONS.setView("SEARCH") },
 	showRegisterPage: function(){ ACTIONS.setView("REGISTER") },
 	showLoginPage: function(){
 		console.log('AppRouter setting login view....')
