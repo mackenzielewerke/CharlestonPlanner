@@ -38,6 +38,7 @@ export const SingleEventView = React.createClass({
 		if(parseInt(component.props.singleEvent) === i){
 			return true
 		}
+		
 	})[0]
 	console.log("SHOULD BE THE EVENT", singleEventInfo)
 
@@ -45,8 +46,6 @@ export const SingleEventView = React.createClass({
       <div>
            <SearchBarComponent/>
 					 <SingleEventComponent oneEventsList={singleEventInfo}/>
-
-
       </div>
 		)
 	}
