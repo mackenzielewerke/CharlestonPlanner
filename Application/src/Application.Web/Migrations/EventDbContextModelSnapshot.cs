@@ -80,9 +80,7 @@ namespace Application.Web.Migrations
 
                     b.Property<string>("EventUser");
 
-                    b.Property<double>("Latitude");
-
-                    b.Property<double>("Longitude");
+                    b.Property<string>("Image");
 
                     b.Property<string>("Name");
 
@@ -93,7 +91,7 @@ namespace Application.Web.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
+            modelBuilder.Entity("Application.Web.Data.Permission", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -110,7 +108,7 @@ namespace Application.Web.Migrations
 
                     b.HasIndex("EventId");
 
-                    b.ToTable("SavedEvents");
+                    b.ToTable("Permissions");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -232,14 +230,14 @@ namespace Application.Web.Migrations
                     b.HasAnnotation("Sqlite:TableName", "UserTokens");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
+            modelBuilder.Entity("Application.Web.Data.Permission", b =>
                 {
                     b.HasOne("Application.Web.Data.ApplicationUser")
-                        .WithMany("SavedEvents")
+                        .WithMany("Permissions")
                         .HasForeignKey("ApplicationUserId");
 
                     b.HasOne("Application.Web.Data.Event")
-                        .WithMany("SavedEvents")
+                        .WithMany("Permissions")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

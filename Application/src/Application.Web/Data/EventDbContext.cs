@@ -10,7 +10,7 @@ namespace Application.Web.Data
     public class EventDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Event> Events { get; set; }
-        public DbSet<SavedEvent> SavedEvents { get; set; }
+        public DbSet<Permission> Permissions { get; set; }
 
         //public DbSet<ApplicationUser> Users { get; set; }
 
