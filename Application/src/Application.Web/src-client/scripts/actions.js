@@ -11,9 +11,9 @@ export const ACTIONS = {
 	},
 
   loginUser: function(credsObj){
-    // console.log('ACTIONS logging in with  creds:', credsObj)
+    console.log('ACTIONS logging in with  creds:', credsObj)
     UserModel.logIn( credsObj.email , credsObj.password ).then(function(serverRes){
-      // console.log('User Logged in in!', serverRes)
+      console.log('User Logged in in!', serverRes)
       //temporary --- need server res to show user data
 
       STORE.setStore('currentUser', credsObj)
@@ -21,6 +21,21 @@ export const ACTIONS = {
       ACTIONS.routeTo('')
   })
 },
+
+  registerNewUser: function(regObj){
+    console.log('ACTIONS registering new creds', regObj)
+    UserModel.register(regObj)
+      .then(function(serverRes){
+        console.log('registered!', serverRes)
+        STORE.setStore('currentUser', regObj)
+        
+        ACTIONS.routeTo('')
+
+      }).fail(function(err){
+       console.log(err)
+
+    })
+  },
 
   fetchCurrentUser: function(){
     // console.log('Checking for current user...')
@@ -34,6 +49,8 @@ export const ACTIONS = {
     console.log('logging out..')
     UserModel.logOut().then(function(){
       STORE.setStore('currentUser', {})
+      // ACTIONS.routeTo('')
+
   })
 },
 
