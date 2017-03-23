@@ -35,7 +35,7 @@ namespace Application.Web.Controllers.api
         public IEnumerable<Event> GetEvents()
         {
             var userId = _userManager.GetUserId(User);
-            var sortEvent = _context.Events.OrderBy(q => q.Date).ToList();
+            var sortEvent = _context.Events.OrderBy(q => q.Date).OrderBy(m => m.Name).ToList();
             return sortEvent;
 
         }
@@ -46,14 +46,14 @@ namespace Application.Web.Controllers.api
         {
             var userId = _userManager.GetUserId(User);
             Event Event = await _context.Events
-                .SingleOrDefaultAsync(m => m.EventUser == userId && m.Id == id);
+                .SingleOrDefaultAsync(m => m.Id == id);
 
             if (Event == null)
             {
                 return NotFound();
             }
 
-            return Ok();
+            return Ok(Event);
         }
 
         [HttpPost]
