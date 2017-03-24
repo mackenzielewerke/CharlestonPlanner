@@ -1,6 +1,7 @@
 export const STORE = {
 	_data: {
 		eventsList: [],
+		eventsSearchList: [],
 		singleEvent: "",
 		currentView: 'HOME',
 		currentUser: {}

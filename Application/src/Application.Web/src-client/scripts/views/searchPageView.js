@@ -31,7 +31,8 @@ export const SearchPageView = React.createClass({
 		}
 		return (
       <div>
-					 <SearchEventListComponent eventsList={this.state.eventsList}/>
+					<SearchBarComponent/>
+					<SearchEventListComponent eventsList={this.state.eventsList} eventsSearchList={this.state.eventsSearchList}/>
       </div>
 		)
 	}

@@ -1,6 +1,8 @@
 import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
+import {STORE} from '../store.js'
+import {ACTIONS} from '../actions.js'
 
 export const SearchBarComponent = React.createClass({
 
@@ -26,6 +28,10 @@ export const SearchBarComponent = React.createClass({
 				console.log("this one", obj)
 				return true
 			}
+			// return filteredEvents
+					STORE.setStore('eventsSearchList', filteredEvents)
+					window.location.hash = 'events/search'
+					// ACTIONS.setView('currentView', "SEARCH")
 		})
 
 },
