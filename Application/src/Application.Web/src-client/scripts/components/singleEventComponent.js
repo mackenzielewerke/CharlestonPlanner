@@ -9,28 +9,25 @@ import moment from 'moment'
 export const SingleEventComponent = React.createClass({
 
 
-	_eachPictureTemplate: function(itemObj){
-	},
+
 	render: function(){
-		let oneEvents=this.props.oneEventsList
-		let theDate= this.props.oneEventsList.date
+		console.log('props passing single event',this.props.singleEvent.singleEvent)
+		let oneEvent=this.props.singleEvent.singleEvent
+		console.log('one event', oneEvent)
+		let theDate= oneEvent.date
 		var theDateFancy= moment(theDate).format('dddd, MMM Do YYYY - h:mm')
-		console.log(theDateFancy)
 
 		return (
 			<div className="single-event">
-						{this._eachPictureTemplate()}
-						<h1>{oneEvents.name}</h1>
-			      <img src={oneEvents.image} alt="..."/>
-			      <div className="single-event-caption">
-			        <h3>{theDateFancy}</h3>
-							<h3>{oneEvents.venue}</h3>
-							<p>{oneEvents.description}</p>
-			        <p><a href="#" className="btn btn-primary" role="button">Save to my Favorites</a></p>
-			      </div>
-			  </div>
-
-
+					 <h1>{oneEvent.name}</h1>
+					 <img src={oneEvent.image} alt="..."/>
+					 <div className="single-event-caption">
+						 <h3>{theDateFancy}</h3>
+						 <h3>{oneEvent.venue}</h3>
+						 <p>{oneEvent.description}</p>
+						 <p><a href="#" className="btn btn-primary" role="button">Save to my Favorites</a></p>
+					 </div>
+			 </div>
 		)
 	}
 })

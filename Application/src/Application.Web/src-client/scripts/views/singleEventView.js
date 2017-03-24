@@ -14,8 +14,9 @@ export const SingleEventView = React.createClass({
 		let component = this;
 
 		// ACTIONS.fetchAllEvents()
-		// console.log(this.props.routeParams.evtId)
-		ACTIONS.fetchSingleEvent(2)
+		console.log('fetching single event', this.props.routeParams.evtId )
+		let eventRecordId = this.props.routeParams.evtId
+		ACTIONS.fetchSingleEvent(eventRecordId)
 		//ACTIONS.fetchSingleView(:id)
 
 	},
@@ -23,8 +24,8 @@ export const SingleEventView = React.createClass({
 	render: function(){
 		let component= this
 		console.log(this.props, "single view props??????????")
-		console.log(this.props.singleEvent)
-		console.log('data??', this.props.singleEvent)
+		console.log(this.props.eventList)
+		// console.log('data??', this.props.eventList.id)
 
 
 
@@ -42,7 +43,7 @@ export const SingleEventView = React.createClass({
 		return (
       <div>
 				<SearchBarComponent/>
-				<h3>some event...</h3>
+				<SingleEventComponent singleEvent={this.props}/>
       </div>
 		)
 	}

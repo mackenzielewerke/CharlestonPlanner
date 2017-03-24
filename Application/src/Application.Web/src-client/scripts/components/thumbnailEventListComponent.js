@@ -13,7 +13,9 @@ export const ThumbnailEventListComponent = React.createClass({
 		console.log("THISS EVENNNNTT??")
 		let clickedIconEl=evt.currentTarget
 		console.log(clickedIconEl.dataset.itemid, 'item idddd')
-		ACTIONS.routeTo(`events/${clickedIconEl.dataset.itemid}`)
+		ACTIONS.routeTo('SINGLE')
+
+		// ACTIONS.routeTo(`events/${clickedIconEl.dataset.itemid}`)
 	},
 
 	getInitialState: function(){

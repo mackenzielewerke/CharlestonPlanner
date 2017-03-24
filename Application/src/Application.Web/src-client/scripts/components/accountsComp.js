@@ -96,7 +96,7 @@ export const EachAccountsEvent= React.createClass({
 						<p>{this.props.eventData.venue}</p>
 						</div>
 					</div>
-		        <p><a className="btn btn-primary" role="button" onClick={this._handleButtonClick}>Saved to Favorites</a></p>
+		        {/* <p><a className="btn btn-primary" role="button" onClick={this._handleButtonClick}>Saved to Favorites</a></p> */}
 		  </div>
 
 			)

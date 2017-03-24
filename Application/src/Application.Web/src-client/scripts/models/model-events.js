@@ -11,7 +11,7 @@ import Backbone from 'backbone'
 
 
 export const EventsModel= Backbone.Model.extend({
-	url: 'api/events',
+	urlRoot: 'api/events',
 	idAttribute: 'id'
 })
 

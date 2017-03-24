@@ -60,6 +60,7 @@ export const ViewController = React.createClass({
 				componentToRender = <EventsPageView {...this.state}/>
 				break;
 			case "SINGLE":
+				console.log('viewcontroller single event working', this.state.routeParams)
 				componentToRender = <SingleEventView {...this.state}/>
 				break;
 			case "SEARCH":
