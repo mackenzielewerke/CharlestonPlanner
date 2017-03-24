@@ -10,7 +10,7 @@ export const SearchBarComponent = React.createClass({
 
 	},
 
-
+//
 	_clickSearch: function(evt){
 		let component= this
 		console.log("search click")
@@ -21,14 +21,12 @@ export const SearchBarComponent = React.createClass({
 		console.log(filteredEvents)
 
 		let filteredEvents = component.props.eventsList.filter(function(obj, i){
+
 			if(obj.name.includes(searchBarVal)){
 				console.log("this one", obj)
 				return true
 			}
-		})[0]
-
-
-
+		})
 
 },
 
