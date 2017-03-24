@@ -20,8 +20,12 @@ export const AppRouter = Backbone.Router.extend({
 
   showHomePage: function(){
 		console.log('changing view!')
-		ACTIONS.setView("HOME") },
+		ACTIONS.setView("HOME")
+	 },
 	showEventsPage: function(){ ACTIONS.setView("EVENTS") },
+	showSingleEvent: function(id){
+		ACTIONS.setView("SINGLE", {evtId: id})
+	},
 	showSingleEvent: function(){ ACTIONS.setView("SINGLE") },
 	showSearchEvent: function(){ACTIONS.setView("SEARCH") },
 	showRegisterPage: function(){ ACTIONS.setView("REGISTER") },

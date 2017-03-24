@@ -10,15 +10,13 @@ import {ACTIONS} from '../actions.js'
 
 export const SingleEventView = React.createClass({
 
-	getInitialState: function(){
-		return STORE.getStoreData()
-	},
-
 	componentDidMount: function(){
 		let component = this;
 
-		ACTIONS.fetchAllEvents()
-
+		// ACTIONS.fetchAllEvents()
+		// console.log(this.props.routeParams.evtId)
+		ACTIONS.fetchSingleEvent(2)
+		//ACTIONS.fetchSingleView(:id)
 
 	},
 
@@ -30,23 +28,25 @@ export const SingleEventView = React.createClass({
 
 
 
-		if (this.state.singleEvent.length < 1){
-		console.log("executing")
-		return <p> loading </p>
-	}
-	let singleEventInfo = this.props.eventsList.filter(function(obj, i){
-		if(parseInt(component.props.singleEvent) === i){
-			return true
-		}
-		
-	})[0]
-	console.log("SHOULD BE THE EVENT", singleEventInfo)
+	// 	if (this.props.singleEvent.length < 1){
+	// 	console.log("executing")
+	// 	return <p> loading </p>
+	// }
+	// let singleEventInfo = this.props.eventsList.filter(function(obj, i){
+	// 	if(parseInt(component.props.singleEvent) === i){
+	// 		return true
+	// 	}
+	// })[0]
+	// console.log("SHOULD BE THE EVENT", singleEventInfo)
 
 		return (
       <div>
-           <SearchBarComponent/>
-					 <SingleEventComponent oneEventsList={singleEventInfo}/>
+				<SearchBarComponent/>
+				<h3>some event...</h3>
       </div>
 		)
 	}
 })
+
+
+//<SingleEventComponent oneEventsList={singleEventInfo}/>

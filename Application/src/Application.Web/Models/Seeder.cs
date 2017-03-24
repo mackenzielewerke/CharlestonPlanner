@@ -19,7 +19,6 @@ namespace Application.Web.Models
             {
                 context.Database.EnsureDeleted();
                 context.Database.Migrate();
-                //var sortEvent = context.Events.OrderBy(q => q.Date).ToList();
 
                 if (!context.Events.Any())
                 {

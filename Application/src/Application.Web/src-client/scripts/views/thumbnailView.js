@@ -9,29 +9,28 @@ import {STORE} from '../store.js'
 
 export const EventsPageView = React.createClass({
 
-	getInitialState: function(){
-		return STORE.getStoreData()
-	},
+	// getInitialState: function(){
+	// 	return STORE.getStoreData()
+	// },
 
 	componentDidMount: function(){
 		let component = this;
 		console.log('ACTIONS.fetch()...')
 		ACTIONS.fetchAllEvents()
-
 	},
 
 
 	render: function(){
 		// console.log('data??', this.props.eventsList)
 		// console.log(this.state.eventsList.length)
-		if (this.state.eventsList.length < 1){
-		console.log("executing")
-		return <p> loading </p>
+		if (this.props.eventsList.length < 1){
+			console.log("executing")
+			return <p> loading </p>
 		}
 		return (
       <div>
            <SearchBarComponent/>
-					 <ThumbnailEventListComponent eventsList={this.state.eventsList}/>
+					 <ThumbnailEventListComponent eventsList={this.props.eventsList}/>
 
 
       </div>
