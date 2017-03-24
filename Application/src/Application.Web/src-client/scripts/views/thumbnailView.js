@@ -30,7 +30,7 @@ export const EventsPageView = React.createClass({
 		return (
       <div>
            <SearchBarComponent/>
-					 <ThumbnailEventListComponent eventsList={this.props.eventsList}/>
+					 <ThumbnailEventListComponent {...this.props}/>
 
 
       </div>

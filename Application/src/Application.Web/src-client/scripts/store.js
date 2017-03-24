@@ -1,7 +1,7 @@
 export const STORE = {
 	_data: {
 		eventsList: [],
-		eventsSearchList: [],
+		searchVal: "",
 		singleEvent: "",
 		currentView: 'HOME',
 		routeParams: {}, //{evtId: 4}

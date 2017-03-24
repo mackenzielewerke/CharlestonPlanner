@@ -20,19 +20,23 @@ export const SearchBarComponent = React.createClass({
 		console.log(searchBarVal)
 
 
-		console.log(filteredEvents)
+		// console.log(filteredEvents)
 
-		let filteredEvents = component.props.eventsList.filter(function(obj, i){
+		// let filteredEvents = component.props.eventsList.filter(function(obj, i){
 
-			if(obj.name.includes(searchBarVal)){
-				console.log("this one", obj)
-				return true
-			}
+			// if(this.props.searchVal === ""){
+			// 	return true
+			//
+			// }else if(obj.name.includes(this.props.searchBar)){
+			// 	return true
+			// }
+
+
 			// return filteredEvents
-					STORE.setStore('eventsSearchList', filteredEvents)
-					window.location.hash = 'events/search'
+					STORE.setStore('searchVal', searchBarVal)
+					console.log(searchBarVal)
 					// ACTIONS.setView('currentView', "SEARCH")
-		})
+
 
 },
 

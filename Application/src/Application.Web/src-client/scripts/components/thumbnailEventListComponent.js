@@ -60,11 +60,23 @@ _makeEventComponents: function(listOfEvents){
 	})
 
 	return arrayOfEventsComponents
-	// console.log(arrayOfEventsComponents)
+	console.log(arrayOfEventsComponents)
 },
 
 render: function(){
-	let allTheEvents=this.props.eventsList
+	console.log('ajsdf;lkajsd;flkjasd;lkfj;lk')
+	let component = this
+	let allTheEvents= this.props.eventsList.filter(function(obj){
+		console.log(component.props.searchVal)
+		if(component.props.searchVal=== ""){
+			console.log(allTheEvents)
+			return true
+		} else if(obj.name.includes(component.props.searchVal)){
+			return true
+		}
+	})
+	console.log(allTheEvents)
+
 
 
 	// console.log("all the events", allTheEvents)
@@ -99,14 +111,6 @@ export const EachEvent= React.createClass({
 
 		let theDate= this.props.eventData.date
 		var theDateFancy= moment(theDate).format('dddd, MMM Do YYYY - h:mm')
-		// console.log(theDateFancy)
-
-		// let displayName = this.props.eventData.name
-		// let newDisplayName = displayName.slice(0,30)
-		//
-		// if(newDisplayName.length >= 30){
-		// 	newDisplayName += '...'
-		// }
 
 			return (
 
