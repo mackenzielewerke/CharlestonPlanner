@@ -7,7 +7,6 @@ import {AuthenticatedNavComponent} from './components/authenticated-nav.js';
 import {HomePageView} from './views/homeView.js'
 import {EventsPageView} from './views/thumbnailView.js'
 import {SingleEventView} from './views/singleEventView.js'
-import {SearchPageView} from './views/searchPageView.js'
 import {RegistrationFormView} from './views/registrationFormView.js'
 import {LoginFormView} from './views/loginFormView.js'
 import {NewEventFormView} from './views/newEventFormView.js'
@@ -62,9 +61,6 @@ export const ViewController = React.createClass({
 			case "SINGLE":
 				console.log('viewcontroller single event working', this.state.routeParams)
 				componentToRender = <SingleEventView {...this.state}/>
-				break;
-			case "SEARCH":
-				componentToRender = <SearchPageView {...this.state}/>
 				break;
 			case "REGISTER":
         console.log('register')
