@@ -56,7 +56,7 @@ export const ViewController = React.createClass({
 				componentToRender = <HomePageView/>
 				break;
 			case "EVENTS":
-				componentToRender = <EventsPageView/>
+				componentToRender = <EventsPageView {...this.state}/>
 				break;
 			case "SINGLE":
 				componentToRender = <SingleEventView {...this.state}/>

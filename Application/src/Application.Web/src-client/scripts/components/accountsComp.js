@@ -89,7 +89,7 @@ export const EachAccountsEvent= React.createClass({
 
 		  <div className="col-sm-6 col-md-3">
 		    <div className="thumbnail" data-itemid={this.props.eventData.id} onClick={component._handleDetailedViewClick}>
-		      <img src="http://www.shockmansion.com/wp-content/myimages/2016/03/rr231.jpg" alt="..."/>
+		      <img src={this.props.eventData.image} alt="..."/>
 		      <div className="caption">
 		        <h4>{this.props.eventData.name}</h4>
 		        <p>{theDateFancy}</p>

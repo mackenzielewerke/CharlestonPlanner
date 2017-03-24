@@ -21,7 +21,7 @@ export const SingleEventComponent = React.createClass({
 			<div className="single-event">
 						{this._eachPictureTemplate()}
 						<h1>{oneEvents.name}</h1>
-			      <img src="https://i.ytimg.com/vi/8HVWitAW-Qg/hqdefault.jpg" alt="..."/>
+			      <img src={oneEvents.image} alt="..."/>
 			      <div className="single-event-caption">
 			        <h3>{theDateFancy}</h3>
 							<h3>{oneEvents.venue}</h3>

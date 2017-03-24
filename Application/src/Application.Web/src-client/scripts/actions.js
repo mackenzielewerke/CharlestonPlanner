@@ -5,9 +5,15 @@ import {UserModel} from './models/model-user.js'
 
 
 export const ACTIONS = {
-  setView: function(viewName){
+  setView: function(viewName, routeParams){
     // console.log('ACTION updating view:', viewName)
-		STORE.setStore('currentView', viewName)
+    if(typeof routeParams === 'object'){
+      STORE.setStore('routeParams', routeParams)
+    } else {
+      STORE.setStore('routeParams', {})
+    }
+
+    STORE.setStore('currentView', viewName)
 	},
 
   loginUser: function(credsObj){
@@ -28,7 +34,7 @@ export const ACTIONS = {
       .then(function(serverRes){
         console.log('registered!', serverRes)
         STORE.setStore('currentUser', regObj)
-        
+
         ACTIONS.routeTo('')
 
       }).fail(function(err){
@@ -58,18 +64,26 @@ export const ACTIONS = {
     let newEventInstance= new EventsModel()
     newEventInstance.set(userFormEntry)
     newEventInstance.save().then(function(serverRes){
-      ACTIONS.fetchAllEvents()
+      // ACTIONS.fetchAllEvents()
+      ACTIONS.routeTo('events')
     })
   },
 
   fetchAllEvents: function(){
-  console.log('new collection instance, and .fetch()')
-  let eventsCollInstance = new EventsCollection()
-  eventsCollInstance.fetch().then(function(serverRes){
-    console.log('events', serverRes)
-    STORE.setStore('eventsList', serverRes)
-  })
-},
+    console.log('new collection instance, and .fetch()')
+    let eventsCollInstance = new EventsCollection()
+    eventsCollInstance.fetch().then(function(serverRes){
+      console.log('events', serverRes)
+      STORE.setStore('eventsList', serverRes)
+    })
+  },
+
+
+
+
+  // let mod = new EventsModel()
+  // mod.set({id: :evtId})
+  // mod.fetch().then(...)
 
   routeTo: function(path){
     window.location.hash = path

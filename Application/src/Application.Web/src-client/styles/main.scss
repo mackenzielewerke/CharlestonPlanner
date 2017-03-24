@@ -298,7 +298,7 @@ body{
 }
 
 .thumbnail{
-	height: 500px;
+	height: 350px;
 }
 
 .single-event{
@@ -309,6 +309,17 @@ body{
 }
 
 .single-event h1{
+	margin-bottom: 30px;
+}
+
+.single-event img{
+	width: 60%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.single-event p{
+	margin-top: 30px;
 	margin-bottom: 30px;
 }
 

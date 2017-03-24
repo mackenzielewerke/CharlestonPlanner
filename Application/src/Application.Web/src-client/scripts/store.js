@@ -3,7 +3,8 @@ export const STORE = {
 		eventsList: [],
 		singleEvent: "",
 		currentView: 'HOME',
-		currentUser: {}
+		routeParams: {}, //{evtId: 4}
+		currentUser: {},
 	},
 
 	getStoreData: function(){
@@ -21,7 +22,6 @@ export const STORE = {
 
 	onStoreChange: function(cb){
 		this._storeTheData = cb
-
 	}
 
 

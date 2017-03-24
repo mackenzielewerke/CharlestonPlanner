@@ -1,12 +1,15 @@
 import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
+import {ACTIONS} from '../actions.js'
 
 export const NewEventFormComponent = React.createClass({
 	getInitialState: function(){
 		return {
-			imagePrevUrl: 'http://9762-presscdn-0-23.pagely.netdna-cdn.com/wp-content/plugins/foundry-customposts/images/noimage.png'
+			imagePrevUrl: 'http://9762-presscdn-0-23.pagely.netdna-cdn.com/wp-content/plugins/foundry-customposts/images/noimage.png',
+			flashMessage_nameField: ""
 		}
+
 	},
 	//
 	// _handleNewEventItem: function(evt){
@@ -39,10 +42,12 @@ export const NewEventFormComponent = React.createClass({
 	},
 
 	_validateName: function(formDomEl){
-		let nameValue=formDomEl.inputName.value
-		let flashMsgEl=document.querySelector('.name.flash-msg')
+		let nameValue = formDomEl.inputName.value
+		console.log(formDomEl)
 		if(nameValue.length < 1){
-			flashMsgEl.innerHTML= "You must enter the event's name"
+			 this.setState({
+				 flashMessage_nameField: "Please enter in a name"
+			 })
 		}
 	},
 
@@ -86,10 +91,23 @@ export const NewEventFormComponent = React.createClass({
 		let formEl=evt.target
 
 		this._validateName(formEl)
-		this._validateDate(formEl)
+		// this._validateDate(formEl)
 		this._validateVenue(formEl)
 		this._validateDescription(formEl)
 		this._validatePicture(formEl)
+
+		console.log(formEl.inputDate.value)
+
+		let newEventRequirements = {
+			name: formEl.inputName.value,
+			date: formEl.inputDate.value,
+			venue: formEl.inputVenue.value,
+			description: formEl.inputDescription.value,
+			image: formEl.inputPicture.value
+		}
+
+		ACTIONS.saveNewEvent(newEventRequirements)
+
 	},
 
 	render: function(){
@@ -101,13 +119,13 @@ export const NewEventFormComponent = React.createClass({
     <div className="form-section">
       <h4>Name of Event </h4>
       <input type="text" className="form-control" name="inputName"/>
-			<p className="name flash-msg"> </p>
+			<p className="name flash-msg">{this.state.flashMessage_nameField}</p>
 		</div>
 
 
     <div className="form-section">
       <h4>Date </h4>
-      <input type="text" className="form-control" name="inputDate"/>
+      <input type="date" className="form-control" name="inputDate"/>
 			<p className="date flash-msg"> </p>
     </div>
 
