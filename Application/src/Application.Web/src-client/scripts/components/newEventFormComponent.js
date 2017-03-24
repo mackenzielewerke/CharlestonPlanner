@@ -53,33 +53,37 @@ export const NewEventFormComponent = React.createClass({
 
 	_validateDate: function(formDomEl){
 		let dateValue=formDomEl.inputDate.value
-		let flashMsgEl=document.querySelector('.date.flash-msg')
 		if(dateValue.length < 1){
-			flashMsgEl.innerHTML= "You must enter the event's date"
+			this.setState({
+				flashMessage_nameField: "You must enter the event's date"
+			})
 		}
 	},
 
 	_validateVenue: function(formDomEl){
 		let venueValue=formDomEl.inputVenue.value
-		let flashMsgEl=document.querySelector('.venue.flash-msg')
 		if(venueValue.length < 1){
-			flashMsgEl.innerHTML= "You must enter the event's venue"
+			this.setState({
+				flashMessage_nameField: "You must enter the event's venue"
+			})
 		}
 	},
 
 	_validateDescription: function(formDomEl){
 		let descriptionValue=formDomEl.inputDescription.value
-		let flashMsgEl=document.querySelector('.description.flash-msg')
 		if(descriptionValue.length < 1){
-			flashMsgEl.innerHTML= "You must enter the event's description"
+			this.setState({
+				flashMessage_nameField: "You must enter the event's description"
+			})
 		}
 	},
 
 	_validatePicture: function(formDomEl){
 		let pictureValue=formDomEl.inputPicture.value
-		let flashMsgEl=document.querySelector('.picture.flash-msg')
 		if(pictureValue.length < 1){
-			flashMsgEl.innerHTML= "You must enter the event's picture"
+			this.setState({
+				flashMessage_nameField: "You must enter the event's picture"
+			})
 		}
 	},
 
@@ -91,10 +95,10 @@ export const NewEventFormComponent = React.createClass({
 		let formEl=evt.target
 
 		this._validateName(formEl)
-		// this._validateDate(formEl)
-		this._validateVenue(formEl)
-		this._validateDescription(formEl)
-		this._validatePicture(formEl)
+		this._validateDate(formEl)
+		// this._validateVenue(formEl)
+		// this._validateDescription(formEl)
+		// this._validatePicture(formEl)
 
 		console.log(formEl.inputDate.value)
 
@@ -126,26 +130,26 @@ export const NewEventFormComponent = React.createClass({
     <div className="form-section">
       <h4>Date </h4>
       <input type="date" className="form-control" name="inputDate"/>
-			<p className="date flash-msg"> </p>
+			<p className="date flash-msg">{this.state.flashMessage_nameField}</p>
     </div>
 
     <div className="form-section">
       <h4>Venue </h4>
       <input type="text" className="form-control" name="inputVenue"/>
-			<p className="venue flash-msg"> </p>
+			<p className="venue flash-msg">{this.state.flashMessage_nameField}</p>
     </div>
 
     <div className="form-section">
       <h4>Description </h4>
       <input type="text" className="form-control description-input" name="inputDescription"/>
-			<p className="description flash-msg"> </p>
+			<p className="description flash-msg">{this.state.flashMessage_nameField}</p>
 		</div>
 
 		<div className="form-section">
       <h4>Upload Picture (URLs only)</h4>
       <input ref="previewImg" type="text" className="form-control" name="inputPicture"/>
 			<div className="add-img" onClick={this._handleImgPrevClick}>Add Image</div>
-			<p className="picture flash-msg"> </p>
+			<p className="picture flash-msg">{this.state.flashMessage_nameField}</p>
 		</div>
 		<div className="preview-img">
 			<img src={this.state.imagePrevUrl}/>

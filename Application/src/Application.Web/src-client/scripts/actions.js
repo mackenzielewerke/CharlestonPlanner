@@ -55,7 +55,7 @@ export const ACTIONS = {
     console.log('logging out..')
     UserModel.logOut().then(function(){
       STORE.setStore('currentUser', {})
-      // ACTIONS.routeTo('')
+      ACTIONS.routeTo('')
 
   })
 },
@@ -79,7 +79,16 @@ export const ACTIONS = {
   },
 
 
-
+  fetchSingleEvent: function(id){
+    console.log('ACTION fetchSingleEvent')
+    let newModelInstance = new EventsModel()
+    newModelInstance.set({id: id})
+    console.log('fetching model', newModelInstance)
+    newModelInstance.fetch().then(function(serverRes){
+      console.log('FROM Server', serverRes);
+      STORE.setStore('singleEvent', serverRes)
+    })
+  },
 
   // let mod = new EventsModel()
   // mod.set({id: :evtId})
