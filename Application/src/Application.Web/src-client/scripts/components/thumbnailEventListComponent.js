@@ -4,6 +4,7 @@ import React from 'react'
 import {STORE} from '../store.js';
 import {ACTIONS} from '../actions.js'
 import moment from 'moment'
+// import Fuse from 'Fuse'
 
 
 
@@ -65,18 +66,27 @@ _makeEventComponents: function(listOfEvents){
 	console.log(arrayOfEventsComponents)
 },
 
+// render: function(){
+// 	console.log('ajsdf;lkajsd;flkjasd;lkfj;lk')
+// 	let component = this
+// 	let allTheEvents= this.props.eventsList.filter(function(obj){
+// 		var fuse = new Fuse(obj, { keys: ["name", "description", "venue"] })
+// 		return true
+// 	})
+
 render: function(){
 	console.log('ajsdf;lkajsd;flkjasd;lkfj;lk')
 	let component = this
 	let allTheEvents= this.props.eventsList.filter(function(obj){
-		console.log(component.props.searchVal)
 		if(component.props.searchVal=== ""){
 			console.log(allTheEvents)
 			return true
-		} else if(obj.name.includes(component.props.searchVal)){
+		} else if(obj.name.toLowerCase().includes(component.props.searchVal.toLowerCase())){
 			return true
 		}
 	})
+
+
 	console.log(allTheEvents)
 
 
