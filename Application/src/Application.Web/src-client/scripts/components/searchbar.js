@@ -34,6 +34,7 @@ export const SearchBarComponent = React.createClass({
 
 			// return filteredEvents
 					STORE.setStore('searchVal', searchBarVal)
+					// searchBarVal=""
 					console.log(searchBarVal)
 					// ACTIONS.setView('currentView', "SEARCH")
 
