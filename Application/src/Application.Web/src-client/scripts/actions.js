@@ -69,6 +69,7 @@ export const ACTIONS = {
     })
   },
 
+
   fetchAllEvents: function(){
     console.log('new collection instance, and .fetch()')
     let eventsCollInstance = new EventsCollection()
