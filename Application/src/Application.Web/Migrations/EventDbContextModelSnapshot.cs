@@ -78,6 +78,9 @@ namespace Application.Web.Migrations
 
                     b.Property<string>("Description");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired();
+
                     b.Property<string>("EventUser");
 
                     b.Property<string>("Image");
@@ -89,26 +92,8 @@ namespace Application.Web.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Events");
-                });
 
-            modelBuilder.Entity("Application.Web.Data.Permission", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("ApplicationUserId");
-
-                    b.Property<int>("EventId");
-
-                    b.Property<int>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ApplicationUserId");
-
-                    b.HasIndex("EventId");
-
-                    b.ToTable("Permissions");
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Event");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -232,14 +217,21 @@ namespace Application.Web.Migrations
 
             modelBuilder.Entity("Application.Web.Data.Permission", b =>
                 {
-                    b.HasOne("Application.Web.Data.ApplicationUser")
-                        .WithMany("Permissions")
-                        .HasForeignKey("ApplicationUserId");
+                    b.HasBaseType("Application.Web.Data.Event");
 
-                    b.HasOne("Application.Web.Data.Event")
-                        .WithMany("Permissions")
-                        .HasForeignKey("EventId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                    b.Property<int>("EventId");
+
+                    b.Property<int>("UserId");
+
+                    b.Property<string>("UserId1");
+
+                    b.HasIndex("EventId");
+
+                    b.HasIndex("UserId1");
+
+                    b.ToTable("Permission");
+
+                    b.HasDiscriminator().HasValue("Permission");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>
@@ -277,6 +269,18 @@ namespace Application.Web.Migrations
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Application.Web.Data.Permission", b =>
+                {
+                    b.HasOne("Application.Web.Data.Event", "Event")
+                        .WithMany("Permissions")
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Application.Web.Data.ApplicationUser", "User")
+                        .WithMany("Permissions")
+                        .HasForeignKey("UserId1");
                 });
         }
     }

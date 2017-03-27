@@ -29,7 +29,7 @@ namespace Application.Web.Controllers.api
         }
 
         [HttpGet]
-        [Route("~/api/permissions/{id}")]
+        [Route("~/api/permissions/user{id}")]
         public IEnumerable<Permission> GetEvents(int id)
         {
             var userId = _userManager.GetUserId(User);
@@ -40,14 +40,28 @@ namespace Application.Web.Controllers.api
         [Route("~/api/permissions/{id}")]
         public async Task<IActionResult> GetEvent(int id)
         {
-            var @event = await _context.Permissions.SingleOrDefaultAsync(m => m.EventId == m.Id && m.UserId == id);
-
+            var @event = await _context.Events.Include(m => m.Permissions).SingleOrDefaultAsync(p => p.Id == id);
+            //var permissions = @event.Permissions.SingleOrDefault(m => m.EventId == id && m.UserId == m.Id);
             if (@event == null)
             {
                 return NotFound();
             }
 
-            return Ok();
+
+
+
+            return Ok(@event);
+        }
+
+        [HttpPut]
+        [Route("~/api/permissions/{id}")]
+        public async Task<IActionResult> SaveEvent(int id)
+        {
+            var @event = await _context.Events.Include(m => m.Permissions).SingleOrDefaultAsync(p => p.Id == id);
+
+            var permissions = await _context.Permissions.SingleOrDefaultAsync(m => m.EventId == m.Id && m.UserId == id);
+            
+            return Ok(permissions);
         }
 
         [HttpDelete]

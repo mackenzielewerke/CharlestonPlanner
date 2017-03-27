@@ -35,7 +35,7 @@ namespace Application.Web.Controllers.api
         public IEnumerable<Event> GetEvents()
         {
             var userId = _userManager.GetUserId(User);
-            var sortEvent = _context.Events.OrderBy(q => q.Date).OrderBy(m => m.Name).ToList();
+            var sortEvent = _context.Events.OrderBy(q => q.Date).ToList();
             return sortEvent;
 
         }
@@ -44,7 +44,7 @@ namespace Application.Web.Controllers.api
         [Route("~/api/events/{id}")]
         public async Task<IActionResult> GetEvent(int id)
         {
-            var userId = _userManager.GetUserId(User);
+
             Event Event = await _context.Events
                 .SingleOrDefaultAsync(m => m.Id == id);
 
@@ -52,6 +52,8 @@ namespace Application.Web.Controllers.api
             {
                 return NotFound();
             }
+            Event.EventUser = _userManager.GetUserId(User);
+
 
             return Ok(Event);
         }
