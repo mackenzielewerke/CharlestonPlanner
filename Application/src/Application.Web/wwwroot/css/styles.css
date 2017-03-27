@@ -5844,7 +5844,7 @@ body {
   display: inline-block; }
 
 .logo {
-  width: 30%;
+  width: 25%;
   padding-left: 20px; }
 
 .sign-in {
@@ -5945,7 +5945,7 @@ body {
   margin-right: auto; }
 
 .description-input {
-  height: 250px; }
+  padding-bottom: 250px; }
 
 .form-section {
   width: 40%;
@@ -6043,15 +6043,33 @@ body {
   margin-right: auto; }
 
 .thumbnail {
-  height: 500px; }
+  height: 425px; }
+
+.thumbnail img {
+  height: 200px; }
+
+.caption p {
+  font-size: 14px; }
 
 .single-event {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  background-color: white;
+  padding: 20px 50px;
+  border-radius: 10px; }
 
 .single-event h1 {
+  margin-bottom: 30px; }
+
+.single-event img {
+  width: 60%;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.single-event p {
+  margin-top: 30px;
   margin-bottom: 30px; }
 
 .accounts-body {
@@ -6073,5 +6091,13 @@ body {
 .middle {
   text-align: center;
   margin-top: 50px; }
+
+.footer {
+  background-color: #22313F;
+  color: #d5d8db;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map*/

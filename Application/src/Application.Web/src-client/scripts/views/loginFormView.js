@@ -7,12 +7,14 @@ import {ThumbnailEventListComponent} from '../components/ThumbnailEventListCompo
 import {SingleEventComponent} from '../components/SingleEventComponent.js'
 import {RegistrationFormComponent} from '../components/registrationFormComponent.js'
 import {LoginFormComponent} from '../components/loginFormComponent.js'
+import {FooterComponent} from '../components/footerComp.js'
+
 export const LoginFormView = React.createClass({
 	render: function(){
 		return (
       <div>
 					 <LoginFormComponent/>
-
+					 {/* <FooterComponent/> */}
 
       </div>
 		)

@@ -167,7 +167,7 @@ body{
 }
 
 .description-input{
-	height: 250px;
+	padding-bottom: 250px;
 }
 
 // .centered-margins{
@@ -298,7 +298,15 @@ body{
 }
 
 .thumbnail{
-	height: 350px;
+	height: 425px;
+}
+
+.thumbnail img{
+	height: 200px;
+}
+
+.caption p{
+	font-size: 14px;
 }
 
 .single-event{
@@ -347,4 +355,13 @@ body{
 .middle{
 	text-align: center;
 	margin-top: 50px;
+}
+
+.footer{
+	background-color: #22313F;
+	color: #d5d8db;
+	padding: 10px;
+	font-size: 12px;
+	font-weight: lighter;
+	text-align: center;
 }

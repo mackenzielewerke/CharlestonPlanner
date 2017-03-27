@@ -82,7 +82,7 @@ export const NewEventFormComponent = React.createClass({
 		let pictureValue=formDomEl.inputPicture.value
 		if(pictureValue.length < 1){
 			this.setState({
-				flashMessage_nameField: "You must enter the event's picture"
+				flashMessage_nameField: "Whoops, looks like you're missing something"
 			})
 		}
 	},
@@ -96,9 +96,9 @@ export const NewEventFormComponent = React.createClass({
 
 		this._validateName(formEl)
 		this._validateDate(formEl)
-		// this._validateVenue(formEl)
-		// this._validateDescription(formEl)
-		// this._validatePicture(formEl)
+		this._validateVenue(formEl)
+		this._validateDescription(formEl)
+		this._validatePicture(formEl)
 
 		console.log(formEl.inputDate.value)
 
@@ -141,7 +141,7 @@ export const NewEventFormComponent = React.createClass({
 
     <div className="form-section">
       <h4>Description </h4>
-      <input type="text" className="form-control description-input" name="inputDescription"/>
+      <textarea type="text" className="form-control description-input" name="inputDescription"/>
 			<p className="description flash-msg">{this.state.flashMessage_nameField}</p>
 		</div>
 
@@ -157,7 +157,7 @@ export const NewEventFormComponent = React.createClass({
 
 
 		<div className="button-div">
-    	<button className="submit-button" type="submit">Register</button>
+    	<button className="submit-button" type="submit">Create Event</button>
 		</div>
   </form>
 
