@@ -5,6 +5,8 @@ import {RegularNavComponent} from '../components/unauthenticated-nav.js'
 import {SearchBarComponent} from '../components/searchbar.js'
 import {ThumbnailEventListComponent} from '../components/ThumbnailEventListComponent.js'
 import {SingleEventComponent} from '../components/SingleEventComponent.js'
+import {FooterComponent} from '../components/footerComp.js'
+
 import {STORE} from '../store.js'
 import {ACTIONS} from '../actions.js'
 
@@ -44,6 +46,7 @@ export const SingleEventView = React.createClass({
       <div>
 				<SearchBarComponent/>
 				<SingleEventComponent singleEvent={this.props}/>
+				{/* <FooterComponent/> */}
       </div>
 		)
 	}

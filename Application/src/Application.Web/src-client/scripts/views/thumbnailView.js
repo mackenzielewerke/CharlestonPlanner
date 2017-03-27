@@ -4,6 +4,7 @@ import React from 'react'
 import {RegularNavComponent} from '../components/unauthenticated-nav.js'
 import {SearchBarComponent} from '../components/searchbar.js'
 import {ThumbnailEventListComponent} from '../components/thumbnailEventListComponent.js'
+import {FooterComponent} from '../components/footerComp.js'
 import {ACTIONS} from '../actions.js'
 import {STORE} from '../store.js'
 
@@ -31,7 +32,6 @@ export const EventsPageView = React.createClass({
       <div>
            <SearchBarComponent/>
 					 <ThumbnailEventListComponent {...this.props}/>
-
 
       </div>
 		)

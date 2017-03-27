@@ -4,6 +4,8 @@ import React from 'react'
 import {RegularNavComponent} from '../components/unauthenticated-nav.js'
 import {SearchBarComponent} from '../components/searchbar.js'
 import {NewEventFormComponent} from '../components/newEventFormComponent.js'
+import {FooterComponent} from '../components/footerComp.js'
+
 
 export const NewEventFormView = React.createClass({
 	render: function(){
@@ -11,7 +13,7 @@ export const NewEventFormView = React.createClass({
       <div>
            {/* <SearchBarComponent/> */}
 					 <NewEventFormComponent/>
-
+					 {/* <FooterComponent/> */}
 
       </div>
 		)

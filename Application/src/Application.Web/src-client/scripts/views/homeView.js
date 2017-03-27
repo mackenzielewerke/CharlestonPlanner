@@ -5,6 +5,8 @@ import {RegularNavComponent} from '../components/unauthenticated-nav.js'
 import {SearchBarComponent} from '../components/searchbar.js'
 import {STORE} from '../store.js'
 import {ACTIONS} from '../actions.js'
+import {FooterComponent} from '../components/footerComp.js'
+
 // import {SimpleSlider} from '../components/home-carousel.js'
 
 export const HomePageView = React.createClass({
@@ -25,6 +27,8 @@ export const HomePageView = React.createClass({
       <div>
            <SearchBarComponent eventsList={this.state.eventsList}/>
            <img src="./images/people.jpg" alt=""></img>
+					 <FooterComponent/>
+
 				 	{/* <SimpleSlider/> */}
       </div>
 		)

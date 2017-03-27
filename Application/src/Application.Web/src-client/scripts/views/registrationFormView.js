@@ -6,13 +6,15 @@ import {SearchBarComponent} from '../components/searchbar.js'
 import {ThumbnailEventListComponent} from '../components/ThumbnailEventListComponent.js'
 import {SingleEventComponent} from '../components/SingleEventComponent.js'
 import {RegistrationFormComponent} from '../components/registrationFormComponent.js'
+import {FooterComponent} from '../components/footerComp.js'
+
 
 export const RegistrationFormView = React.createClass({
 	render: function(){
 		return (
       <div>
 					 <RegistrationFormComponent/>
-
+					 {/* <FooterComponent/> */}
 
       </div>
 		)
