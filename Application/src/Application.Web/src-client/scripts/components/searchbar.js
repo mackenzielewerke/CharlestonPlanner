@@ -18,10 +18,8 @@ export const SearchBarComponent = React.createClass({
 		console.log("search click")
 		let searchBarVal=this.refs.inputSearch.value
 		console.log(searchBarVal)
-					STORE.setStore('searchVal', searchBarVal)
-					// STORE.setStore('searchVal', "")
-					console.log(searchBarVal)
-					// ACTIONS.setView('currentView', "SEARCH")
+			STORE.setStore('searchVal', searchBarVal)
+			window.location.hash = 'events'
 
 
 },
