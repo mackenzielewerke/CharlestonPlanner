@@ -9,6 +9,10 @@ export const SearchBarComponent = React.createClass({
 	_handleClickAllEvents: function(evt){
 		console.log('click')
 		window.location.hash = 'events'
+		let empty= ""
+		STORE.setStore('searchVal', empty)
+		this.refs.inputSearch.value=""
+
 
 	},
 
