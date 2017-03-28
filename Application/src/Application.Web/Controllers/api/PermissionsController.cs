@@ -33,21 +33,24 @@ namespace Application.Web.Controllers.api
         public IEnumerable<Permission> GetEvents(int id)
         {
             var userId = _userManager.GetUserId(User);
-            return _context.Permissions.Where(q => q.UserId == id).ToList();
+            return _context.Permissions.Where(q => q.User.Id == userId).ToList();
         }
 
         [HttpGet]
         [Route("~/api/permissions/{id}")]
         public async Task<IActionResult> GetEvent(int id)
         {
-            var @event = await _context.Events.Include(m => m.Permissions).SingleOrDefaultAsync(p => p.Id == id);
+            //var e = await _context.Permissions.Include(n => n.Events).SingleOrDefaultAsync(p =>p.Id == id);
+            var @event = await _context.Events.SingleOrDefaultAsync(p => p.Id == id);
+
             //var permissions = @event.Permissions.SingleOrDefault(m => m.EventId == id && m.UserId == m.Id);
             if (@event == null)
             {
                 return NotFound();
             }
 
-
+             var userId = _userManager.GetUserId(User);
+            //Event.EventUser = userId;
 
 
             return Ok(@event);
@@ -57,9 +60,11 @@ namespace Application.Web.Controllers.api
         [Route("~/api/permissions/{id}")]
         public async Task<IActionResult> SaveEvent(int id)
         {
-            var @event = await _context.Events.Include(m => m.Permissions).SingleOrDefaultAsync(p => p.Id == id);
+            var @event = await _context.Permissions.Include(m => m.Event).SingleOrDefaultAsync(p => p.Id == id);
 
-            var permissions = await _context.Permissions.SingleOrDefaultAsync(m => m.EventId == m.Id && m.UserId == id);
+            var userId = _userManager.GetUserId(User);
+
+            var permissions = await _context.Permissions.SingleOrDefaultAsync(m => m.Event.Id == m.Id && m.User.Id == userId);
             
             return Ok(permissions);
         }
@@ -76,8 +81,8 @@ namespace Application.Web.Controllers.api
             var userId = _userManager.GetUserId(User);
 
             var @event = await _context.Permissions
-                .Where(q => q.UserId == id)
-                .SingleOrDefaultAsync(m => m.EventId == m.Id);
+                .Where(q => q.User.Id == userId)
+                .SingleOrDefaultAsync(m => m.Event.Id == m.Id);
 
             if (@event == null)
             {

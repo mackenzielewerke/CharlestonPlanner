@@ -28,9 +28,19 @@ namespace Application.Web.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             //builder.Entity<Permission>()
-            //    .HasMany<Event>()
-                
-                
+            //    .HasKey(t => new { t.UserId, t.EventId });
+
+            //builder.Entity<Permission>()
+            //    .HasOne(pt => pt.User)
+            //    .WithMany(p => p.Permissions)
+            //    .HasForeignKey(pt => pt.Id);
+
+            //builder.Entity<Permission>()
+            //    .HasOne(pt => pt.Event)
+            //    .WithMany(t => t.Permissions)
+            //    .HasForeignKey(pt => pt.EventId);
+
+
             base.OnModelCreating(builder);
 
             builder.Entity<ApplicationUser>()

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Application.Web.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Application.Web.Controllers.api
 {
@@ -30,14 +31,24 @@ namespace Application.Web.Controllers.api
             return View();
         }
 
-        [HttpGet]
-        [Route("~/api/events")]
+        //two get
+        [HttpGet("~/api/events")]
         public IEnumerable<Event> GetEvents()
         {
-            var userId = _userManager.GetUserId(User);
-            var sortEvent = _context.Events.OrderBy(q => q.Date).ToList();
+            //var userId = _userManager.GetUserId(User);
+            var sortEvent = _context.Events.OrderBy(q => q.Date);
+            
             return sortEvent;
 
+        }
+        [Authorize]
+        [HttpGet("~/api/user/events")]
+        public IActionResult GetUserEvents()
+        {
+            var userId = _userManager.GetUserId(User);
+            var events = _context.Permissions.Where(q => q.User.Id == userId).Select(e => e.Event).ToList();
+            return Ok(events);
+                
         }
 
         [HttpGet]
@@ -67,7 +78,7 @@ namespace Application.Web.Controllers.api
                 return BadRequest(ModelState);
             }
 
-            events.EventUser = _userManager.GetUserId(User);
+           //events.EventUser = _userManager.GetUserId(User);
             _context.Events.Add(events);
             await _context.SaveChangesAsync();
 
@@ -87,7 +98,7 @@ namespace Application.Web.Controllers.api
                 return BadRequest(Response);
             }
 
-            events.EventUser = _userManager.GetUserId(User);
+            //events.EventUser = _userManager.GetUserId(User);
             _context.Entry(events).State = EntityState.Modified;
             await _context.SaveChangesAsync();
 
@@ -107,7 +118,7 @@ namespace Application.Web.Controllers.api
             var userId = _userManager.GetUserId(User);
 
             Event events = await _context.Events
-                .Where(q => q.EventUser == userId)
+                //.Where(q => q.EventUser == userId)
                 .SingleOrDefaultAsync(m => m.Id == id);
 
             if (events == null)
