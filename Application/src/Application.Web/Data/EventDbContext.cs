@@ -27,6 +27,10 @@ namespace Application.Web.Data
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            //builder.Entity<Permission>()
+            //    .HasMany<Event>()
+                
+                
             base.OnModelCreating(builder);
 
             builder.Entity<ApplicationUser>()
