@@ -8,10 +8,17 @@ import moment from 'moment'
 
 export const SingleEventComponent = React.createClass({
 
+	getInitialState: function(){
+		return{
+			buttonMsg: "Save to Favorites"
+		}
+	},
+
 	_handleSaveEvent: function(evt){
 
 		console.log('save events click', evt.target.value)
 		alert('Event has been saved to your favorites!')
+		this.setState({buttonMsg: "Saved to Favorites"})
 	},
 
 	render: function(){
@@ -29,7 +36,7 @@ export const SingleEventComponent = React.createClass({
 						 <h3>{theDateFancy}</h3>
 						 <h3>{oneEvent.venue}</h3>
 						 <p>{oneEvent.description}</p>
-						 <button onClick={this._handleSaveEvent} className="btn btn-primary" role="button">Save to my Favorites</button>
+						 <button onClick={this._handleSaveEvent} className="btn btn-primary" role="button">{this.state.buttonMsg}</button>
 					 </div>
 			 </div>
 		)
