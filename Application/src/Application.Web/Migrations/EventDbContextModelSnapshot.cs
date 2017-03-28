@@ -78,9 +78,6 @@ namespace Application.Web.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired();
-
                     b.Property<string>("EventUser");
 
                     b.Property<string>("Image");
@@ -92,8 +89,24 @@ namespace Application.Web.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Events");
+                });
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Event");
+            modelBuilder.Entity("Application.Web.Data.Permission", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int?>("EventId");
+
+                    b.Property<string>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EventId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Permissions");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -217,21 +230,13 @@ namespace Application.Web.Migrations
 
             modelBuilder.Entity("Application.Web.Data.Permission", b =>
                 {
-                    b.HasBaseType("Application.Web.Data.Event");
+                    b.HasOne("Application.Web.Data.Event", "Event")
+                        .WithMany()
+                        .HasForeignKey("EventId");
 
-                    b.Property<int>("EventId");
-
-                    b.Property<int>("UserId");
-
-                    b.Property<string>("UserId1");
-
-                    b.HasIndex("EventId");
-
-                    b.HasIndex("UserId1");
-
-                    b.ToTable("Permission");
-
-                    b.HasDiscriminator().HasValue("Permission");
+                    b.HasOne("Application.Web.Data.ApplicationUser", "User")
+                        .WithMany("Permissions")
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>
@@ -269,18 +274,6 @@ namespace Application.Web.Migrations
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("Application.Web.Data.Permission", b =>
-                {
-                    b.HasOne("Application.Web.Data.Event", "Event")
-                        .WithMany("Permissions")
-                        .HasForeignKey("EventId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("Application.Web.Data.ApplicationUser", "User")
-                        .WithMany("Permissions")
-                        .HasForeignKey("UserId1");
                 });
         }
     }

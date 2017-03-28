@@ -16,10 +16,9 @@ namespace Application.Web.Data
         public string Venue { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
-        public virtual List<Permission> Permissions { get; set; }
         public Event()
         {
-            Permissions = new List<Permission>();
+
         }
     }
 }
