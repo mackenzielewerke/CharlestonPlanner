@@ -91,7 +91,7 @@ namespace Application.Web.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.Permission", b =>
+            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -106,7 +106,7 @@ namespace Application.Web.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Permissions");
+                    b.ToTable("SavedEvents");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -228,14 +228,14 @@ namespace Application.Web.Migrations
                     b.HasAnnotation("Sqlite:TableName", "UserTokens");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.Permission", b =>
+            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
                 {
                     b.HasOne("Application.Web.Data.Event", "Event")
                         .WithMany()
                         .HasForeignKey("EventId");
 
                     b.HasOne("Application.Web.Data.ApplicationUser", "User")
-                        .WithMany("Permissions")
+                        .WithMany("SavedEvents")
                         .HasForeignKey("UserId");
                 });
 

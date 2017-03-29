@@ -122,7 +122,7 @@ namespace Application.Web.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Permissions",
+                name: "SavedEvents",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -132,15 +132,15 @@ namespace Application.Web.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Permissions", x => x.Id);
+                    table.PrimaryKey("PK_SavedEvents", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Permissions_Events_EventId",
+                        name: "FK_SavedEvents_Events_EventId",
                         column: x => x.EventId,
                         principalTable: "Events",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Permissions_Users_UserId",
+                        name: "FK_SavedEvents_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
@@ -204,13 +204,13 @@ namespace Application.Web.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Permissions_EventId",
-                table: "Permissions",
+                name: "IX_SavedEvents_EventId",
+                table: "SavedEvents",
                 column: "EventId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Permissions_UserId",
-                table: "Permissions",
+                name: "IX_SavedEvents_UserId",
+                table: "SavedEvents",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
@@ -243,7 +243,7 @@ namespace Application.Web.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Permissions");
+                name: "SavedEvents");
 
             migrationBuilder.DropTable(
                 name: "RoleClaims");

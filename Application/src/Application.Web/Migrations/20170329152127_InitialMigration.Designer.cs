@@ -8,7 +8,7 @@ using Application.Web.Data;
 namespace Application.Web.Migrations
 {
     [DbContext(typeof(EventDbContext))]
-    [Migration("20170328165652_Initial-Migration")]
+    [Migration("20170329152127_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -92,7 +92,7 @@ namespace Application.Web.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.Permission", b =>
+            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -107,7 +107,7 @@ namespace Application.Web.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Permissions");
+                    b.ToTable("SavedEvents");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -229,14 +229,14 @@ namespace Application.Web.Migrations
                     b.HasAnnotation("Sqlite:TableName", "UserTokens");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.Permission", b =>
+            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
                 {
                     b.HasOne("Application.Web.Data.Event", "Event")
                         .WithMany()
                         .HasForeignKey("EventId");
 
                     b.HasOne("Application.Web.Data.ApplicationUser", "User")
-                        .WithMany("Permissions")
+                        .WithMany("SavedEvents")
                         .HasForeignKey("UserId");
                 });
 
