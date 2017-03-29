@@ -50,7 +50,12 @@ namespace Application.Web
                 .AddEntityFrameworkStores<EventDbContext>()
                 .AddDefaultTokenProviders();
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc()
+                .AddJsonOptions(options =>
+                {
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Serialize;
+                    options.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.All;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
