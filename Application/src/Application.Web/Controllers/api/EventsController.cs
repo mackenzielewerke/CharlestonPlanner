@@ -31,7 +31,6 @@ namespace Application.Web.Controllers.api
             return View();
         }
 
-        //two get
         [HttpGet("~/api/events")]
         public IEnumerable<Event> GetEvents()
         {
@@ -41,18 +40,44 @@ namespace Application.Web.Controllers.api
             return sortEvent;
 
         }
+
+
         [Authorize]
-        [HttpGet("~/api/user/events")]
-        public IActionResult GetUserEvents()
+        [HttpPost("~/api/events/{id}/save")]
+        public async Task<IActionResult> SaveEvent(int id)
+        {
+            var @event = _context.Events.Find(id);
+
+            if(@event == null)
+            {
+                return NotFound();
+            }
+
+            var savedEvent = new SavedEvent();
+            savedEvent.Event = @event;
+
+            var user = await _userManager.GetUserAsync(User);
+
+            user.SavedEvents.Add(savedEvent);
+
+            await _userManager.UpdateAsync(user);
+
+            return Ok(savedEvent);
+        }
+
+        [Authorize]
+        [HttpGet("~/api/events/saves")]
+        public async Task<IActionResult> GetUserEvents()
         {
             var userId = _userManager.GetUserId(User);
-            var events = _context.Permissions.Where(q => q.User.Id == userId).Select(e => e.Event).ToList();
-            return Ok(events);
+            var user = _context.Users.Include(q => q.SavedEvents).FirstOrDefault(m => m.Id == userId);
+            
+           
+            return Ok(user.SavedEvents);
                 
         }
 
-        [HttpGet]
-        [Route("~/api/events/{id}")]
+        [HttpGet("~/api/events/{id}")]
         public async Task<IActionResult> GetEvent(int id)
         {
 
@@ -69,8 +94,7 @@ namespace Application.Web.Controllers.api
             return Ok(Event);
         }
 
-        [HttpPost]
-        [Route("~/api/events")]
+        [HttpPost("~/api/events")]
         public async Task<IActionResult> PostEvent([FromBody]Event events)
         {
             if (!ModelState.IsValid)
@@ -78,7 +102,6 @@ namespace Application.Web.Controllers.api
                 return BadRequest(ModelState);
             }
 
-           //events.EventUser = _userManager.GetUserId(User);
             _context.Events.Add(events);
             await _context.SaveChangesAsync();
 
@@ -106,8 +129,7 @@ namespace Application.Web.Controllers.api
         }
 
 
-        [HttpDelete]
-        [Route("~/api/events/{id}")]
+        [HttpDelete("~/api/events/{id}")]
         public async Task<IActionResult> DeleteEvent(int id)
         {
             if (!ModelState.IsValid)
