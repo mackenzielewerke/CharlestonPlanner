@@ -51,10 +51,18 @@ namespace Application.Web
                 .AddDefaultTokenProviders();
             // Add framework services.
             services.AddMvc()
+<<<<<<< HEAD
               .AddJsonOptions(options => {
                 options.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Serialize;
               });
+=======
+                .AddJsonOptions(options =>
+                {
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Serialize;
+                    options.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.All;
+                });
+>>>>>>> 1864e61c75b1eae54be5ed67ef09c1b78ae8b80b
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

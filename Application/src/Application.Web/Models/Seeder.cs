@@ -17,7 +17,6 @@ namespace Application.Web.Models
             List<Event> events = JsonConvert.DeserializeObject<List<Event>>(jsonData);
             using (var context = services.GetRequiredService<EventDbContext>())
             {
-                context.Database.EnsureDeleted();
                 context.Database.Migrate();
 
                 if (!context.Events.Any())

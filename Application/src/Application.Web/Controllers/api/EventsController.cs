@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Application.Web.Controllers.api
 {
-    [Route("~/events")]
     public class EventsController : Controller
     {
 
@@ -45,7 +44,7 @@ namespace Application.Web.Controllers.api
         [Authorize]
         [HttpPost("~/api/events/{id}/save")]
         public async Task<IActionResult> SaveEvent(int id)
-        {
+       {
             var @event = _context.Events.Find(id);
 
             if(@event == null)
