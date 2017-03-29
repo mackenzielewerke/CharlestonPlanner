@@ -33,7 +33,7 @@ export const ViewController = React.createClass({
 
     new AppRouter()
 
-    ACTIONS.fetchCurrentUser()
+    // ACTIONS.fetchCurrentUser()
 
   },
 
