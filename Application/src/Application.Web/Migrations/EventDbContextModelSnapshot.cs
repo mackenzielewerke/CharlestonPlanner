@@ -91,24 +91,22 @@ namespace Application.Web.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.Permission", b =>
+            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("ApplicationUserId");
+                    b.Property<int?>("EventId");
 
-                    b.Property<int>("EventId");
-
-                    b.Property<int>("UserId");
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ApplicationUserId");
-
                     b.HasIndex("EventId");
 
-                    b.ToTable("Permissions");
+                    b.HasIndex("UserId");
+
+                    b.ToTable("SavedEvents");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -230,16 +228,15 @@ namespace Application.Web.Migrations
                     b.HasAnnotation("Sqlite:TableName", "UserTokens");
                 });
 
-            modelBuilder.Entity("Application.Web.Data.Permission", b =>
+            modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
                 {
-                    b.HasOne("Application.Web.Data.ApplicationUser")
-                        .WithMany("Permissions")
-                        .HasForeignKey("ApplicationUserId");
+                    b.HasOne("Application.Web.Data.Event", "Event")
+                        .WithMany()
+                        .HasForeignKey("EventId");
 
-                    b.HasOne("Application.Web.Data.Event")
-                        .WithMany("Permissions")
-                        .HasForeignKey("EventId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                    b.HasOne("Application.Web.Data.ApplicationUser", "User")
+                        .WithMany("SavedEvents")
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>

@@ -6,12 +6,12 @@ namespace Application.Web.Data
 {
     public class ApplicationUser : IdentityUser
     {
-        public List<Permission> Permissions { get; set; }
+        public virtual List<SavedEvent> SavedEvents { get; set; }
         public Guid Signature { get; set; }
 
         public ApplicationUser()
         {
-            Permissions = new List<Permission>();
+            SavedEvents = new List<SavedEvent>();
         }
     }
 }

@@ -11,7 +11,6 @@ export const SearchBarComponent = React.createClass({
 		window.location.hash = 'events'
 		let empty= ""
 		STORE.setStore('searchVal', empty)
-		this.refs.inputSearch.value=""
 
 
 	},
@@ -24,6 +23,8 @@ export const SearchBarComponent = React.createClass({
 		console.log(searchBarVal)
 			STORE.setStore('searchVal', searchBarVal)
 			window.location.hash = 'events'
+			this.refs.inputSearch.value=""
+
 
 
 },

@@ -26,7 +26,7 @@ export const HomePageView = React.createClass({
 		return (
       <div>
            <SearchBarComponent eventsList={this.state.eventsList}/>
-           <img src="./images/people.jpg" alt=""></img>
+           <img className="home-page-img" src="./images/event.jpg" alt=""></img>
 					 <FooterComponent/>
 
 				 	{/* <SimpleSlider/> */}

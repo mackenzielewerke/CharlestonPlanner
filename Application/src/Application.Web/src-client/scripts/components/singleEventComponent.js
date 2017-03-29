@@ -8,7 +8,16 @@ import moment from 'moment'
 
 export const SingleEventComponent = React.createClass({
 
+	getInitialState: function(){
+		return{
+			buttonMsg: "Save to Favorites"
+		}
+	},
 
+	_handleSaveEvent: function(evt){
+		this.setState({buttonMsg: "Saved to Favorites"})
+		ACTIONS.saveNewEvent()
+	},
 
 	render: function(){
 		console.log('props passing single event',this.props.singleEvent.singleEvent)
@@ -25,7 +34,7 @@ export const SingleEventComponent = React.createClass({
 						 <h3>{theDateFancy}</h3>
 						 <h3>{oneEvent.venue}</h3>
 						 <p>{oneEvent.description}</p>
-						 <p><a href="#" className="btn btn-primary" role="button">Save to my Favorites</a></p>
+						 <button onClick={this._handleSaveEvent} className="btn btn-primary" role="button">{this.state.buttonMsg}</button>
 					 </div>
 			 </div>
 		)

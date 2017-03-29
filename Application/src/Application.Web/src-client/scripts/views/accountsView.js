@@ -16,7 +16,7 @@ export const AccountsPageView = React.createClass({
   componentDidMount: function(){
     let component = this;
     console.log('ACTIONS.fetch()...')
-    ACTIONS.fetchAllEvents()
+    ACTIONS.fetchSavedEvent()
 
   },
 

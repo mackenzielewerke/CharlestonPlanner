@@ -10,9 +10,8 @@ namespace Application.Web.Data
     public class EventDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Event> Events { get; set; }
-        public DbSet<Permission> Permissions { get; set; }
 
-        //public DbSet<ApplicationUser> Users { get; set; }
+        public DbSet<SavedEvent> SavedEvents { get; set; }
 
         public EventDbContext()
             : base()
@@ -27,6 +26,20 @@ namespace Application.Web.Data
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            //builder.Entity<Permission>()
+            //    .HasKey(t => new { t.UserId, t.EventId });
+
+            //builder.Entity<Permission>()
+            //    .HasOne(pt => pt.User)
+            //    .WithMany(p => p.Permissions)
+            //    .HasForeignKey(pt => pt.Id);
+
+            //builder.Entity<Permission>()
+            //    .HasOne(pt => pt.Event)
+            //    .WithMany(t => t.Permissions)
+            //    .HasForeignKey(pt => pt.EventId);
+
+
             base.OnModelCreating(builder);
 
             builder.Entity<ApplicationUser>()
