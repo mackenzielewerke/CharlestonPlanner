@@ -122,27 +122,27 @@ namespace Application.Web.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "SavedEvent",
+                name: "SavedEvents",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    ApplicationUserId = table.Column<string>(nullable: true),
-                    EventId = table.Column<int>(nullable: true)
+                    EventId = table.Column<int>(nullable: true),
+                    UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SavedEvent", x => x.Id);
+                    table.PrimaryKey("PK_SavedEvents", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SavedEvent_Users_ApplicationUserId",
-                        column: x => x.ApplicationUserId,
-                        principalTable: "Users",
+                        name: "FK_SavedEvents_Events_EventId",
+                        column: x => x.EventId,
+                        principalTable: "Events",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_SavedEvent_Events_EventId",
-                        column: x => x.EventId,
-                        principalTable: "Events",
+                        name: "FK_SavedEvents_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -204,14 +204,14 @@ namespace Application.Web.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_SavedEvent_ApplicationUserId",
-                table: "SavedEvent",
-                column: "ApplicationUserId");
+                name: "IX_SavedEvents_EventId",
+                table: "SavedEvents",
+                column: "EventId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SavedEvent_EventId",
-                table: "SavedEvent",
-                column: "EventId");
+                name: "IX_SavedEvents_UserId",
+                table: "SavedEvents",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "RoleNameIndex",
@@ -243,7 +243,7 @@ namespace Application.Web.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "SavedEvent");
+                name: "SavedEvents");
 
             migrationBuilder.DropTable(
                 name: "RoleClaims");

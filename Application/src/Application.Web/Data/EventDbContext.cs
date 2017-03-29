@@ -11,6 +11,8 @@ namespace Application.Web.Data
     {
         public DbSet<Event> Events { get; set; }
 
+        public DbSet<SavedEvent> SavedEvents { get; set; }
+
         public EventDbContext()
             : base()
         {

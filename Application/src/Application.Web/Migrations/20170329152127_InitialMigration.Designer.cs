@@ -8,7 +8,7 @@ using Application.Web.Data;
 namespace Application.Web.Migrations
 {
     [DbContext(typeof(EventDbContext))]
-    [Migration("20170328195511_InitialMigration")]
+    [Migration("20170329152127_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -97,17 +97,17 @@ namespace Application.Web.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("ApplicationUserId");
-
                     b.Property<int?>("EventId");
+
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ApplicationUserId");
-
                     b.HasIndex("EventId");
 
-                    b.ToTable("SavedEvent");
+                    b.HasIndex("UserId");
+
+                    b.ToTable("SavedEvents");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
@@ -231,13 +231,13 @@ namespace Application.Web.Migrations
 
             modelBuilder.Entity("Application.Web.Data.SavedEvent", b =>
                 {
-                    b.HasOne("Application.Web.Data.ApplicationUser")
-                        .WithMany("SavedEvents")
-                        .HasForeignKey("ApplicationUserId");
-
                     b.HasOne("Application.Web.Data.Event", "Event")
                         .WithMany()
                         .HasForeignKey("EventId");
+
+                    b.HasOne("Application.Web.Data.ApplicationUser", "User")
+                        .WithMany("SavedEvents")
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>

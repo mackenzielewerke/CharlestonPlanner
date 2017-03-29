@@ -70,10 +70,11 @@ namespace Application.Web.Controllers.api
         public async Task<IActionResult> GetUserEvents()
         {
             var userId = _userManager.GetUserId(User);
-            var user = _context.Users.Include(q => q.SavedEvents).FirstOrDefault(m => m.Id == userId);
+            var savedEvents = _context.SavedEvents.Include(s => s.Event).Where(s => s.UserId == userId).ToList();
+           // var user = _context.Users.Include(q => q.SavedEvents.Select(r => r.Event)).FirstOrDefault(m => m.Id == userId);
             
            
-            return Ok(user.SavedEvents);
+            return Ok(savedEvents);
                 
         }
 
