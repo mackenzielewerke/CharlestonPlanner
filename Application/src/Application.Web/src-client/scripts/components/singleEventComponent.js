@@ -2,8 +2,7 @@ import Backbone from 'backbone';
 import ReactDOM from 'react-dom'
 import React from 'react'
 import moment from 'moment'
-
-
+import {ACTIONS} from '../actions.js'
 
 
 export const SingleEventComponent = React.createClass({
@@ -15,8 +14,13 @@ export const SingleEventComponent = React.createClass({
 	},
 
 	_handleSaveEvent: function(evt){
+		console.log('console logging evt', evt)
 		this.setState({buttonMsg: "Saved to Favorites"})
-		ACTIONS.saveNewEvent()
+		let crntID = window.location.hash
+		crntID = crntID.split('/')[1]
+		console.log(crntID)
+		ACTIONS.fetchSingleEventToSave(crntID)
+		// ACTIONS.saveNewEvent(evt)
 	},
 
 	render: function(){

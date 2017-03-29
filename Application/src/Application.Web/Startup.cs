@@ -39,7 +39,7 @@ namespace Application.Web
             //}
             // Add framework services.
             services.AddDbContext<EventDbContext>();
-            
+
             services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequireUppercase = false;
@@ -47,10 +47,15 @@ namespace Application.Web
                 options.Password.RequireLowercase = false;
                 options.Cookies.ApplicationCookie.LoginPath = "/accounts/login";
             })
-                .AddEntityFrameworkStores<EventDbContext>()
+            .AddEntityFrameworkStores<EventDbContext>()
                 .AddDefaultTokenProviders();
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc()
+                .AddJsonOptions(options =>
+                {
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                    options.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -73,7 +78,7 @@ namespace Application.Web
             app.UseStaticFiles();
 
             app.UseIdentity();
-            
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
