@@ -17,14 +17,14 @@ export const AccountsPageComponent = React.createClass({
 	  window.location.hash = `events/${clickedIconEl.dataset.itemid}`
 	},
 
-  _makeEventComponents: function(listOfEvents){
-  	let arrayOfEventsComponents= listOfEvents.map(function (eachEventObj, i){
+  _makeEventComponents: function(favoriteEvents){
+  	let arrayOfEventsComponents= favoriteEvents.map(function (eachEventObj, i){
 
   		return (
   			<EachAccountsEvent eventData= {eachEventObj} key= {i}/>
   		)
   	})
-  	return arrayOfEventsComponents.slice(0,6)
+  	return arrayOfEventsComponents
   	console.log('array of components', arrayOfEventsComponents)
   },
 

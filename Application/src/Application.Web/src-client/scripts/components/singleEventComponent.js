@@ -15,9 +15,8 @@ export const SingleEventComponent = React.createClass({
 	},
 
 	_handleSaveEvent: function(evt){
-
-		console.log('save events click', evt.target.value)
 		this.setState({buttonMsg: "Saved to Favorites"})
+		ACTIONS.saveNewEvent()
 	},
 
 	render: function(){

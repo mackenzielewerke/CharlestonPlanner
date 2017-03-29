@@ -60,12 +60,23 @@ export const ACTIONS = {
   })
 },
 
-  saveNewEvent: function(userFormEntry){
+  saveNewEvent: function(savedEvent){
     let newEventInstance= new EventsModel()
-    newEventInstance.set(userFormEntry)
+    newEventInstance.set(savedEvent)
     newEventInstance.save().then(function(serverRes){
       // ACTIONS.fetchAllEvents()
-      ACTIONS.routeTo('events')
+      ACTIONS.routeTo('ACCOUNT')
+    })
+  },
+
+  fetchSavedEvent: function(evtId){
+    console.log('ACTION fetchSingleEvent')
+    let newModelInstance = new EventsModel()
+    newModelInstance.set({id: id})
+    console.log('fetching model', newModelInstance)
+    newModelInstance.fetch().then(function(serverRes){
+      console.log('FROM Server', serverRes);
+      STORE.setStore('favoriteList', serverRes)
     })
   },
 
