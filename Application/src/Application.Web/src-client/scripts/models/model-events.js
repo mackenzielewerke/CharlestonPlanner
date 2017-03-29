@@ -15,6 +15,12 @@ export const EventsModel= Backbone.Model.extend({
 	idAttribute: 'id'
 })
 
+// export const SaveEventsModel = Backbone.MOdel.extend({
+// 	initialize: function(id){
+//
+// 	}
+// })
+
 export const EventsCollection= Backbone.Collection.extend({
 	model: EventsModel,
 	url: 'api/events'

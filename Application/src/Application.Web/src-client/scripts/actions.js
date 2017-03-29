@@ -63,22 +63,42 @@ export const ACTIONS = {
   saveNewEvent: function(savedEvent){
     let newEventInstance= new EventsModel()
     newEventInstance.set(savedEvent)
+    console.log('new events saving', savedEvent)
+
     newEventInstance.save().then(function(serverRes){
       // ACTIONS.fetchAllEvents()
-      ACTIONS.routeTo('ACCOUNT')
+      ACTIONS.routeTo('events')
     })
   },
 
-  fetchSavedEvent: function(evtId){
-    console.log('ACTION fetchSingleEvent')
+  fetchSingleEventToSave: function(id){
     let newModelInstance = new EventsModel()
     newModelInstance.set({id: id})
-    console.log('fetching model', newModelInstance)
-    newModelInstance.fetch().then(function(serverRes){
-      console.log('FROM Server', serverRes);
-      STORE.setStore('favoriteList', serverRes)
-    })
+      // ACTIONS.routeTo('accounts/:id')
+
+    // newModelInstance.save().then(function(se){
+    //   console.log(se)
+    // })
+    // console.log('fetching model', newModelInstance.attributes)
+    // // STORE.setStore('favoriteList', newModelInstance.attributes)
+    // let objAttributes = newModelInstance.attributes
+    // console.log('attributes?', objAttributes)
+    // newModelInstance.fetch().then(function(serverRes){
+    //   console.log('FROM Server', serverRes);
+    //   STORE.setStore('favoriteList', serverRes)
+    // })
   },
+
+  // fetchSavedEvent: function(evtId){
+  //   console.log('ACTION fetchSingleEvent')
+  //   let newModelInstance = new EventsModel()
+  //   newModelInstance.set({id: id})
+  //   console.log('fetching model', newModelInstance)
+  //   newModelInstance.fetch().then(function(serverRes){
+  //     console.log('FROM Server', serverRes);
+  //     STORE.setStore('favoriteList', serverRes)
+  //   })
+  // },
 
 
   fetchAllEvents: function(){
@@ -92,12 +112,11 @@ export const ACTIONS = {
 
 
   fetchSingleEvent: function(id){
-    console.log('ACTION fetchSingleEvent')
     let newModelInstance = new EventsModel()
     newModelInstance.set({id: id})
-    console.log('fetching model', newModelInstance)
+    // console.log('fetching model', newModelInstance)
     newModelInstance.fetch().then(function(serverRes){
-      console.log('FROM Server', serverRes);
+      // console.log('FROM Server', serverRes);
       STORE.setStore('singleEvent', serverRes)
     })
   },

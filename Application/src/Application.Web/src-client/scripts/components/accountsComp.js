@@ -24,7 +24,7 @@ export const AccountsPageComponent = React.createClass({
   			<EachAccountsEvent eventData= {eachEventObj} key= {i}/>
   		)
   	})
-  	return arrayOfEventsComponents
+  	return arrayOfEventsComponents.slice(0,1)
   	console.log('array of components', arrayOfEventsComponents)
   },
 
