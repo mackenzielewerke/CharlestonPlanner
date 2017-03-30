@@ -2,6 +2,12 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 import {ViewController} from './viewController.js'
 
+if(window.location.hostname === 'localhost'){
+    let headEl = document.querySelector('head')
+    let linkEl = document.querySelector('link[href="./css/styles.css"]')
+    headEl.removeChild(linkEl)
+}
+
 ReactDOM.render(<ViewController/>, document.querySelector('#app-container'))
 // import {HomePageView} from './views/homeView.js'
 // import {EventsPageView} from './views/thumbnailView.js'
@@ -10,11 +16,7 @@ ReactDOM.render(<ViewController/>, document.querySelector('#app-container'))
 // import {LoginFormView} from './views/loginFormView.js'
 // import {NewEventFormView} from './views/newEventFormView.js'
 //
-// if(window.location.hostname === 'localhost'){
-//     let headEl = document.querySelector('head')
-//     let linkEl = document.querySelector('link[href="./css/styles.css"]')
-//     headEl.removeChild(linkEl)
-// }
+
 //
 // const AppRouter = Backbone.Router.extend({
 // 	initialize: function(){
